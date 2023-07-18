@@ -4213,12 +4213,6 @@ a:focus {
 	transform: scale(1);
 }
 
-.service-one__single:hover .service-one__image>a {
-	opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	height: 100%;
-}
 
 .service-one__single:hover .service-one__image>a i {
 	opacity: 1;
