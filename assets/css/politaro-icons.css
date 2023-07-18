@@ -184,9 +184,6 @@
 .politaro-icon-hand-2:before {
   content: "\e934";
 }
-.politaro-icon-hand-3:before {
-  content: "\e935";
-}
 .politaro-icon-horn-1:before {
   content: "\e936";
 }
@@ -205,12 +202,15 @@
 .politaro-icon-woman-1:before {
   content: "\e93b";
 }
-.politaro-icon-person-1:before {
-  content: "\e93c";
-}
 .politaro-icon-law-1:before {
-  content: "\e93d";
+  content: url(/assets/images/shapes/education.png);
 }
 .politaro-icon-paper-pencil:before {
-  content: "\e93e";
+  content: url(/assets/images/shapes/community.png);
+}
+.politaro-icon-person-1:before {
+  content: url(/assets/images/shapes/icon1.png);
+}
+.politaro-icon-hand-3:before {
+  content: url(/assets/images/shapes/data.png);
 }

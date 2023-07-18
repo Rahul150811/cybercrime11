@@ -2563,7 +2563,10 @@ a:focus {
 # cta
 --------------------------------------------------------------*/
 .cta-one {
-	padding-bottom: 120px;
+	margin-top: 80px;
+	margin-bottom: -170px;
+	position: relative;
+	z-index: 11;
 }
 
 .cta-one .inner-container {
@@ -2719,7 +2722,7 @@ a:focus {
 # faq
 --------------------------------------------------------------*/
 .faq-one {
-	background-color: var(--thm-primary);
+	background-image: url(/assets/images/resources/banner2.png);
 	position: relative;
 	padding-top: 50px;
 }
@@ -4838,7 +4841,7 @@ a:focus {
 }
 
 .about-one__video {
-	margin-top: -30px;
+	margin-top: 130px;
 	z-index: 10;
 	position: relative;
 }
