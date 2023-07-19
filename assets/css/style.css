@@ -4620,17 +4620,11 @@ a:focus {
 }
 
 .service-three__single img {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 170px;
 	height: 165px;
-	font-size: 70px;
 	color: var(--thm-base);
-	display: -webkit-box;
-	display: flex;
-	text-align: center;
-	-webkit-box-align: center;
 	align-items: center;
 	-webkit-box-pack: center;
 	justify-content: center;
