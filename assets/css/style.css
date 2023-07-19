@@ -4619,6 +4619,12 @@ a:focus {
 	transition: all 500ms ease;
 }
 
+.service-three__single img{
+	border-radius: 3px;
+	width: 170px;
+	margin-top: 30px;
+}
+
 .service-three__single i {
 	display: block;
 	margin-left: auto;
