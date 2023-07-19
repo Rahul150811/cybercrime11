@@ -4619,7 +4619,7 @@ a:focus {
 	transition: all 500ms ease;
 }
 
-.service-three__single i {
+.service-three__single img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -4665,7 +4665,7 @@ a:focus {
 	background-color: var(--thm-base);
 }
 
-.service-three__single:hover i {
+.service-three__single:hover img {
 	color: #ffffff;
 }
 
