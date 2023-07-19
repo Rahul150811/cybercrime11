@@ -1244,6 +1244,10 @@ a:focus {
 	padding: 15px 37.5px;
 	background-color: var(--thm-primary);
 }
+.slider-one__btn1 {
+	padding: 8px 20.5px;
+	background-color: rgb(58, 131, 160);
+}
 
 .slider-one__btn-two {
 	padding: 13px 35.85px;
