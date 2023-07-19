@@ -4640,14 +4640,10 @@ a:focus {
 	margin: 0;
 	padding: 17px 15px;
 	border-radius: 3px;
-	color: #fff;
+	color: #000;
 	font-size: 18px;
-	background: #245da2;
+	background: #fff;
 	transition: all 500ms ease;
-}
-
-.service-three__single:hover h3{
-	background: #771717;
 }
 
 .service-three__single h3 a {
