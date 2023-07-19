@@ -4619,12 +4619,18 @@ a:focus {
 	transition: all 500ms ease;
 }
 
-.service-three__single img {
+.service-three__single i {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 170px;
 	height: 165px;
+	font-size: 70px;
 	color: var(--thm-base);
+	display: -webkit-box;
+	display: flex;
+	text-align: center;
+	-webkit-box-align: center;
 	align-items: center;
 	-webkit-box-pack: center;
 	justify-content: center;
@@ -4638,10 +4644,14 @@ a:focus {
 	margin: 0;
 	padding: 17px 15px;
 	border-radius: 3px;
-	color: #000;
+	color: #fff;
 	font-size: 18px;
-	background: #fff;
+	background: #245da2;
 	transition: all 500ms ease;
+}
+
+.service-three__single:hover h3{
+	background: #771717;
 }
 
 .service-three__single h3 a {
@@ -4659,9 +4669,10 @@ a:focus {
 	background-color: var(--thm-base);
 }
 
-.service-three__single:hover img {
+.service-three__single:hover i {
 	color: #ffffff;
 }
+
 
 .service-four {
 	padding: 120px 0;
