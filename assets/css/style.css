@@ -6940,3 +6940,112 @@ a:focus {
 .event-six__carousel .owl-nav{
 	display: block !important;
 }
+
+/* ----------- Learning Page ------------*/
+.ftco-section {
+	padding: 7em 0;
+	position: relative;
+	width: 100%;
+}
+@media (max-width: 767.98px) {
+	.ftco-section {
+		padding: 6em 0; 
+	} 
+}
+.project-wrap {
+	margin-bottom: 30px;
+	width: 100%;
+	background: #fff;
+	-webkit-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+	box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.11);
+}
+.project-wrap .img {
+	display: block;
+	width: 100%;
+	height: 270px;
+	position: relative;
+	z-index: 1; 
+}
+.project-wrap .img .price {
+	position: absolute;
+	bottom: -8px;
+	left: 20px;
+	display: inline-block;
+	background: #4986fc;
+	color: #fff;
+	padding: 2px 10px;
+	font-size: 16px;
+	font-weight: 500;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease; 
+}
+.project-wrap .img .price:after, .project-wrap .img .price:before {
+	position: absolute;
+	bottom: 0;
+	content: ''; 
+}
+.project-wrap .img .price:after {
+	right: -8px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 0;
+	border-color: #0456f4 transparent transparent transparent; 
+}
+.project-wrap .img .price:before {
+	width: 0;
+	left: -8px;
+	height: 0;
+	border-style: solid;
+	border-width: 0 8px 8px 0;
+	border-color: transparent #0456f4 transparent transparent; 
+}
+.project-wrap.hotel .img {
+	height: 320px; 
+}
+.project-wrap .text {
+  	width: 100%;
+  	position: relative;
+  	border-top: none; 
+}
+.project-wrap .text .advisor {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 500; 
+}
+.project-wrap .text .advisor span {
+	color: #4986fc; 
+}
+.project-wrap .text .days {
+	font-size: 12px;
+	color: #4986fc;
+	text-transform: uppercase;
+	font-weight: 700; 
+}
+.project-wrap .text h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: 500; }
+.project-wrap .text h3 a {
+	color: #000000; }
+.project-wrap .text ul {
+	margin: 0;
+	padding: 10px 0 0 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.05); }
+.project-wrap .text ul li {
+	display: inline-block;
+	color: #b3b3b3;
+	font-weight: 600; }
+.project-wrap .text ul li span {
+	color: #4986fc;
+	margin-right: 10px;
+	font-size: 20px;
+	line-height: 1; }
+.project-wrap .text ul li.price {
+	color: #4986fc; }
+
+	  
