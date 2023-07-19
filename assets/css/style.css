@@ -2564,7 +2564,7 @@ a:focus {
 --------------------------------------------------------------*/
 .cta-one {
 	margin-top: 80px;
-	margin-bottom: -170px;
+	margin-bottom: -80px;
 	position: relative;
 	z-index: 11;
 }
@@ -2722,6 +2722,7 @@ a:focus {
 # faq
 --------------------------------------------------------------*/
 .faq-one {
+	background-image: url(/assets/images/resources/banner2.png);
 	position: relative;
 	padding-top: 50px;
 }
@@ -4213,6 +4214,12 @@ a:focus {
 	transform: scale(1);
 }
 
+.service-one__single:hover .service-one__image>a {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	height: 100%;
+}
 
 .service-one__single:hover .service-one__image>a i {
 	opacity: 1;
@@ -4608,7 +4615,25 @@ a:focus {
 	transition: all 500ms ease;
 }
 
-
+.service-three__single i {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 170px;
+	height: 165px;
+	font-size: 70px;
+	color: var(--thm-base);
+	display: -webkit-box;
+	display: flex;
+	text-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+  
 .service-three__single h3 {
 	position: relative;
 	display: block;
@@ -5342,6 +5367,7 @@ a:focus {
 
 .site-footer__logo {
 	margin-bottom: 30px;
+	margin-top: 50px;
 }
 
 .site-footer__counter {
@@ -5352,6 +5378,7 @@ a:focus {
 }
 
 .site-footer__counter-single {
+	margin-top: 50px;
 	margin-bottom: 30px;
 }
 
