@@ -4436,7 +4436,7 @@ a:focus {
 }
 
 .service-two {
-	padding-top: 155px;
+	padding-top: 20px;
 	padding-bottom: 95px;
 }
 
@@ -4450,11 +4450,11 @@ a:focus {
 	flex: 1 1 41%;
 	max-width: 41%;
 	padding-left: 15px;
-	padding-right: 15px;
+	padding-right: 15px; 
 }
 
 .service-two__content {
-	padding-top: 45px;
+	padding-top: 5px;
 	padding-right: 46px;
 }
 
