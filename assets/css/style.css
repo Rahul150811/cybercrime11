@@ -4625,6 +4625,7 @@ a:focus {
 	margin-top: 30px;
 }
 
+
 .service-three__single i {
 	display: block;
 	margin-left: auto;
@@ -4650,14 +4651,14 @@ a:focus {
 	margin: 0;
 	padding: 17px 15px;
 	border-radius: 3px;
-	color: #fff;
+	color: black;
 	font-size: 18px;
-	background: #245da2;
+	background: #fff;
 	transition: all 500ms ease;
 }
 
 .service-three__single:hover h3{
-	background: #771717;
+	background: white;
 }
 
 .service-three__single h3 a {
@@ -4671,9 +4672,6 @@ a:focus {
 	transform: translateY(-10px);
 }
 
-.service-three__single:hover {
-	background-color: var(--thm-base);
-}
 
 .service-three__single:hover i {
 	color: #ffffff;
