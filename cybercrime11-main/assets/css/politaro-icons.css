@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'politaro';
+  src:  url('../fonts/politaro.eot?rtzh8y');
+  src:  url('../fonts/politaro.eot?rtzh8y#iefix') format('embedded-opentype'),
+    url('../fonts/politaro.ttf?rtzh8y') format('truetype'),
+    url('../fonts/politaro.woff?rtzh8y') format('woff'),
+    url('../fonts/politaro.svg?rtzh8y#politaro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="politaro-icon-"], [class*=" politaro-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'politaro' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.politaro-icon-business:before {
+  content: "\e900";
+}
+.politaro-icon-checklist:before {
+  content: "\e901";
+}
+.politaro-icon-announcer:before {
+  content: "\e902";
+}
+.politaro-icon-boss:before {
+  content: "\e903";
+}
+.politaro-icon-avatar:before {
+  content: "\e904";
+}
+.politaro-icon-avatar1:before {
+  content: "\e905";
+}
+.politaro-icon-candidates:before {
+  content: "\e906";
+}
+.politaro-icon-check:before {
+  content: "\e907";
+}
+.politaro-icon-check1:before {
+  content: "\e908";
+}
+.politaro-icon-ballot:before {
+  content: "\e909";
+}
+.politaro-icon-check2:before {
+  content: "\e90a";
+}
+.politaro-icon-bar-chart:before {
+  content: "\e90b";
+}
+.politaro-icon-balance:before {
+  content: "\e90c";
+}
+.politaro-icon-ballot1:before {
+  content: "\e90d";
+}
+.politaro-icon-democracy:before {
+  content: "\e90e";
+}
+.politaro-icon-address:before {
+  content: "\e90f";
+}
+.politaro-icon-audience:before {
+  content: "\e910";
+}
+.politaro-icon-demonstration:before {
+  content: "\e911";
+}
+.politaro-icon-demonstration1:before {
+  content: "\e912";
+}
+.politaro-icon-ballot2:before {
+  content: "\e913";
+}
+.politaro-icon-businessman:before {
+  content: "\e914";
+}
+.politaro-icon-campaign:before {
+  content: "\e915";
+}
+.politaro-icon-business1:before {
+  content: "\e916";
+}
+.politaro-icon-check3:before {
+  content: "\e917";
+}
+.politaro-icon-coin:before {
+  content: "\e918";
+}
+.politaro-icon-communication:before {
+  content: "\e919";
+}
+.politaro-icon-democracy1:before {
+  content: "\e91a";
+}
+.politaro-icon-avatar2:before {
+  content: "\e91b";
+}
+.politaro-icon-candidate:before {
+  content: "\e91c";
+}
+.politaro-icon-candidates1:before {
+  content: "\e91d";
+}
+.politaro-icon-home:before {
+  content: "\e91e";
+}
+.politaro-icon-gps:before {
+  content: "\e91f";
+}
+.politaro-icon-ballot3:before {
+  content: "\e920";
+}
+.politaro-icon-candidate1:before {
+  content: "\e921";
+}
+.politaro-icon-ballot4:before {
+  content: "\e922";
+}
+.politaro-icon-calendar:before {
+  content: "\e923";
+}
+.politaro-icon-campaign1:before {
+  content: "\e924";
+}
+.politaro-icon-Advertisement1:before {
+  content: "\e925";
+}
+.politaro-icon-democracy2:before {
+  content: "\e926";
+}
+.politaro-icon-accessory:before {
+  content: "\e927";
+}
+.politaro-icon-advertise:before {
+  content: "\e928";
+}
+.politaro-icon-badge:before {
+  content: "\e929";
+}
+.politaro-icon-check4:before {
+  content: "\e92a";
+}
+.politaro-icon-Advertisement:before {
+  content: "\e92b";
+}
+.politaro-icon-ballot-box:before {
+  content: "\e92c";
+}
+.politaro-icon-advertise1:before {
+  content: "\e92d";
+}
+.politaro-icon-ballot-box1:before {
+  content: "\e92e";
+}
+.politaro-icon-ballot-box2:before {
+  content: "\e92f";
+}
+.politaro-icon-ballot5:before {
+  content: "\e930";
+}
+.politaro-icon-ballot6:before {
+  content: "\e931";
+}
+.politaro-icon-check-1:before {
+  content: "\e932";
+}
+.politaro-icon-hand-1:before {
+  content: "\e933";
+}
+.politaro-icon-hand-2:before {
+  content: "\e934";
+}
+.politaro-icon-horn-1:before {
+  content: "\e936";
+}
+.politaro-icon-logo-1:before {
+  content: "\e937";
+}
+.politaro-icon-star-1:before {
+  content: "\e938";
+}
+.politaro-icon-star-2:before {
+  content: "\e939";
+}
+.politaro-icon-vote-box:before {
+  content: "\e93a";
+}
+.politaro-icon-woman-1:before {
+  content: "\e93b";
+}
+.politaro-icon-law-1:before {
+  content: url(/assets/images/media/education1.png);
+}
+.politaro-icon-paper-pencil:before {
+  content: url(/assets/images/media/community1.png);
+}
+.politaro-icon-person-1:before {
+  content: url(/assets/images/media/icon1.png);
+}
+.politaro-icon-hand-3:before {
+  content: url(/assets/images/media/data1.png);
+}
+.politaro-icon-law-1 {
+  content: url(/assets/images/media/education1.png);
+}
