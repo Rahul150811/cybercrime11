@@ -4614,7 +4614,7 @@ a:focus {
 	border-radius: 3px;
 	width: 170px;
 	margin-top: 30px;
-	background-color: #f4f4f4;
+	background-color: white;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
@@ -4653,7 +4653,7 @@ a:focus {
 	border-radius: 3px;
 	color: black;
 	font-size: 18px;
-	background: #fff;
+	background: white;
 	transition: all 500ms ease;
 }
 
