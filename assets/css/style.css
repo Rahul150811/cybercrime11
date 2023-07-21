@@ -7171,11 +7171,12 @@ a:focus {
   
   .shuffle-item img {
 	height: 200px;
-	width: 400px;
+	width: 200px;
   }
   .shuffle-item h3 {
 	font-size: 20px;
-	color: red;
+	font-weight: bold;
+	color: #114f9a;
 	text-align: center;
 
   }
