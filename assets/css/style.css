@@ -1241,8 +1241,13 @@ a:focus {
 }
 
 .slider-one__btn {
-	padding: 15px 37.5px;
+	padding: 14px 14px;
 	background-color: var(--thm-primary);
+}
+.slider-one__btn_1 {
+	padding: 14px 14px;
+	color: white;
+	background-color: red;
 }
 .slider-one__btn1 {
 	padding: 8px 20.5px;
