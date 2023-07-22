@@ -7170,8 +7170,8 @@ a:focus {
   }
   
   .shuffle-item img {
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
   }
   .shuffle-item h3 {
 	font-size: 20px;
@@ -7180,4 +7180,6 @@ a:focus {
 	text-align: center;
 
   }
-
+  .shuffle-wrapper .shuffle-item {
+    margin-bottom: 4rem;
+  }
