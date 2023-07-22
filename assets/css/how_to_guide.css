@@ -7192,6 +7192,7 @@ a:focus {
 .border-left {
     margin-bottom: 30px;
 }
+
 .content-inner-page .column-title{
     font-family: "arimo";
     font-weight: 700;
@@ -7306,7 +7307,6 @@ a:focus {
     padding: 15px 20px;
     border: 0;
     margin-bottom: 8px;
-    position: relative;
     transition: 400ms;
     display: block;
   }
