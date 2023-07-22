@@ -7206,13 +7206,11 @@ a:focus {
 .sidebar .widget-title{
     font-size: 20px;
     font-weight: 700;
-    position: relative;
     margin: 0 0 30px;
     padding-left: 15px;
     text-transform: uppercase;
     border-left: 3px solid #cd2828;
   }
-  
   /* Widget common */
   .sidebar .widget {
     margin-top: 50px;
