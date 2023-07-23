@@ -1101,14 +1101,13 @@ a:focus {
 	color: #fff;
 	font-size: 15px;
 }
-
 .inner-banner__title {
 	margin: 0;
 	color: #fff;
 	font-size: 68px;
 	line-height: 1em;
 	font-weight: bold;
-	margin-top: 10px;
+	margin-top: -60px;
 	margin-bottom: 20px;
 }
 
@@ -5039,7 +5038,6 @@ a:focus {
 }
 
 .about-two .nav-tabs {
-	position: fixed;
 	margin: 0;
 	-webkit-box-pack: center;
 	justify-content: center;
