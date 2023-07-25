@@ -7212,6 +7212,13 @@ a:focus {
     text-transform: uppercase;
     border-left: 3px solid #cd2828;
   }
+
+  .sidebar.sidebar-left.header.sticky {
+    position: fixed;
+    top: 89px;
+    width: 220px;
+}
+
   /* Widget common */
   .sidebar .widget {
     margin-top: 50px;

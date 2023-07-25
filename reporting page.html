@@ -143,7 +143,7 @@
                     </div>
                   <div class="row">
                     <div class="col-xl-3 col-lg-4">
-                      <div class="sidebar sidebar-left">
+                      <div class="sidebar sidebar-left header" id="myHeader">
                         <div class="widget">
                           <h3 class="widget-title">Content</h3>
                           <ul class="nav service-menu">
@@ -327,31 +327,6 @@
 
 
         <section class="site-footer__wrapper site-footer__style-two ">
-            <div class="site-footer__upper">
-                <div class="container">
-                    <div class="site-footer__logo">
-                        <a href="index.html"><img src="assets/images/resources/PROTECT-1 (1).png" alt="Awesome Image" /></a>
-                    </div><!-- /.site-footer__logo -->
-                    <div class="site-footer__counter">
-                        <div class="site-footer__counter-single">
-                            <h3><span class="counter">0</span></h3><!-- /.counter -->
-                            <p>Total Complaints</p>
-                        </div><!-- /.site-footer__counter-single -->
-                        <div class="site-footer__counter-single">
-                            <h3 class="counter">0</h3><!-- /.counter -->
-                            <p>Cases Resolved</p>
-                        </div><!-- /.site-footer__counter-single -->
-                        <div class="site-footer__counter-single">
-                            <h3>$<span class="counter">0</span></h3><!-- /.counter -->
-                            <p>Money Retrieved</p>
-                        </div><!-- /.site-footer__counter-single -->
-                        <div class="site-footer__counter-single">
-                            <h3 class="counter">1</h3><!-- /.counter -->
-                            <p>Active Volunteers</p>
-                        </div><!-- /.site-footer__counter-single -->
-                    </div><!-- /.site-footer__counter -->
-                </div><!-- /.container -->
-            </div><!-- /.site-footer__upper -->
             <footer class="site-footer">
                 <div class="container">
                     <div class="row no-gutters">
@@ -476,6 +451,20 @@
     <script src="assets/js/nouislider.js"></script>
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+      // JavaScript code to make the header sticky after scrolling 200px down the page
+      window.onscroll = function() { myFunction() };
+
+      var header = document.getElementById("myHeader");
+
+      function myFunction() {
+          if (window.pageYOffset > 560) {
+              header.classList.add("sticky");
+          } else {
+              header.classList.remove("sticky");
+          }
+      }
+</script>
       
 </body>
 </html>
