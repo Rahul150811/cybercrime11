@@ -7235,3 +7235,35 @@ a:focus {
 }
 
 --------------------------------------*/
+
+
+.container-fluid {
+    height: 100%;
+}
+
+.tic-tac-toe-row {
+    height: 33.33vh; /* Each row takes up one-third of the viewport height */
+}
+
+
+.col {
+    height: 100%; /* Each column takes up the full height of its row */
+}
+
+.col h3{
+	margin-top: 50px;
+}
+.col a{
+	text-decoration: none;
+	color: blue;
+	font-family: "arimo";
+	font-weight: bold;
+}
+
+.border-right {
+    border-right: 2px solid black;
+}
+
+.border-bottom {
+    border-bottom: 2px solid black;
+}
