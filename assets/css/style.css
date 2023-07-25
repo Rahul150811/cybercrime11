@@ -4330,8 +4330,10 @@ a:focus {
 }
 
 .service-one__content i {
-	color: var(--thm-base);
-	font-size: 80px;
+	font-size: 16px;
+	line-height: 28px;
+	color: #666666;
+	margin: 0;
 }
 
 .service-one__content h3 {
