@@ -774,14 +774,12 @@ hr {
   min-height: 70px;
 }
 #header .logo {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
+  float: left;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 /*=== 4.1 Main Navigation ===*/
