@@ -451,19 +451,27 @@
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script>
-      // JavaScript code to make the header sticky after scrolling 200px down the page
-      window.onscroll = function() { myFunction() };
-
-      var header = document.getElementById("myHeader");
-
-      function myFunction() {
-          if (window.pageYOffset > 560) {
-              header.classList.add("sticky");
+      // JavaScript code to make the header sticky on larger screens
+      function addSticky() {
+          var header = document.getElementById("myHeader");
+          if (window.innerWidth > 767) {
+              if (window.pageYOffset > 560) {
+                  header.classList.add("sticky");
+              } else {
+                  header.classList.remove("sticky");
+              }
           } else {
               header.classList.remove("sticky");
           }
       }
-</script>
+  
+      // Call addSticky on scroll and resize
+      window.onscroll = addSticky;
+      window.onresize = addSticky;
+  
+      // Initial call when the page loads
+      addSticky();
+  </script>
       
 </body>
 </html>

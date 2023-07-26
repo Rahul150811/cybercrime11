@@ -7219,6 +7219,23 @@ a:focus {
     width: 220px;
 }
 
+@media screen and (min-width: 768px) {
+	.sidebar.sidebar-left.header.sticky {
+		position: fixed;
+		top: 89px;
+		width: 220px;
+	}
+}
+
+/* Fixed sidebar styles for smaller screens */
+@media screen and (max-width: 767px) {
+	.sidebar.sidebar-left.header.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+}
+
   /* Widget common */
   .sidebar .widget {
     margin-top: 50px;
