@@ -1101,16 +1101,16 @@ a:focus {
 	color: #fff;
 	font-size: 15px;
 }
+
 .inner-banner__title {
 	margin: 0;
 	color: #fff;
 	font-size: 68px;
 	line-height: 1em;
 	font-weight: bold;
-	margin-top: -60px;
+	margin-top: 10px;
 	margin-bottom: 20px;
 }
-
 .thm-breadcrumb {
 	margin: 0;
 	display: -webkit-box;
