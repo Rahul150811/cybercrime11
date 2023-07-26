@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/css/nouislider.pips.css">
     <link rel="stylesheet" href="assets/css/jquery.bootstrap-touchspin.min.css">
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- icon styles -->
     <link rel="stylesheet" type="text/css" href="assets/css/politaro-icons.css">
@@ -323,9 +324,29 @@
                                         <div class="col-lg slider-one__btn-block">
                                             <a href="reporting page.html" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
                                         </div>
+
                                         <div class="col slider-one__btn-block">
-                                            <a href="reportingpage2.html" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
+                                            <a href="#modalScrollableCenter" role="button" class="btn btn-primary slider-one__btn_1 thm-btn" data-bs-toggle="modal" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
                                         </div>
+                                        <!-- Scrollable Modal HTML -->
+                                        <div id="modalScrollableCenter" class="modal fade" tabindex="-1" data-bs-backdrop="false" data-bs-keyboard="false">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Modal Alignment Demo</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien vel, porttitor bibendum enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. Pellentesque vitae metus ipsum. Phasellus sed nunc ac sem malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien diam. Donec pharetra id arcu eget blandit. Proin imperdiet mattis augue in porttitor. Quisque tempus enim id lobortis feugiat. Suspendisse tincidunt risus quis dolor fringilla blandit. Ut sed sapien at purus lacinia porttitor. Nullam iaculis, felis a pretium ornare, dolor nisl semper tortor, vel sagittis lacus est consequat eros. Sed id pretium nisl. Curabitur dolor nisl, laoreet vitae aliquam id.</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
                                     </div>
                             </div><!-- /.service-one__content -->
                         </div><!-- /.service-one__single -->
@@ -448,7 +469,7 @@
                     </div><!-- /.service-three__column -->
                     <div class="service-three__column">
                         <div class="service-three__single">
-                            <img src="https://www.hirahul.info/cybercrime11/assets/images/services/relax1.png">
+                            <img src="https://www.hirahul.info/cybercrime11/assets/images/services/relax.png">
                             <h3>Relax</h3>
                         </div><!-- /.service-three__single -->
                     </div><!-- /.service-three__column -->
@@ -1333,6 +1354,7 @@
     <script src="assets/js/circle-progress.min.js"></script>
     <script src="assets/js/countdown.min.js"></script>
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/nouislider.js"></script>
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
