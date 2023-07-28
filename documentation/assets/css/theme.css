@@ -35,7 +35,6 @@
 
 .page-header .page-heading{
   color:#fff;
-  font-size: 70px;
 }
 .page-header .page-intro{color:white;-webkit-opacity:.8;-moz-opacity:.8;opacity:.8}.social-list li{font-size:1.125rem;background:white;width:32px;height:32px;text-align:center;border-radius:50%;padding-top:3px}.social-list li a{color:black}.social-list li a:hover{color:#28b76b}.social-list li:not(:last-child){margin-right:0.875rem}.header{box-shadow:0 1px 4px 0 rgba(0,0,0,0.1);background:#fff}.btn-success,.btn-warning,.btn-info,.btn-danger{color:#fff}.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-info:hover,.btn-info:focus,.btn-info:active,.btn-danger:hover,.btn-danger:focus,.btn-danger:active{color:#fff}.footer .copyright{font-size:0.875rem}.page-heading{font-size:2.5rem}.page-intro{font-size:1.125rem}.main-search-box{max-width:600px}
 .docs-overview .card{
