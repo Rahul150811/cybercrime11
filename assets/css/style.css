@@ -7386,3 +7386,34 @@ a:focus {
   .intro-fix .text-color .points{
 	margin-top: 50px;
   }
+
+/*-------------------------------*/
+.modal-open {
+	overflow: hidden;
+}
+
+.modal-blur {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(5px);
+	z-index: 1040; /* Make sure this value is higher than the modal's z-index */
+	display: none;
+}
+
+.modal.show .modal-blur {
+	display: block;
+}
+
+/* Style to prevent scrolling on the body when modal is open */
+.modal-open .modal-blur {
+	overflow-y: auto;
+}
+
+/* Additional styles for the modal to ensure proper display */
+.modal-dialog {
+	z-index: 1050; /* Make sure this value is higher than the modal's backdrop z-index */
+}

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Report an Incident</title>
+    <style>
+      /* Style for the accordion */
+      .card {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      margin-bottom: 15px;
+      }
+      .card-header {
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      }
+      .card-header a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      }
+      .card-header a:hover {
+      color: #428bca;
+      }
+      .card-header i {
+      float: right;
+      font-size: 24px;
+      line-height: 1;
+      margin-top: 0px;
+      color: #333;
+      }
+      .card-header .collapsed i {
+      transform: rotate(90deg);
+      }
+      .card-block {
+      padding: 15px;
+      }
+      .card-block .row {
+      margin: 0 -5px;
+      }
+      .card-block .row > div {
+      padding: 0 5px;
+      }
+      .card-block strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      }
+      .card-block a {
+      color: #428bca;
+      }
+      .card-block a:hover {
+      text-decoration: none;
+      }
+      /* Style for the TD Bank logo */
+      .card-header img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px;
+      width: 50px;
+      }
+      @media (max-width: 767px) {
+      .card-header img {
+      margin-right: 10px;
+      }
+      .card-header a {
+      font-size: 16px;
+      }
+      .card-block strong {
+      font-size: 14px;
+      }
+      }
+      .search-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      }
+      .search-container input[type=text] {
+      border: 2px solid black;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px 0 0 5px;
+      }
+      .search-container button {
+      padding: 10px;
+      background: #ddd;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
+      }
+      .search-container button:hover {
+      background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-------------------------------------------------------------------------------------------------------->
+    <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 style="font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;">Find Your Bank: Report a Stolen Card and Protect Your Finances</h1>
+            <div class="search-container">
+              <form action="/search">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          <div class="bd-example">
+            <div id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://logos-download.com/wp-content/uploads/2016/03/Toronto-Dominion_TB_Bank_logo_logotype_emblem-700x625.png" alt="TD Bank" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">TD Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-888-751-9000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> customer.service@td.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.td.com/us/en/personal-banking/contact-us/
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://logos-world.net/wp-content/uploads/2021/02/JP-Morgan-Chase-Symbol.png" alt="Chase" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Chase Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-800-935-9935
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://www.chase.com/digital/resources/contact-chase
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.chase.com/digital/resources/contact-chase
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://companieslogo.com/img/orig/COF-669e640e.png?t=1634111222" alt="Capital One" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Capital One Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-877-383-4802
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://www.capitalone.com/support-center/contact-us/
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.capitalone.com/support-center/contact-us/
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://www.vhv.rs/dpng/d/509-5092388_citi-logo-citibank-logo-hd-png-download.png" alt="Citi" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Citi Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-800-374-9700
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://online.citi.com/US/ag/contactus
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://online.citi.com/US/ag/contactus
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/93_Discover_Credit_Card_logo_logos-1024.png" alt="Discover" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Discover</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-800-347-7000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://www.discover.com/credit-cards/help-center/contact-us/
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.discover.com/credit-cards/help-center/contact-us/
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://companieslogo.com/img/orig/SAN-8a4d0f73.png?t=1647958776" alt="Santander" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Santander Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-877-768-2265
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://www.santanderbank.com/us/personal/support/contact-us
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.santanderbank.com/us/personal/support/contact-us
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://companieslogo.com/img/orig/BAC-e7995069.png?t=1633208020" alt="Bank of America" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Bank of America</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-800-432-1000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://www.bankofamerica.com/customer-service/contact-us/
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.bankofamerica.com/customer-service/contact-us/
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wells_Fargo_Logo_%282020%29.png/834px-Wells_Fargo_Logo_%282020%29.png?20200601172502" alt="Wells Fargo" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Wells Fargo</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 1-800-869-3557
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> https://www.wellsfargo.com/help/contact-us/
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> https://www.wellsfargo.com/help/contact-us/
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://companieslogo.com/img/orig/PNC-7acb1325.png?t=1647879156" alt="PNC Bank" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">PNC Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://cdn.freebiesupply.com/logos/large/2x/american-express-2-logo-png-transparent.png" alt="American Express" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">American Express</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://assets.stickpng.com/images/62334af5dd0d9e6d0a152ab3.png" alt="Citizens Bank" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Citizens Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseEleven" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://play-lh.googleusercontent.com/1Hxy3wUCBYQyRCxHnMS_5sTzCRzY19on1hqjpKOtruT2nJizLCvdP7zMfRtL9UxVal0=w480-h960-rw" alt="International Bank of Chicago" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">International Bank of Chicago</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseTwelve" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://logos-world.net/wp-content/uploads/2020/10/Goldman-Sachs-Emblem.png" alt="Goldman Sachs" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Goldman Sachs</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseThirteen" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingTwo">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://www.chime.com/wp-content/uploads/2019/01/chime-square-icon.jpg" alt="Chime Bank" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Chime Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseFourteen" class="collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="headingThree">
+                  <div class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                      <img src="https://companieslogo.com/img/orig/MCB-d59b36e0.png?t=1649225883" alt="Metropolitan Commercial Bank" style="width: 50px; margin-right: 20px;">
+                      <h3 style="display: inline; vertical-align: middle;">Metropolitan Commercial Bank</h3>
+                    </a>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="collapseFifteen" class="collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false">
+                  <div class="card-block">
+                    <div class="row">
+                      <div class="col">
+                        <strong>Phone Number:</strong><br> 000-000-0000
+                      </div>
+                      <div class="col">
+                        <strong>Email:</strong> example@helpcenter.com
+                      </div>
+                      <div class="col">
+                        <strong>Web Link:</strong> helpcenter.example.com
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const accordionItems = document.querySelectorAll('.accordion-item');
+      
+      accordionItems.forEach(item => {
+      item.addEventListener('click', event => {
+      const content = item.querySelector('.accordion-content');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+      });
+      
+    </script>
+    <!---------------------------------------------------------------------------------------------------------> 
+    <!--------------------------Credit------------------------------->
+    <!--------------------- Code used from and Made by the Pipe Video Recording Platform https://addpipe.com/simple-recorderjs-demo/ -------------------->
+  </body>
+</html>
