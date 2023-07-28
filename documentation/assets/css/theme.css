@@ -101,7 +101,7 @@
   font-size:inherit;
   position:relative;
   top:0.3rem;
-  background:none
+  background: whitesmoke;
 }
 .docs-sidebar-toggler:focus{
   outline:none
