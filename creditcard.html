@@ -47,57 +47,57 @@
 <body>
     <div class="preloader" style="background-image: url(assets/images/resources/preloader.svg);"></div><!-- /.preloader -->
     <div class="page-wrapper">
-        <div class="site-header__header-one-wrapper">
-            <header class="site-header site-header__header-one">
-                <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
-                    <div class="container clearfix">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="logo-box">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/resources/PROTECT-1 (1).png" class="main-logo" alt="Awesome Image" />
-                            </a>
-                            <button class="menu-toggler side-menu__toggler">
-                                <span class="fa fa-bars"></span>
-                            </button>
-                        </div><!-- /.logo-box -->
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="main-navigation main-nav__main-navigation">
-                            <ul class=" navigation-box ">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-
-                                <li>
-                                    <a href="resource.html">Resources</a>
-                                </li>
-
-                                <li>
-                                    <a href="learn.html">Learn</a>
-                                </li>
-
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                                <li class="header__search search-popup__toggler">
-                                    <a href="#"><i class="icon-magnifier"></i></a>
-                                </li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                        <div class="right-side-box">
-                            <a href="#!" class="thm-btn header-donation__btn">Report</a>
-                        </div><!-- /.right-side-box -->
-                    </div>
-                    <!-- /.container -->
-                </nav>
-            </header><!-- /.site-header -->
-        </div><!-- /.site-header__header-one-wrapper -->
+        <header class="site-header site-header__header-one">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/resources/PROTECT-1 (1).png" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler side-menu__toggler">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation main-nav__main-navigation">
+                        <ul class="navigation-box">
+                            <li class="current">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+    
+                            <li>
+                                <a href="news.html">What-to-do Guide</a>
+                            </li>
+    
+                            <li>
+                                <a href="resource.html">Resources</a>
+                            </li>
+    
+                            <li>
+                                <a href="learn.html">Learn</a>
+                            </li>
+    
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                    <div class="right-side-box">
+                        <a href="#!" class="thm-btn header-donation__btn">Report</a>
+                    </div><!-- /.right-side-box -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+    
 
 
         
-        <div class="block-title text-center" style="margin-top: 20vh;">
+        <div class="block-title text-center" style="margin-top: 10vh;">
             <i class="block-title__icon politaro-icon-star-2"></i>
             <p>Find All You Need to Know About Your Bank</p>
             <h3>Bank Information <span style="color: red;">Lookup</span></h3>
@@ -494,6 +494,15 @@
     <script src="assets/js/countdown.min.js"></script>
     <script src="assets/js/jquery.ajaxchimp.min.js"></script>
     <script src="assets/js/shuffle.min.js"></script>
+    <script>
+        // JavaScript code to toggle the mobile menu
+        const menuToggler = document.querySelector('.menu-toggler');
+        const mainNavigation = document.querySelector('.main-navigation');
+
+        menuToggler.addEventListener('click', () => {
+            mainNavigation.classList.toggle('active');
+        });
+    </script>
 
     <script src="assets/js/nouislider.js"></script>
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
@@ -501,58 +510,48 @@
     <script src="assets/js/resource.js"></script>
     <script src="assets/js/search.js"></script>
     <script>
-        var accordion = (function(){
-  
-  var $accordion = $('.js-accordion');
-  var $accordion_header = $accordion.find('.js-accordion-header');
-  var $accordion_item = $('.js-accordion-item');
- 
-  // default settings 
-  var settings = {
-    // animation speed
-    speed: 400,
-    
-    // close all other accordion items if true
-    oneOpen: false
-  };
-    
-  return {
-    // pass configurable object literal
-    init: function($settings) {
-      $accordion_header.on('click', function() {
-        accordion.toggle($(this));
-      });
-      
-      $.extend(settings, $settings); 
-      
-      // ensure only one accordion is active if oneOpen is true
-      if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
-        $('.js-accordion-item.active:not(:first)').removeClass('active');
-      }
-      
-      // reveal the active accordion bodies
-      $('.js-accordion-item.active').find('> .js-accordion-body').show();
-    },
-    toggle: function($this) {
-            
-      if(settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
-        $this.closest('.js-accordion')
-               .find('> .js-accordion-item') 
-               .removeClass('active')
-               .find('.js-accordion-body')
-               .slideUp()
-      }
-      
-      // show/hide the clicked accordion item
-      $this.closest('.js-accordion-item').toggleClass('active');
-      $this.next().stop().slideToggle(settings.speed);
-    }
-  }
-})();
-
-$(document).ready(function(){
-  accordion.init({ speed: 300, oneOpen: true });
-});
+    var accordion = (function(){
+        var $accordion = $('.js-accordion');
+        var $accordion_header = $accordion.find('.js-accordion-header');
+        var $accordion_item = $('.js-accordion-item');
+        // default settings 
+        var settings = {
+            // animation speed
+            speed: 400,
+            // close all other accordion items if true
+            oneOpen: false
+        };
+        return {
+             // pass configurable object literal
+             init: function($settings) {
+                $accordion_header.on('click', function() {
+                    accordion.toggle($(this));
+                });
+                $.extend(settings, $settings); 
+                // ensure only one accordion is active if oneOpen is true
+                if(settings.oneOpen && $('.js-accordion-item.active').length > 1) {
+                    $('.js-accordion-item.active:not(:first)').removeClass('active');
+                }
+                // reveal the active accordion bodies
+                $('.js-accordion-item.active').find('> .js-accordion-body').show();
+            },
+            toggle: function($this) {
+                if(settings.oneOpen && $this[0] != $this.closest('.js-accordion').find('> .js-accordion-item.active > .js-accordion-header')[0]) {
+                    $this.closest('.js-accordion')
+                    .find('> .js-accordion-item') 
+                    .removeClass('active')
+                    .find('.js-accordion-body')
+                    .slideUp()
+                }
+                // show/hide the clicked accordion item
+                $this.closest('.js-accordion-item').toggleClass('active');
+                $this.next().stop().slideToggle(settings.speed);
+            }
+        }
+    })();
+    $(document).ready(function(){
+        accordion.init({ speed: 300, oneOpen: true });
+    });
     </script>
   
 

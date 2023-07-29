@@ -7506,3 +7506,68 @@ a:focus {
     box-shadow: none;
     border: none;
   }
+
+
+
+
+  .navbar {
+	background-color: #222222;
+	padding: 10px 0;
+}
+
+.navbar-brand img {
+	height: 150px; /* Adjust the height as needed */
+}
+
+.navigation-box {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation-box li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.navigation-box li:last-child {
+	margin-right: 0;
+}
+
+.navigation-box li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+	.logo-box,
+	.right-side-box {
+		float: none;
+		text-align: center;
+	}
+
+	.logo-box {
+		margin-bottom: 15px;
+	}
+
+	.main-navigation {
+		display: none;
+		text-align: center;
+	}
+
+	.main-navigation.active {
+		display: block;
+	}
+
+	.menu-toggler {
+		display: block;
+	}
+
+	.navigation-box li {
+		display: block;
+		margin: 10px 0;
+	}
+}
