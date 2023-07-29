@@ -5168,7 +5168,7 @@ a:focus {
 
 .about-two__content .accrodion-title h4 {
 	margin: 0;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	color: var(--thm-black);
 	position: relative;
@@ -5180,7 +5180,7 @@ a:focus {
 	transition: all 500ms ease;
 }
 .about-two__content .accrodion-content h5 {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 }
 .about-two__content .accrodion.active .accrodion-title h4 {
