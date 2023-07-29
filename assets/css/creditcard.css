@@ -7333,22 +7333,57 @@ a:focus {
 	transition: all .3s;
 	text-transform: uppercase;
   }
-  .accordion-header i{
-	margin-top: -40px;
-	margin-right: 25px;
-  }
+  .accordion-header i {
+    margin-top: -40px;
+    margin-right: 20px;
+	color: var(--thm-black);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .accordion-header i {
+        margin-top: -3vw; /* Adjust the icon's top margin for smaller screens */
+        margin-right: 3vw; /* Adjust the icon's right margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .accordion-header i {
+        margin-top: -4vw; /* Further adjust the icon's top margin for even smaller screens */
+        margin-right: 4vw; /* Further adjust the icon's right margin for even smaller screens */
+    }
+}
+
 .image-icon-container {
 	display: flex;
 }
-.image-icon-container img{
-	height:50px;
-	width: auto;
+.image-icon-container img {
+    max-height: 50px;
+    width: auto;
+    max-width: 100%;
 }
 
-.image-icon-container h4{
-	margin-top: 10px;
-	margin-left: 20px;
+.image-icon-container h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 2vw;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .image-icon-container h4 {
+        margin-left: 5vw; /* Adjust the left margin for smaller screens */
+        font-size: 3vw; /* Adjust the font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .image-icon-container h4 {
+        margin-left: 3vw; /* Further adjust the left margin for even smaller screens */
+        font-size: 4vw; /* Further adjust the font size for even smaller screens */
+    }
+}
+
 
 
   .accordion__item {
@@ -7373,7 +7408,7 @@ a:focus {
   
   .accordion-body__contents {
 	padding: 1.5em 1.5em;
-	font-size: .85em;
+	font-size: 1.2em;
   }
   
   .accordion__item.active:last-child .accordion-header {
