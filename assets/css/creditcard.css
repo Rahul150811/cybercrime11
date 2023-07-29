@@ -7405,7 +7405,7 @@ a:focus {
 
   #searchResults {
     padding: 1em;
-    background-color: #f1f1f1;
+    background-color: white;
     border-radius: 5px;
     width: 80vw;
     margin: 0 auto;
