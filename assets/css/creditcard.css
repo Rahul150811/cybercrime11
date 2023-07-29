@@ -7326,8 +7326,8 @@ a:focus {
   
   .accordion-header {
 	padding: 1.5em 1.5em;
-	background: #245da2;
-	color: white;
+	background: white;
+	color: black;
 	cursor: pointer;
 	letter-spacing: .1em;
 	transition: all .3s;
@@ -7339,6 +7339,10 @@ a:focus {
   }
 .image-icon-container {
 	display: flex;
+}
+.image-icon-container img{
+	height:50px;
+	width: auto;
 }
 
 .image-icon-container h4{
@@ -7356,7 +7360,7 @@ a:focus {
   }
   
   .accordion-header:hover {
-	background: #2D3D99;
+	background: rgb(226, 226, 226);
 	position: relative;
 	z-index: 5;
   }
@@ -7385,7 +7389,7 @@ a:focus {
   }
   
   .accordion__item.active .accordion-header {
-	background: #cd2828;
+	background: rgb(226, 226, 226);
   }
   
   .accordion__item .accordion__item .accordion-header {
