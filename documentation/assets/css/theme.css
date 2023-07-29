@@ -133,7 +133,7 @@
 }
 .docs-sidebar{
   display:none;
-  width:400px;
+  width:380px;
   position:fixed;
   z-index:10;
   top:80px;
