@@ -67,11 +67,11 @@
   position:relative;
   top:-0.3rem;
   font-size: 28px;
-  font-family: "Raleway,sans-serif";
+  font-family: 'Roboto',sans-serif;
 }
 .docs-overview .card-text{
-  font-size: 19px;
-  font-family: "Raleway,sans-serif";
+  font-size: 16px;
+  font-family: 'Roboto',sans-serif;
 }
 
 .docs-overview .card-text li{
