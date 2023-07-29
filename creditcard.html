@@ -108,12 +108,14 @@
                 <div class="col-md-6">
                     <div class="form">
                         <i class="fa fa-search"></i>
-                        <input type="text" class="form-control form-input" placeholder="Search anything...">
+                        <input type="text" class="form-control form-input" id="searchInput" placeholder="Search anything...">
                         <span class="left-pan"><i class="fa fa-microphone"></i></span>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Add this div where you want to display the search results -->
+        <div id="searchResults"></div>
 
         <!-------------------------------------------------------------->
         <div class="accordion js-accordion">
@@ -300,6 +302,7 @@
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/resource.js"></script>
+    <script src="assets/js/search.js"></script>
     <script>
         var accordion = (function(){
   
@@ -354,6 +357,7 @@ $(document).ready(function(){
   accordion.init({ speed: 300, oneOpen: true });
 });
     </script>
+  
 
 </body>
 </html>
