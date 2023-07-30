@@ -139,7 +139,7 @@
   width:380px;
   position:fixed;
   z-index:10;
-  top:80px;
+  top:70px;
   height:calc(100% - 69px);
   background:#fff;
   overflow-y:auto;
