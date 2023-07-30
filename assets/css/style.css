@@ -7387,5 +7387,9 @@ a:focus {
 	margin-top: 50px;
   }
 
+  /*-------------------------------*/
 
-  
+ .course{
+	background-color: #fff;
+	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06);
+ } 
