@@ -319,7 +319,7 @@ a:focus {
 	background: #292728;
 	position: fixed;
 	bottom: 40px;
-	left: 40px;
+	right: 40px;
 	z-index: 990;
 	text-align: center;
 	-webkit-transition: all .4s ease;
