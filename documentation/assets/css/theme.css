@@ -191,8 +191,8 @@
 }
 .docs-nav .nav-item{
   margin-left:2.5rem;
-  font-size: 18px;
-  font-family: 'arimo';
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .docs-nav .nav-item.section-title{
   margin-left:0;
