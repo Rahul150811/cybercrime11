@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "ashik.mdashikurrahman@gmail.com" );
+define( "RECIPIENT_NAME", "Rahul" );
+define( "RECIPIENT_EMAIL", "mrsaini281@gmail.com" );
 
 // Read the form values
 $success = false;
