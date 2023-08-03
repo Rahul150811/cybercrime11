@@ -232,14 +232,12 @@
   color: black;
 }
 .docs-nav .nav-link.active:before{
-  background-color: #f4fcf6;
 }
 .docs-nav .nav-link.active .theme-icon-holder{
   color: white;
   background:#114f9a
 }
 .docs-nav .nav-link:before{
-  background-color:#f4fcf6;
   content:' ';
   display:inline-block;
   height:inherit;
