@@ -3565,7 +3565,6 @@ a:focus {
 .event-three__image>a {
 	position: absolute;
 	z-index: 10;
-	background-color: rgba(34, 34, 34, 0.85);
 	top: 0;
 	left: 0;
 	right: 0;
@@ -5155,7 +5154,7 @@ a:focus {
 }
 
 .about-two__content .accrodion {
-	border-top: 1px solid #e7e7e7;
+	margin-top: -25px;
 }
 
 .about-two__content .accrodion.active {
