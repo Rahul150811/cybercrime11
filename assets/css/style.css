@@ -2876,6 +2876,13 @@ a:focus {
 /*--------------------------------------------------------------
 # map
 --------------------------------------------------------------*/
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+	.iframe-container {
+		padding-top: 100%; /* Change the aspect ratio or adjust as needed */
+	}
+}
+
 .map-one {
 	padding: 120px 0 90px;
 }
