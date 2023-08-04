@@ -5632,6 +5632,7 @@ a:focus {
 	border: none;
 	outline: none;
 	display: block;
+	padding: 5px 15px;
 	width: 100%;
 	height: 55px;
 	border: 1px solid #dddddd;
