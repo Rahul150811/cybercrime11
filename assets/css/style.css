@@ -7411,6 +7411,15 @@ a:focus {
 	flex-wrap: wrap;
 }
 
+.category img,
+.course-item img {
+    transition: .5s;
+}
+
+.category a:hover img,
+.course-item:hover img {
+    transform: scale(1.1);
+}
 
  /*--------------------------------*/
  .docs-overview .card{
