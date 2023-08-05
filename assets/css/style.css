@@ -7400,6 +7400,17 @@ a:focus {
 	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06);
  } 
 
+ .course-item{
+	margin-bottom: 80px;
+	display: flex;
+    flex-direction: column;
+	height: auto;
+ }
+ .row-eq-height {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 
  /*--------------------------------*/
  .docs-overview .card{
