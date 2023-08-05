@@ -478,6 +478,16 @@
       }
 </script>
 <script src="assets/js/automate_topbar.js"></script>
+<script>
+    var counter = 1;
+    
+    function incrementCounter() {
+      counter++;
+      document.querySelector(".visitor").innerHTML = counter;
+    }
+    
+    window.addEventListener("load", incrementCounter);
+</script>
       
 </body>
 </html>

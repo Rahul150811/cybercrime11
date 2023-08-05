@@ -553,5 +553,15 @@
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/automate_topbar.js"></script>
+    <script>
+        var counter = 1;
+        
+        function incrementCounter() {
+          counter++;
+          document.querySelector(".visitor").innerHTML = counter;
+        }
+        
+        window.addEventListener("load", incrementCounter);
+    </script>
 </body>
 </html>
