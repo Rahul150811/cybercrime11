@@ -898,6 +898,7 @@
                     <div class="site-footer__logo">
                         <img src="assets/images/resources/1.png" height="160px" width="200px" class="main-logo" alt="Awesome Image" />
                     </div><!-- /.site-footer__logo -->
+                    
                     <div class="site-footer__counter">
                         <div class="site-footer__counter-single">
                             <h3><span class="counter">0</span></h3><!-- /.counter -->
@@ -907,15 +908,21 @@
                             <h3 class="counter">0</h3><!-- /.counter -->
                             <p>Cases Resolved</p>
                         </div><!-- /.site-footer__counter-single -->
+                        <!--
                         <div class="site-footer__counter-single">
-                            <h3>$<span class="counter">0</span></h3><!-- /.counter -->
+                            <h3>$<span class="counter">0</span></h3>
                             <p>Money Retrieved</p>
-                        </div><!-- /.site-footer__counter-single -->
+                        </div> -->
                         <div class="site-footer__counter-single">
                             <h3 class="counter">1</h3><!-- /.counter -->
                             <p>Active Volunteers</p>
                         </div><!-- /.site-footer__counter-single -->
+                        <div class="site-footer__counter-single">
+                            <h3 class="visitor"></h3><!-- /.counter -->
+                            <p>Total Visits</p>
+                        </div><!-- /.site-footer__counter-single -->
                     </div><!-- /.site-footer__counter -->
+
                 </div><!-- /.container -->
             </div><!-- /.site-footer__upper -->
             <footer class="site-footer">
@@ -1043,5 +1050,15 @@
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/automate_topbar.js"></script>
+    <script>
+        var counter = 1;
+        
+        function incrementCounter() {
+          counter++;
+          document.querySelector(".visitor").innerHTML = counter;
+        }
+        
+        window.addEventListener("load", incrementCounter);
+        </script>
 </body>
 </html>
