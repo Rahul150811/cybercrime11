@@ -30,15 +30,42 @@
                 contentType: false,
                 processData: false,
                 success: function (data) {
-                    var resultHtml = "<h2>Scan Results:</h2>";
-                    resultHtml += "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
-                    $("#result").html(resultHtml);
+                    var analysisId = data.data.id;
+                    checkAnalysisStatus(analysisId);
                 },
                 error: function (xhr, status, error) {
                     $("#result").html("<p>Error: " + error + "</p>");
                 }
             });
         });
+
+        function checkAnalysisStatus(analysisId) {
+            $.ajax({
+                url: "https://www.virustotal.com/api/v3/analyses/" + analysisId,
+                type: "GET",
+                headers: {
+                    "x-apikey": "1a82c50b0b02b73e8e038fb496f4208972ea672c440ada17cc56fdb5c0c838dc"
+                },
+                success: function (data) {
+                    if (data.data.attributes.status === "completed") {
+                        displayScanResults(data.data.attributes.results);
+                    } else {
+                        setTimeout(function () {
+                            checkAnalysisStatus(analysisId);
+                        }, 5000); // Poll every 5 seconds
+                    }
+                },
+                error: function (xhr, status, error) {
+                    $("#result").html("<p>Error: " + error + "</p>");
+                }
+            });
+        }
+
+        function displayScanResults(results) {
+            var resultHtml = "<h2>Scan Results:</h2>";
+            resultHtml += "<pre>" + JSON.stringify(results, null, 2) + "</pre>";
+            $("#result").html(resultHtml);
+        }
     </script>
 </body>
 </html>
