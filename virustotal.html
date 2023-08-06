@@ -7,7 +7,7 @@
 <body>
     <h1>VirusTotal Scanner</h1>
     <form id="upload-form">
-        <label for="file">Select a file:</label>
+        <label for="file">Select a file to scan:</label>
         <input type="file" id="file" name="file" accept=".exe, .dll, .zip, .rar">
         <button type="submit">Scan</button>
     </form>
@@ -25,7 +25,7 @@
                 type: "POST",
                 data: formData,
                 headers: {
-                    "x-apikey": "1a82c50b0b02b73e8e038fb496f4208972ea672c440ada17cc56fdb5c0c838dc"
+                    "x-apikey": "YOUR_VIRUSTOTAL_API_KEY"
                 },
                 contentType: false,
                 processData: false,
@@ -44,11 +44,13 @@
                 url: "https://www.virustotal.com/api/v3/analyses/" + analysisId,
                 type: "GET",
                 headers: {
-                    "x-apikey": "1a82c50b0b02b73e8e038fb496f4208972ea672c440ada17cc56fdb5c0c838dc"
+                    "x-apikey": "YOUR_VIRUSTOTAL_API_KEY"
                 },
                 success: function (data) {
                     if (data.data.attributes.status === "completed") {
-                        displayScanResults(data.data.attributes.results);
+                        var results = data.data.attributes.results;
+                        var categorizedResults = categorizeScanResults(results);
+                        displayCategorizedResults(categorizedResults);
                     } else {
                         setTimeout(function () {
                             checkAnalysisStatus(analysisId);
@@ -61,9 +63,36 @@
             });
         }
 
-        function displayScanResults(results) {
+        function categorizeScanResults(results) {
+            var categories = {
+                safe: 0,
+                partialSafe: 0,
+                malicious: 0,
+                error: 0
+            };
+
+            for (var engine in results) {
+                var result = results[engine].result;
+                if (result === null) {
+                    categories.safe++;
+                } else if (result === "malicious") {
+                    categories.malicious++;
+                } else if (result === "error") {
+                    categories.error++;
+                } else {
+                    categories.partialSafe++;
+                }
+            }
+
+            return categories;
+        }
+
+        function displayCategorizedResults(categories) {
             var resultHtml = "<h2>Scan Results:</h2>";
-            resultHtml += "<pre>" + JSON.stringify(results, null, 2) + "</pre>";
+            resultHtml += "<p>Safe: " + categories.safe + "</p>";
+            resultHtml += "<p>Partial Safe: " + categories.partialSafe + "</p>";
+            resultHtml += "<p>Malicious: " + categories.malicious + "</p>";
+            resultHtml += "<p>Error: " + categories.error + "</p>";
             $("#result").html(resultHtml);
         }
     </script>
