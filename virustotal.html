@@ -25,7 +25,7 @@
                 type: "POST",
                 data: formData,
                 headers: {
-                    "x-apikey": "YOUR_VIRUSTOTAL_API_KEY"
+                    "x-apikey": "1a82c50b0b02b73e8e038fb496f4208972ea672c440ada17cc56fdb5c0c838dc"
                 },
                 contentType: false,
                 processData: false,
@@ -44,7 +44,7 @@
                 url: "https://www.virustotal.com/api/v3/analyses/" + analysisId,
                 type: "GET",
                 headers: {
-                    "x-apikey": "YOUR_VIRUSTOTAL_API_KEY"
+                    "x-apikey": "1a82c50b0b02b73e8e038fb496f4208972ea672c440ada17cc56fdb5c0c838dc"
                 },
                 success: function (data) {
                     if (data.data.attributes.status === "completed") {
