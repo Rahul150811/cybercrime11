@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VirusTotal Scanner</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>VirusTotal Scanner</h1>
+    <form id="upload-form">
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file" accept=".exe, .dll, .zip, .rar">
+        <button type="submit">Scan</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        $("#upload-form").submit(function (event) {
+            event.preventDefault();
+            
+            var formData = new FormData();
+            formData.append("file", $("#file")[0].files[0]);
+            
+            $.ajax({
+                url: "https://www.virustotal.com/api/v3/files",
+                type: "POST",
+                data: formData,
+                headers: {
+                    "x-apikey": "1a82c50b0b02b73e8e038fb496f4208972ea672c440ada17cc56fdb5c0c838dc"
+                },
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    var resultHtml = "<h2>Scan Results:</h2>";
+                    resultHtml += "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
+                    $("#result").html(resultHtml);
+                },
+                error: function (xhr, status, error) {
+                    $("#result").html("<p>Error: " + error + "</p>");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
