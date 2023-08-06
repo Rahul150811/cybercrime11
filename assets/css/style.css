@@ -7406,14 +7406,12 @@ a:focus {
     flex-direction: column;
 	height: auto;
  }
- .row-eq-height {
-	display: flex;
-	flex-wrap: wrap;
-}
 
 .category img,
 .course-item img {
     transition: .5s;
+	height: 200px;
+	width: 400px;
 }
 
 .category a:hover img,
