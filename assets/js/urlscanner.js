@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>VirusTotal Scanner</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-    <h1>VirusTotal Scanner</h1>
-    <form id="upload-form">
-        <label for="file">Select a file:</label>
-        <input type="file" id="file" name="file" accept=".exe, .dll, .zip, .rar">
-        <button type="submit">Scan File</button>
-    </form>
-    <form id="url-form">
-        <label for="url">Enter a URL:</label>
-        <input type="text" id="url" name="url">
-        <button type="submit">Scan URL</button>
-    </form>
-    <div id="result"></div>
-
-    <script>
-        $("#upload-form").submit(function (event) {
+$("#upload-form").submit(function (event) {
             event.preventDefault();
             var formData = new FormData();
             formData.append("file", $("#file")[0].files[0]);
@@ -110,6 +89,3 @@
             resultHtml += "<p>Error: " + categories.error + "</p>";
             $("#result").html(resultHtml);
         }
-    </script>
-</body>
-</html>
