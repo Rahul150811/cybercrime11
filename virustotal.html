@@ -7,19 +7,34 @@
 <body>
     <h1>VirusTotal Scanner</h1>
     <form id="upload-form">
-        <label for="file">Select a file to scan:</label>
+        <label for="file">Select a file:</label>
         <input type="file" id="file" name="file" accept=".exe, .dll, .zip, .rar">
-        <button type="submit">Scan</button>
+        <button type="submit">Scan File</button>
+    </form>
+    <form id="url-form">
+        <label for="url">Enter a URL:</label>
+        <input type="text" id="url" name="url">
+        <button type="submit">Scan URL</button>
     </form>
     <div id="result"></div>
 
     <script>
         $("#upload-form").submit(function (event) {
             event.preventDefault();
-            
             var formData = new FormData();
             formData.append("file", $("#file")[0].files[0]);
-            
+            submitScanRequest(formData);
+        });
+
+        $("#url-form").submit(function (event) {
+            event.preventDefault();
+            var url = $("#url").val();
+            var formData = new FormData();
+            formData.append("url", url);
+            submitScanRequest(formData);
+        });
+
+        function submitScanRequest(formData) {
             $.ajax({
                 url: "https://www.virustotal.com/api/v3/files",
                 type: "POST",
@@ -37,7 +52,7 @@
                     $("#result").html("<p>Error: " + error + "</p>");
                 }
             });
-        });
+        }
 
         function checkAnalysisStatus(analysisId) {
             $.ajax({
