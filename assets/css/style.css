@@ -38,9 +38,7 @@
 --------------------------------------------------------------*/
 
 /* Template Variables */
-.html{
-	scroll-behavior: smooth;
-}
+
 :root {
 	--thm-base: #cd2828;
 	--thm-primary: #114f9a;
@@ -315,16 +313,18 @@ a:focus {
 }
 
 .scroll-to-top {
-	display: none;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #292728;
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
 	z-index: 990;
-	transition: transform 0.2s ease-in-out;
-	width: 50px;
-	height: 50px;
-	background: #292728;
 	text-align: center;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+	display: none;
 	border: 1px solid #393838;
 }
 
@@ -341,7 +341,8 @@ a:focus {
 	color: #fff;
 	position: relative;
 	z-index: 10;
-	transition: transform 0.2s ease-in-out;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
 }
 
 @media (max-width: 480px) {
