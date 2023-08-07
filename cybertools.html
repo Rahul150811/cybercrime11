@@ -18,6 +18,7 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#cd2828">
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i%7CMerriweather:400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+KuC5n5l81/6b7pLGE+cK+S5L4DkV/y4CM2l8Y3G02Dt+IB" crossorigin="anonymous">
 
     <!-- plugins styles -->
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -172,101 +173,465 @@
                   
                   <div class="row shuffle-wrapper">
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Password Managers"]'>
-                      <img src="/assets/images/resources/dashlane.png" class="img-fluid" alt="Dashlane">
-                      <h3>Dashlane</h3>
+                      <img src="/assets/images/resources/microsoftauthenticator.png" class="img-fluid" alt="Dashlane">
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">Dashlane</a></h3>
                       <p>An online password manager that keeps all your passwords safe behind one master password. 
                         It has a password generator and autosave feature for seamless logins across devices.</p>
                     </div>
-                  
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Password Managers"]'>
                       <img src="/assets/images/resources/lastpass.png">
-                      <h3>LastPass</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#lastpassModal">LastPass</a></h3>
                       <p>A password manager that securely stores all your passwords in an encrypted vault. 
                         It generates strong, unique passwords for each site and logs you in with a single click.</p>
                     </div><!-- shuffle item 2 end -->
+
+                    <div class="modal fade" id="lastpassModal" tabindex="-1" role="dialog" aria-labelledby="lastpassModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="lastpassModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">lastpass.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Password Managers"]'>
                       <img src="/assets/images/resources/1password.png">
-                      <h3>1Password</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#1passwordModal">1Password</a></h3>
                       <p>A popular password manager that creates strong, unique passwords for every account. 
                         It stores passwords securely in a digital vault and syncs across all your devices.</p>
                     </div><!-- shuffle item 3 end -->
+
+                    <div class="modal fade" id="1passwordModal" tabindex="-1" role="dialog" aria-labelledby="1passwordModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="1passwordModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">1Password.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Antivirus Software"]'>
                       <img src="/assets/images/resources/avast.png">
-                      <h3>Avast</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#avastModal">Avast</a></h3>
                       <p>Avast keeps your devices safe from online dangers. It's easy to use, detecting and stopping malware, so you can enjoy the internet worry-free.</p>
                     </div><!-- shuffle item 4 end -->
+
+                    <div class="modal fade" id="avastModal" tabindex="-1" role="dialog" aria-labelledby="avastModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="avastModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">avast.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Antivirus Software"]'>
                       <img src="/assets/images/resources/mcfee.png">
-                      <h3>McAfee</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#mcafeeModal">McAfee</a></h3>
                       <p>McAfee makes your digital life worry-free. It stops viruses, guards your identity, and lets you browse securely, even if you're not a tech expert.</p>
                     </div><!-- shuffle item 5 end -->
+
+                    <div class="modal fade" id="mcafeeModal" tabindex="-1" role="dialog" aria-labelledby="mcafeeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="mcfaeeModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">mcafee.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Antivirus Software"]'>
                       <img src="/assets/images/resources/bitdefender.png">
-                      <h3>Bitdefender</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#bitdefenderModal">Bitdefender</a></h3>
                       <p>Bitdefender offers hassle-free cybersecurity. It blocks viruses, secures your data, and works quietly in the background, making online protection simple for everyone.</p>
                     </div><!-- shuffle item 6 end -->
+
+                    <div class="modal fade" id="bitdefenderModal" tabindex="-1" role="dialog" aria-labelledby="bitdefenderModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="bitdefenderModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">bitdefender.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Online Privacy"]'>
-                      <img src="/assets/images/resources/brave.png">
-                      <h3>Brave Browser</h3>
+                      <img src="/assets/images/resources/microsoftauthenticator.png">
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">Brave Browser</a></h3>
                       <p>Brave is a user-friendly browser that blocks ads and trackers, giving you a faster, safer, and more private way to explore the web.</p>
                     </div><!-- shuffle item 7 end -->
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticatorbrowser.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Online Privacy"]'>
-                      <img src="/assets/images/resources/firefox.png">
-                      <h3>Firefox</h3>
+                      <img src="/assets/images/resources/microsoftauthenticator.png">
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">Firefox</a></h3>
                       <p>Firefox is a user-friendly web browser focused on speed and privacy. 
                         It offers a customizable experience, strong security features, and supports various add-ons for enhanced browsing.</p>
                     </div><!-- shuffle item 8 end -->
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Online Privacy"]'>
                       <img src="/assets/images/resources/duckduck.png">
-                      <h3>DuckDuckGo</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">DuckDuckGo</a></h3>
                       <p>DuckDuckGo is a privacy-focused search engine. It doesn't track your searches, ensuring anonymous browsing and delivering reliable results while respecting your online privacy.</p>
                     </div><!-- shuffle item 9 end -->
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["VPN"]'>
                       <img src="/assets/images/resources/proton.png">
-                      <h3>ProtonVPN</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">ProtonVPN</a></h3>
                       <p>ProtonVPN is a user-friendly virtual private network (VPN) that shields your online activity. 
                         It encrypts your connection, keeping your data secure and enabling safe browsing on public networks.</p>
                     </div><!-- shuffle item 10 end -->
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["VPN"]'>
-                      <img src="/assets/images/resources/protonmail.png">
-                      <h3>ProtonMail</h3>
+                      <img src="/assets/images/resources/microsoftauthenticator.png">
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">Protonmail</a></h3>
                       <p>ProtonMail offers user-friendly encrypted email services. It keeps your messages private, with end-to-end encryption, ensuring secure communication and protection against unauthorized access.</p>
                     </div><!-- shuffle item 11 end -->
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">proton.me</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Ad Blockers"]'>
                       <img src="/assets/images/resources/ad.png">
-                      <h3>AdBlocker</h3>
+                      <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">AdBlocker</a></h3>
                       <p> 
                         AdBlocker is a browser extension that blocks ads and trackers, giving you a faster, safer, and more private way to explore the web.</p>
                       </p>
                     </div><!-- shuffle item 12 end -->
 
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Mulit-Factor Authentication"]'>
                         <img src="/assets/images/resources/duo.png">
-                        <h3>Duo Mobile</h3>
+                        <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">Duo Mobile</a></h3>
                         <p>
                             Duo Mobile is a user-friendly app that adds two-factor authentication to your accounts. 
                             It generates passcodes for login and can receive push notifications for easy, one-tap authentication.
                         </p>
                     </div><!-- shuffle item 13 end -->
 
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="col-lg-3 col-md-4 col-sm-6 shuffle-item d-flex flex-column align-items-center" data-groups='["Mulit-Factor Authentication"]'>
                         <img src="/assets/images/resources/microsoft.png">
-                        <h3>Microsoft Authenticator</h3>
+                        <h3><a href="#" data-toggle="modal" data-target="#microsoftauthenticatorModal">Microsoft Authenticator</a></h3>
                         <p>
                             Microsoft Authenticator is a user-friendly app that adds two-factor authentication to your accounts. 
                             It generates passcodes for login and can receive push notifications for easy, one-tap authentication.
                         </p>
                     </div><!-- shuffle item 14 end -->
+
+                    <div class="modal fade" id="microsoftauthenticatorModal" tabindex="-1" role="dialog" aria-labelledby="microsoftauthenticatorModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="microsoftauthenticatorModalLabel"><b>Choose your category!</b></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h5>Download Options</h5>
+                            <p>Please select your preferred platform:</p>
+                            <div class="btn-group" role="group" aria-label="Platform Buttons">
+                              <a href="https://www.example.com/windows" class="btn btn-secondary platform-button mr-2" target="_blank">Windows</a>
+                              <a href="https://www.example.com/mac" class="btn btn-secondary platform-button mr-2" target="_blank">Mac</a>
+                              <a href="https://www.example.com/iphone" class="btn btn-secondary platform-button mr-2" target="_blank">iPhone</a>
+                              <a href="https://www.example.com/android" class="btn btn-secondary platform-button" target="_blank">Android</a>
+                            </div>
+                            <hr>
+                            <h5><i class="fas fa-hands-down"></i> Visit their Website</h5>
+                            <a href="#" class="btn btn-secondary platform-button" target="_blank">microsoftauthenticator.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div><!-- shuffle end -->
                 </div>`
               </div><!-- Content row end -->
