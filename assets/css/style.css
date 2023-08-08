@@ -7183,13 +7183,12 @@ a:focus {
 	font-family: "arimo";
 	display: inline-block;
 	color: #114f9a;
-	font-size: 20px;
-	padding: 6px 25px;
+	font-size: 18px;
+	padding: 6px 15px;
 	padding-top: 10px;
-	font-weight: 700;
+	font-weight: 550;
 	transition: all 0.3s;
 	cursor: pointer;
-	margin: 0;
   }
   .shuffle-btn-group label.active {
 	color: #cd2828;
@@ -7197,22 +7196,48 @@ a:focus {
   .shuffle-btn-group label input {
 	display: none;
   }
-  
-  .shuffle-item img {
-	height: 150px;
-	width: 150px;
-  }
+
+  .shuffle-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shuffle-item {
+    flex: 1 0 calc(33.33% - 20px); /* Adjust this percentage as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 400px; /* Set a fixed height for all shuffle items */
+    overflow: hidden; /* Hide overflow content if needed */
+}
+
+.shuffle-item img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+}
   .shuffle-item h3 {
 	font-size: 20px;
 	font-weight: bold;
 	color: #114f9a;
 	text-align: center;
+  }
 
+  .shuffle-item a{
+	color: #114f9a;
   }
   .shuffle-wrapper .shuffle-item {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
+.project-area{
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
 
 
   /*----------------------------------------
