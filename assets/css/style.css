@@ -7485,3 +7485,32 @@ a:focus {
 	top:0;
 	left:0
   }
+
+
+  .brand-one img {
+	width: 80px;
+	height: 80px;
+  }
+  
+  .brand-one .social-sharing {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  }
+  
+  .brand-one .social-sharing img {
+	margin: 20px;
+  }
+  
+  /* Media Queries for Responsive Layout */
+  @media (max-width: 768px) {
+	.brand-one img {
+	  width: 40px;
+	  height: 40px;
+	}
+	
+	.brand-one .social-sharing img {
+	  margin: 5px;
+	}
+  }
+  
