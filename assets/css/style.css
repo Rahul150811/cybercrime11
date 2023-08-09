@@ -7565,43 +7565,45 @@ a:focus {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the cards horizontally */
+    justify-content: space-between; /* Adjust alignment between cards */
+    margin: 0 -15px; /* Add negative margin to compensate for the card margins */
 }
 
 .card {
-    flex-basis: calc(33.33% - 30px); 
-    margin: 0 15px;
+    flex-basis: calc(33.33% - 30px);
     box-sizing: border-box;
     border: 1px solid #ccc;
     padding: 10px;
-	margin-bottom: 50px;
-}
-.card-title{
-	margin-top: 30px;
-	font-size: 25px;
-	font-weight: bold;
-	color: black;
-	text-align: center;
+    margin: 0 15px 30px; /* Adjust margin to provide spacing between cards */
 }
 
-.card .card-content a{
-	color: #666666;
+.card-title {
+    margin-top: 10px; /* Adjust title margin */
+    font-size: 20px; /* Adjust font size for better responsiveness */
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
 
+.card .card-content a {
+    color: #666666;
+    text-decoration: none; /* Remove underline from links */
 }
 
 .card img {
     max-width: 100%;
-    height: 100%;
+    height: 80%; /* Adjust image height for better responsiveness */
 }
 
 @media (max-width: 1024px) {
     .card {
-        flex-basis: calc(50% - 30px); 
+        flex-basis: calc(50% - 30px);
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        flex-basis: calc(50% - 30px); 
+        flex-basis: 100%; /* Cards will take up full width on smaller screens */
     }
 }
+
