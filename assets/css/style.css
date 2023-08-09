@@ -1269,8 +1269,8 @@ a:focus {
 .slider-one .active .slider-one__icon {
 	-webkit-animation-name: fadeInDown;
 	animation-name: fadeInDown;
-	-webkit-animation-delay: .5s;
-	animation-delay: .5s;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
 }
 
 .slider-one .active .slider-one__tag-line {
