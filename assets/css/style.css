@@ -7584,7 +7584,7 @@ a:focus {
 	text-align: center;
 }
 
-.card-content a{
+.card .card-content a{
 	color: #666666;
 
 }
