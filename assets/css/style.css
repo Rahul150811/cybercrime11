@@ -5196,7 +5196,7 @@ a:focus {
 	content: '';
 	width: 17px;
 	height: 17px;
-	background-image: url(../images/shapes/faq-minus.png);
+	background-image: url(../images/shapes/faq-plus.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	position: absolute;
@@ -5207,7 +5207,7 @@ a:focus {
 }
 
 .about-two__content .accrodion.active .accrodion-title h4::before {
-	background-image: url(../images/shapes/faq-plus.png);
+	background-image: url(../images/shapes/faq-minus.png);
 }
 
 .about-two__content .accrodion-content {
