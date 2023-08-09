@@ -3078,7 +3078,8 @@ a:focus {
 # progress
 --------------------------------------------------------------*/
 .progress-one {
-	padding-bottom: 120px;
+	margin-top: 150px;
+	padding-bottom: 100px;
 }
 
 .progress-one .inner-container {
