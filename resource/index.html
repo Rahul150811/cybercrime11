@@ -724,11 +724,11 @@
       <div class="popup-overlay" id="popupOverlay"></div>
       <div class="popup-container" id="popupContainer">
           <p style="font-size: 22px; font-weight: 700;">Redirecting to:</p>
-          <p id="redirectWebsite"></p>
+          <p><span id="redirectWebsite"></span><br><span id="redirectUrlDisplay"></span></p>
           <p>You will be redirected in <span id="popupSeconds" style="color: rgb(218, 13, 13);">10</span> seconds.</p>
-          <p>if you are not redirected, click here</p>
+          <p>If you are not redirected, <a id="redirectLink" href="#" target="_blank">click here</a>.</p>
       </div>
-    
+          
       <!------------------------------------------------------------------------------------------->
       
 
@@ -1623,16 +1623,21 @@
       var popupOverlay = document.getElementById('popupOverlay');
       var popupContainer = document.getElementById('popupContainer');
       var popupSeconds = document.getElementById('popupSeconds');
+      var redirectLink = document.getElementById('redirectLink');
       var redirectWebsite = document.getElementById('redirectWebsite');
+      var redirectUrlDisplay = document.getElementById('redirectUrlDisplay');
       var total = popupSeconds.textContent;
       var timeinterval;
-
-      function startTimerAndRedirect(redirectUrl, redirectText) {
-          redirectWebsite.textContent = redirectText;
-
+  
+      function startTimerAndRedirect(redirectUrl, websiteName) {
+          redirectLink.href = redirectUrl; // Set the href of the dynamic link
+          redirectLink.textContent = "click here"; // Set the text of the dynamic link
+          redirectWebsite.textContent = websiteName; // Set the website name
+          redirectUrlDisplay.textContent = redirectUrl; // Set the redirect URL
+  
           popupContainer.style.display = 'block';
           popupOverlay.style.display = 'block';
-
+  
           timeinterval = setInterval(function () {
               total = --total;
               popupSeconds.textContent = total;
@@ -1642,16 +1647,16 @@
               }
           }, 1000);
       }
-
+  
       externalLinks.forEach(function (link) {
           link.addEventListener('click', function (event) {
               event.preventDefault();
               var redirectUrl = link.getAttribute('data-redirect-url');
-              var redirectText = link.querySelector('.card-title').textContent + ': ' + redirectUrl;
-              startTimerAndRedirect(redirectUrl, redirectText);
+              var websiteName = link.querySelector('.card-title').textContent;
+              startTimerAndRedirect(redirectUrl, websiteName);
           });
       });
-
+  
       popupOverlay.addEventListener('click', function () {
           popupContainer.style.display = 'none';
           popupOverlay.style.display = 'none';
