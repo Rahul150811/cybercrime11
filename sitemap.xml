@@ -4,19 +4,22 @@
         <loc>https://www.protectnow.info</loc>
     </url>
     <url>
-        <loc>https://www.protectnow.info/about.html</loc>
+        <loc>https://www.protectnow.info/home/</loc>
     </url>
     <url>
-        <loc>https://www.protectnow.info/contact.html</loc>
+        <loc>https://www.protectnow.info/about/</loc>
     </url>
     <url>
-        <loc>https://www.protectnow.info/resource.html</loc>
+        <loc>https://www.protectnow.info/contact/</loc>
     </url>
     <url>
-        <loc>https://www.protectnow.info/cybertools.html</loc>
+        <loc>https://www.protectnow.info/resource/</loc>
     </url>
     <url>
-        <loc>https://www.protectnow.info/learn.html</loc>
+        <loc>https://www.protectnow.info/resource/cybertools/</loc>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/learn/</loc>
     </url>
     <url>
         <loc>https://docs.protectnow.info</loc>
