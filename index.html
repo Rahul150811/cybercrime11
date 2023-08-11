@@ -932,7 +932,7 @@
                             <p>Active Volunteers</p>
                         </div><!-- /.site-footer__counter-single -->
                         <div class="site-footer__counter-single">
-                            <h3 class="visitor"></h3><!-- /.counter -->
+                            <h3 class="counter visitor">0</h3><!-- /.counter -->
                             <p>Total Visits</p>
                         </div><!-- /.site-footer__counter-single -->
                     </div><!-- /.site-footer__counter -->
@@ -1066,26 +1066,18 @@
     <script src="assets/js/automate_topbar.js"></script>
 
     
-    
     <script>
-        var visitorCount = 0;
-        var localStorage = window.localStorage;
-            
+        // Function to increment the visitor count
         function incrementVisitorCount() {
-          var visitorId = localStorage.getItem("visitorId");
-          if (visitorId === null) {
-            visitorId = Math.random().toString(36).substring(7);
-            localStorage.setItem("visitorId", visitorId);
-          }
-      
-          if (visitorId !== null) {
-            visitorCount++;
-          }
+            const visitorElement = document.querySelector('.visitor');
+            const currentCount = parseInt(visitorElement.textContent);
+            visitorElement.textContent = currentCount + 1;
         }
-        
-        incrementVisitorCount();
-        
-        document.getElementById("visitorCount").innerHTML = visitorCount;
+    
+        // Call the increment function when the page loads
+        window.onload = function () {
+            incrementVisitorCount();
+        };
     </script>
 
 
