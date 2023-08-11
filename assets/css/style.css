@@ -3109,14 +3109,12 @@ a:focus {
 	position: relative;
 	padding-top: 78.5px;
 }
-
 .progress-one__floated-icon {
-	font-size: 383px;
 	color: #fff;
 	opacity: .05;
 	position: absolute;
-	top: 12%;
-	right: 0;
+	top: 0%;
+	left: 70%;
 }
 
 .progress-one__content-text p {
@@ -3159,7 +3157,7 @@ a:focus {
 }
 
 .progress-one__box-top p {
-	color: var(--thm-base);
+	color: yellow;
 	font-size: 16px;
 	margin: 0;
 	line-height: 1em;

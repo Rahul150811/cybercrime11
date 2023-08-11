@@ -1068,18 +1068,24 @@
     
     
     <script>
-        var counterContainer = document.querySelector(".visitor");
-        var visitCount = localStorage.getItem("page_view");
-
-        // Check if page_view entry is present
-        if (visitCount) {
-          visitCount = Number(visitCount) + 1;
-          localStorage.setItem("page_view", visitCount);
-        } else {
-          visitCount = 1;
-          localStorage.setItem("page_view", 1);
+        var visitorCount = 0;
+        var localStorage = window.localStorage;
+            
+        function incrementVisitorCount() {
+          var visitorId = localStorage.getItem("visitorId");
+          if (visitorId === null) {
+            visitorId = Math.random().toString(36).substring(7);
+            localStorage.setItem("visitorId", visitorId);
+          }
+      
+          if (visitorId !== null) {
+            visitorCount++;
+          }
         }
-        counterContainer.innerHTML = visitCount;
+        
+        incrementVisitorCount();
+        
+        document.getElementById("visitorCount").innerHTML = visitorCount;
     </script>
 
 
