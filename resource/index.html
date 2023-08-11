@@ -620,7 +620,7 @@
         <div class="card">
           <img src="/assets/images/resources/virustotal1.png" alt="Virustotal">
           <div class="card-content">
-              <a href="https://www.virustotal.com/gui/home/upload" target="_blank" id="redirectLink">
+              <a href="https://www.virustotal.com/gui/home/upload" target="_blank" class="external-link" data-redirect-url="https://www.virustotal.com/gui/home/upload">
                   <div class="card-title">Virustotal</div>
                   <p>A service that analyzes files and URLs for potential malware using multiple antivirus engines and provides detailed reports.</p>
               </a>
@@ -630,9 +630,9 @@
         <div class="card">
             <img src="/assets/images/resources/haveibeenpwned.png" alt="Have I been Pwned?">
             <div class="card-content">
-                <a href="https://haveibeenpwned.com/" target="_blank" id="redirectLink">
+                <a href="https://haveibeenpwned.com/" target="_blank" class="external-link" data-redirect-url="https://haveibeenpwned.com/">
                   <div class="card-title">Have I been Pwned?</div>
-                  <p>Check if youremail address or passwordshave been compromised in data breaches to enhance your online security.</p>
+                  <p>Check if your email address or passwords have been compromised in data breaches to enhance your online security.</p>
                 </a>
             </div>
         </div>
@@ -640,7 +640,7 @@
         <div class="card">
           <img src="/assets/images/resources/stopncii.png" alt="StopNCII">
           <div class="card-content">
-            <a href="https://stopncii.org/" target="_blank" id="redirectLink">
+            <a href="https://stopncii.org/" target="_blank" class="external-link" data-redirect-url="https://stopncii.org/">
               <div class="card-title">StopNCII.org</div>
             <p>Visit stopncii.org to quickly assess if your personal information, including email addresses and passwords, has been compromised in data breaches. 
               Safeguard your online security by staying informed about potential vulnerabilities.</p>
@@ -651,7 +651,7 @@
         <div class="card">
           <img src="/assets/images/resources/urlscan.png" alt="urlscan">
           <div class="card-content">
-            <a href="https://urlscan.io/" target="_blank" id="redirectLink">
+            <a href="https://urlscan.io/" target="_blank" class="external-link" data-redirect-url="https://urlscan.io/">
               <div class="card-title">URLScan.io</div>
             <p>This service allows you to scan and analyze websites for potential threats, including phishing and malware.</p>
             </a>
@@ -661,7 +661,7 @@
         <div class="card">
           <img src="/assets/images/resources/wot.png" alt="wot">
           <div class="card-content">
-            <a href="https://www.mywot.com/" target="_blank" id="redirectLink">
+            <a href="https://www.mywot.com/" target="_blank" class="external-link" data-redirect-url="https://www.mywot.com/">
               <div class="card-title">Website Safety Check & Phishing Protection</div>
             <p>WOT is a browser extension that helps users identify trustworthy websites and warns them about potentially harmful sites.</p>
             </a>
@@ -671,7 +671,7 @@
         <div class="card">
           <img src="/assets/images/resources/scamwatch.png" alt="scamwatch">
           <div class="card-content">
-            <a href="https://www.scamwatch.gov.au/" target="_blank" id="redirectLink">
+            <a href="https://www.scamwatch.gov.au/" target="_blank" class="external-link" data-redirect-url="https://www.scamwatch.gov.au/">
               <div class="card-title">Scamwatch (Australia)</div>
             <p>This government website provides information about current scams and tips to avoid falling victim to them.</p>
             </a>
@@ -681,7 +681,7 @@
         <div class="card">
           <img src="/assets/images/resources/phishtank.png" alt="phishtank">
           <div class="card-content">
-            <a href="https://phishtank.org/" target="_blank" id="redirectLink">
+            <a href="https://phishtank.org/" target="_blank" class="external-link" data-redirect-url="https://phishtank.org/">
               <div class="card-title">Phishtank</div>
             <p>A community-driven website that tracks and verifies phishing scams. Users can report and verify suspicious emails or links.</p>
             </a>
@@ -691,7 +691,7 @@
         <div class="card">
           <img src="/assets/images/resources/tineye.png" alt="tineye">
           <div class="card-content">
-            <a href="https://tineye.com/" target="_blank" id="redirectLink">
+            <a href="https://tineye.com/" target="_blank" class="external-link" data-redirect-url="https://tineye.com/">
               <div class="card-title">TinEye</div>
             <p>TinEye allows you to upload an image and find instances of its use across the web. It's particularly useful for tracking the usage of images.</p>
             </a>
@@ -701,7 +701,7 @@
         <div class="card">
           <img src="/assets/images/resources/berify.png" alt="">
           <div class="card-content">
-            <a href="https://berify.com/" target="_blank" id="redirectLink">
+            <a href="https://berify.com/" target="_blank" class="external-link" data-redirect-url="https://berify.com/">
               <div class="card-title">Berify</div>
             <p>A community-driven website that tracks and verifies phishing scams. Users can report and verify suspicious emails or links.</p>
             </a>
@@ -712,9 +712,10 @@
 
       <div class="popup-overlay" id="popupOverlay"></div>
       <div class="popup-container" id="popupContainer">
-          <p>Redirecting to:</p>
+          <p style="font-size: 22px; font-weight: 700;">Redirecting to:</p>
           <p id="redirectWebsite"></p>
-          <p>You will be redirected in <span id="popupSeconds">3</span> seconds.</p>
+          <p>You will be redirected in <span id="popupSeconds" style="color: rgb(218, 13, 13);">10</span> seconds.</p>
+          <p>if you are not redirected, click here</p>
       </div>
     
       <!------------------------------------------------------------------------------------------->
@@ -1607,7 +1608,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!------------------------Redirection link----------------------->
     <script>
-      var redirectLink = document.getElementById('redirectLink');
+      var externalLinks = document.querySelectorAll('.external-link');
       var popupOverlay = document.getElementById('popupOverlay');
       var popupContainer = document.getElementById('popupContainer');
       var popupSeconds = document.getElementById('popupSeconds');
@@ -1615,11 +1616,9 @@
       var total = popupSeconds.textContent;
       var timeinterval;
 
-      function startTimerAndRedirect() {
-          var redirectUrl = redirectLink.getAttribute('href');
-          var redirectText = redirectLink.textContent;
-          redirectWebsite.textContent = redirectText + ' (' + redirectUrl + ')';
-          
+      function startTimerAndRedirect(redirectUrl, redirectText) {
+          redirectWebsite.textContent = redirectText;
+
           popupContainer.style.display = 'block';
           popupOverlay.style.display = 'block';
 
@@ -1633,16 +1632,20 @@
           }, 1000);
       }
 
-      redirectLink.addEventListener('click', function (event) {
-          event.preventDefault();
-          startTimerAndRedirect();
+      externalLinks.forEach(function (link) {
+          link.addEventListener('click', function (event) {
+              event.preventDefault();
+              var redirectUrl = link.getAttribute('data-redirect-url');
+              var redirectText = link.querySelector('.card-title').textContent + ': ' + redirectUrl;
+              startTimerAndRedirect(redirectUrl, redirectText);
+          });
       });
 
       popupOverlay.addEventListener('click', function () {
           popupContainer.style.display = 'none';
           popupOverlay.style.display = 'none';
           clearInterval(timeinterval);
-          total = 3;
+          total = 10; // Reset the timer to 10 seconds
           popupSeconds.textContent = total;
       });
   </script>
