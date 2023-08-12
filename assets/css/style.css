@@ -7463,6 +7463,7 @@ a:focus {
  .docs-overview .card{
 	border-color:#e7e9ed;
 	position:relative;
+	width: 100%;
 	height:100%;
 	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06);
   }
@@ -7471,11 +7472,9 @@ a:focus {
 	color: red;
   }
   .docs-overview .card-icon-holder{
-	width:60px;
-	height:60px;
+	width: 100%;
 	font-size:1.5rem;
 	padding-top:1rem;
-	display:inline-block;
 	color: #114f9a;
   }
   .docs-overview .card-title-text{
@@ -7660,3 +7659,42 @@ a:focus {
 	color: #003366; /* Dark blue link color */
 	text-decoration: underline;
 }
+
+/*------- What to do if you become victim ------*/
+
+  .whattodo{
+	padding-bottom:100px;
+	padding-top: 100px;
+	color: black;
+  }
+  .article{
+	padding:2rem;
+	color: black;
+	scroll-margin-top:69px;
+  }
+  .article {
+	color:black;
+  }
+  .article p{
+	font-size: 18px;
+	font-family: Montserrat,sans-serif;
+	line-height: 1.50;
+  }
+    
+  .article h2{
+	color:black;
+	font-weight: bold;
+  }
+
+  .article h4{
+	margin-top: 20px;
+	color:black;
+	font-weight: bold;
+  }
+
+  .article ul{
+	padding-left:1.5rem
+  }
+  .article li{
+	padding-top:0.5rem;padding-bottom:0.5rem
+  }

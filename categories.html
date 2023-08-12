@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="assets/css/hover-min.css">Recent
+    <link rel="stylesheet" href="assets/css/hover-min.css">
 
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -45,7 +45,10 @@
 </head>
 
 <body>
-    <div class="preloader" style="background-image: url(assets/images/resources/preloader.svg);"></div><!-- /.preloader -->
+    <div class="preloader">
+        <div class="loader-icon" style="background-image: url(/assets/images/resources/preloader.svg);"></div>
+        <p class="loading-text">Loading, please wait...</p>
+    </div>
     <div class="page-wrapper">
         <div class="site-header__header-one-wrapper">
             <div class="topbar-one">
@@ -54,7 +57,7 @@
                         <span style="color: black;"><i class="fa fa-rss"></i> Updates: &nbsp;</span><p>This website would be ready to launch in 3 weeks.</p>
                     </div>
                     <div class="topbar-one__right">
-                        <a href="#!">Events</a>
+                        <a href="/events/">Events</a>
                         <a href="javascript:void( window.open( 'https://form.jotform.com/232155324325145', 'blank', 'scrollbars=yes, toolbar=no, width=800, height=800' ) ) ">
                             Become a Sponsor
                         </a>
@@ -83,32 +86,39 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="main-navigation main-nav__main-navigation">
                             <ul class=" navigation-box ">
-                                <li>
-                                    <a href="index.html">Home</a>
+                                <li class="current">
+                                    <a href="/home/">Home</a>
                                 </li>
-                                
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="/about/">About</a>
                                 </li>
                                 
                                 <li>
                                     <a href="https://www.docs.protectnow.info/" target="_blank">What-to-do Guide</a>
                                 </li>
 
-                                <li>
-                                    <a href="resource.html">Resources</a>
+                                <li class="dropdown"><a href="/resource/">Resources</a>
+                                    <ul>
+                                        <li><a href="/resource/#govlinks">Government Links</a></li>
+                                        <li><a href="/resource/cybertools/">Softwares/Tools</a></li>
+                                        <li><a href="/resource/#webhelp">Help from Organizations</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="/learn/">Learn</a>
+                                    <ul>
+                                        <li><a href="/learn/#games">Awarness Games</a></li>
+                                    </ul>
                                 </li>
 
                                 <li>
-                                    <a href="learn.html">Learn</a>
+                                    <a href="/contact/">Contact</a>
                                 </li>
-
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
+                                <!--- Search Bar
                                 <li class="header__search search-popup__toggler">
                                     <a href="#"><i class="icon-magnifier"></i></a>
                                 </li>
+                            -->
                             </ul>
                         </div><!-- /.navbar-collapse -->
                         <div class="right-side-box">
@@ -121,7 +131,7 @@
         </div><!-- /.site-header__header-one-wrapper -->
 
 
-        <section class="inner-banner" style="background-image: url(assets/images/backgrounds/inner-banner-team-bg.jpg);">
+        <section class="inner-banner" style="background-image: url(assets/images/backgrounds/14.png);">
             <div class="container text-center">
                 <i class="inner-banner__icon politaro-icon-star-2"></i>
                 <h2 class="inner-banner__title">Categories</h2><!-- /.inner-banner__title -->
@@ -132,215 +142,169 @@
             </div><!-- /.container -->
         </section><!-- /.inner-banner -->
 
-        <div class="page-content">
+        <section class="service-one" style="margin-top: 50px;">
             <div class="container">
-                <div class="docs-overview py-5">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-arrow-down"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text text-center">Phishing</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Fake PayPal emails asking for login information.</li>
-                                            <li> "Your Apple ID has been compromised" messages.</li>
-                                            <li>Bank notifications requesting account details.</li>
-                                            <li>Fraudulent social media login pages stealing credentials.</li>
-                                            <li>Deceptive emails pretending to be from government agencies.</li>
-                                        </ul>
+                <div class="row">
+                    <div class="col-lg-4 wow">
+                        <div class="service-one__single">
+                            <div class="service-one__image">
+                                <img src="/assets/images/services/dating_scam.jpg" alt="Awesome Image" />
+                            </div><!-- /.service-one__image -->
+                            <div class="service-one__content">
+                                <div class="service-one__top">
+                                    <h3><a href="#!">Dating Catfishing</a></h3>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-lg slider-one__btn-block">
+                                            <a href="404.html" target="_blank" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
+                                        </div>
+                                        <div class="col slider-one__btn-block">
+                                            <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
+                                        </div>
                                     </div>
-                                    <a class="card-link-mask" href="phishing_intro_guide.html"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-arrow-down"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Ransomware</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Individual's personal files encrypted, ransom demanded.</li>
-                                            <li>Hacker locks mobile device, demands payment for unlock.</li>
-                                            <li>Home computer infected, ransom demanded for decryption.</li>
-                                            <li>Cybercriminals encrypt sensitive data on personal laptop.</li>
-                                            <li>Online scam leads to ransomware attack on victim's PC.</li>
-                                        </ul>
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 wow" >
+                        <div class="service-one__single">
+                            <div class="service-one__image">
+                                <img src="/assets/images/services/jobscam.jpg" alt="Awesome Image" />
+                            </div><!-- /.service-one__image -->
+                            <div class="service-one__content">
+                                <div class="service-one__top">
+                                    <h3><a href="#!">Employment Scams</a></h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg slider-one__btn-block">
+                                        <a href="404.html" target="_blank" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
                                     </div>
-                                    <a class="card-link-mask" href="ransomware_guide.html"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-box fa-fw"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Identity Theft</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Stolen credit card used for unauthorized purchases.</li>
-                                            <li>Personal data leaked in major data breaches.</li>
-                                            <li>Criminals open bank accounts in victim's name.</li>
-                                            <li>Impersonation on social media for malicious purposes.</li>
-                                            <li>Tax fraud using stolen Social Security numbers.</li>
-                                        </ul>				    
+                                    <div class="col slider-one__btn-block">
+                                        <a href="https://ransomware.ic3.gov/default" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
                                     </div>
-                                    <a class="card-link-mask" href="identity_guide.html"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-cogs fa-fw"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Cyberbullying</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Persistent online threats and harassment via email.</li>
-                                            <li>Unknown person stalking victim on social media.</li>
-                                            <li>Repeated intimidation through anonymous online messages.</li>
-                                            <li>Unwanted attention from an online acquaintance turned stalker.</li>
-                                            <li>Cyberbullying with hurtful messages and rumors circulated.</li>
-                                        </ul>				    
+                                </div>
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 wow" >
+                        <div class="service-one__single">
+                            <div class="service-one__image">
+                                <img src="/assets/images/services/scam.jpg" alt="Awesome Image" />
+                            </div><!-- /.service-one__image -->
+                            <div class="service-one__content">
+                                <div class="service-one__top">
+                                    <h3><a href="#!">Investment Scams</a></h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg slider-one__btn-block">
+                                        <a href="404.html" target="_blank" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
                                     </div>
-                                    <a class="card-link-mask" href="cyberbullying_guide.html"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-tools"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Social Engineering</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Impersonating a family member to gain sensitive information.</li>
-                                            <li>Impersonating a family member to gain sensitive information.</li>
-                                            <li>Manipulative caller extracts bank details from victim.</li>
-                                            <li>Pretending to be an employer to obtain personal data.</li>
-                                            <li>Fraudster gains access to a user's account using social media.</li>
-                                        </ul>				    
+                                    <div class="col slider-one__btn-block">
+                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
                                     </div>
-                                    <a class="card-link-mask" href="#!"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-laptop-code"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Malware</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Phishing email leads to Trojan virus infection.</li>
-                                            <li>Drive-by download infects user's computer unknowingly.</li>
-                                            <li>Ransomware encrypts files on an individual's device.</li>
-                                            <li>Spyware captures sensitive information without user's knowledge.</li>
-                                            <li>Keylogger records keystrokes to steal login credentials.</li>
-                                        </ul>				    
-                                    </div>
-                                    <a class="card-link-mask" href="malware_guide.html"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-tablet-alt"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Online Extortion</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Blackmail threats using compromising images to extort money.</li>
-                                            <li>Ransom demand issued to website owner to prevent a DDoS attack.</li>
-                                            <li>Hacker threatens to publish stolen data unless compensated.</li>
-                                            <li>Cybercriminal demands payment to avoid releasing sensitive information.</li>
-                                            <li>Extortionist threatens to harm an individual's reputation unless paid.</li>
-                                        </ul>				    
-                                    </div>
-                                    <a class="card-link-mask" href="#!"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-book-reader"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Child Exploitation</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Distribution of explicit photos of minors on social media.</li>
-                                            <li>Sexual predators targeting minors in online gaming communities.</li>
-                                            <li>Illegal sharing of explicit content featuring underage individuals.</li>
-                                            <li>Online grooming by adults seeking inappropriate contact with children.</li>
-                                            <li> Child pornography ring discovered on the dark web.</li>
-                                        </ul>				    
-                                    </div>
-                                    <a class="card-link-mask" href="#!"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                        <div class="col-12 col-lg-4 py-3">
-                            <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title mb-3">
-                                        <span class="theme-icon-holder card-icon-holder me-2">
-                                            <i class="fas fa-lightbulb"></i>
-                                        </span><!--//card-icon-holder-->
-                                        <span class="card-title-text">Unauthorized Access</span>
-                                    </h5>
-                                    <div class="card-text">
-                                        <ul>
-                                            <li>Former employee gains unauthorized access to company's confidential files.</li>
-                                            <li>Hacker breaches email account, sending unauthorized messages.</li>
-                                            <li>Unauthorized users infiltrate a closed online community to disrupt operations.</li>
-                                            <li>Phishing attack leads to unauthorized access to university's research database.</li>
-                                            <li> Intruder gains access to an individual's private cloud storage.</li>
-                                        </ul>				    
-                                    </div>
-                                    <a class="card-link-mask" href="hacked_guide.html"></a>
-                                </div><!--//card-body-->
-                            </div><!--//card-->
-                        </div><!--//col-->
-                    </div><!--//row-->
-                </div><!--//container-->
-            </div><!--//container-->
-        </div><!--//page-content-->
+                                </div>
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 wow" >
+                        <div class="service-one__single">
+                            <div class="service-one__image">
+                                <img src="/assets/images/services/extortion.jpg" alt="Awesome Image" />
+                            </div><!-- /.service-one__image -->
+                            <div class="service-one__content">
+                                <div class="service-one__top">
+                                    <h3><a href="#!">Online Extortion</a></h3>
+                                </div><!-- /.service-one__top -->
 
+                                <div class="row">
+                                    <div class="col-lg slider-one__btn-block">
+                                        <a href="404.html" target="_blank" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
+                                    </div>
+                                    <div class="col slider-one__btn-block">
+                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 wow" >
+                        <div class="service-one__single">
+                            <div class="service-one__image">
+                                <img src="/assets/images/services/child.jpg" alt="Awesome Image" />
+                            </div><!-- /.service-one__image -->
+                            <div class="service-one__content">
+                                <div class="service-one__top">
+                                    <h3><a href="#!">Child Pornography</a></h3>
+                                </div><!-- /.service-one__top -->
+
+                                <div class="row">
+                                    <div class="col-lg slider-one__btn-block">
+                                        <a href="404.html" target="_blank" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
+                                    </div>
+                                    <div class="col slider-one__btn-block">
+                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 wow" >
+                        <div class="service-one__single">
+                            <div class="service-one__image">
+                                <img src="/assets/images/services/revenge.jpg" alt="Awesome Image" />
+                            </div><!-- /.service-one__image -->
+                            <div class="service-one__content">
+                                <div class="service-one__top">
+                                    <h3><a href="#!">Revenge Porn</a></h3>
+                                </div><!-- /.service-one__top -->
+
+                                <div class="row">
+                                    <div class="col-lg slider-one__btn-block">
+                                        <a href="404.html" target="_blank" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
+                                    </div>
+                                    <div class="col slider-one__btn-block">
+                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- /.service-one__content -->
+                        </div><!-- /.service-one__single -->
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.service-one -->
 
         <section class="site-footer__wrapper site-footer__style-two ">
+            <div class="site-footer__upper">
+                <div class="container">
+                    <div class="site-footer__logo">
+                        <img src="/assets/images/resources/1.png" height="160px" width="200px" class="main-logo" alt="Awesome Image" />
+                    </div><!-- /.site-footer__logo -->
+
+                    <div class="site-footer__counter">
+                        <div class="site-footer__counter-single">
+                            <h3><span class="counter">0</span></h3><!-- /.counter -->
+                            <p>Total Complaints</p>
+                        </div><!-- /.site-footer__counter-single -->
+                        <div class="site-footer__counter-single">
+                            <h3 class="counter">0</h3><!-- /.counter -->
+                            <p>Cases Resolved</p>
+                        </div><!-- /.site-footer__counter-single -->
+                        <!--
+                        <div class="site-footer__counter-single">
+                            <h3>$<span class="counter">0</span></h3>
+                            <p>Money Retrieved</p>
+                        </div> -->
+                        <div class="site-footer__counter-single">
+                            <h3 class="counter">1</h3><!-- /.counter -->
+                            <p>Active Volunteers</p>
+                        </div><!-- /.site-footer__counter-single -->
+                        <div class="site-footer__counter-single">
+                            <h3 class="visitor"></h3><!-- /.counter -->
+                            <p>Total Visits</p>
+                        </div><!-- /.site-footer__counter-single -->
+                    </div><!-- /.site-footer__counter -->
+
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -361,10 +325,9 @@
                             <div class="footer-widget footer-widget__links-widget">
                                 <h3 class="footer-widget__title">Project</h3><!-- /.footer-widget__title -->
                                 <ul class="footer-widget__links list-unstyled">
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">What We Do</a></li>
-                                    <li><a href="#">Our Missions</a></li>
-                                    <li><a href="privacypolicy.html" target="_blank">Privacy Policy</a></li>
+                                    <li><a href="/about/">Our Missions</a></li>
+                                    <li><a href="/spread/">Spread Us</a></li>
+                                    <li><a href="/privacypolicy/" target="_blank">Privacy Policy</a></li>
                                 </ul><!-- /.footer-widget__links -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-lg-3 -->
@@ -373,8 +336,8 @@
                                 <h3 class="footer-widget__title">Useful Links</h3><!-- /.footer-widget__title -->
                                 <ul class="footer-widget__links list-unstyled">
                                     <li><a href="https://www.docs.protectnow.info/" target="_blank">Documentation</a></li>
-                                    <li><a href="#!">Main Events</a></li>
-                                    <li><a href="#!">Latest News</a></li>
+                                    <li><a href="/events/">Main Events</a></li>
+                                    <li><a href="/news/">Latest News</a></li>
                                 </ul><!-- /.footer-widget__links -->
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-lg-3 -->
@@ -388,7 +351,7 @@
                                     </li>
                                     <li>
                                         <i class="fa fa-envelope-open"></i>
-                                        <a href="mailto:info@example.com">info@example.com</a>
+                                        <a href="mailto:protect4help@gmail.com">protect4help@gmail.com</a>
                                     </li>
                                 </ul><!-- /.footer-widget__contact-info -->
                             </div><!-- /.footer-widget -->
@@ -402,20 +365,17 @@
                 </div><!-- /.container -->
             </div><!-- /.site-footer__bottom -->
         </section><!-- /.site-footer__wrapper -->
+
     </div><!-- /.page-wrapper -->
+
     <div class="side-menu__block">
-
-        <a href="#" class="side-menu__toggler side-menu__close-btn">
-            <i class="fa fa-times"></i>
-        </a>
-
+        <a href="#" class="side-menu__toggler side-menu__close-btn"><i class="fa fa-times"></i></a>
         <div class="side-menu__block-overlay custom-cursor__overlay">
             <div class="cursor"></div>
             <div class="cursor-follower"></div>
         </div><!-- /.side-menu__block-overlay -->
         <div class="side-menu__block-inner ">
-
-            <a href="index.html" class="side-menu__logo"> <img src="assets/images/resources/1.png" height="160px" width="200px" alt="Awesome Image" /></a>
+            <a href="/home/" class="side-menu__logo"> <img src="/assets/images/resources/1.png" height="160px" width="200px" alt="Awesome Image" /></a>
             <nav class="mobile-nav__container">
                 <!-- content is loading via js -->
             </nav>
@@ -430,18 +390,8 @@
             </div>
         </div><!-- /.side-menu__block-inner -->
     </div><!-- /.side-menu__block -->
-    <div class="search-popup">
-        <div class="search-popup__overlay custom-cursor__overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div><!-- /.search-popup__overlay -->
-        <div class="search-popup__inner">
-            <form action="#" class="search-popup__form">
-                <input type="text" name="search" placeholder="Type here to Search....">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div><!-- /.search-popup__inner -->
-    </div><!-- /.search-popup -->
+
+
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
