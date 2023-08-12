@@ -4221,7 +4221,7 @@ a:focus {
 	color: var(--thm-base);
 }
 
-/*--------------------------------------------------------------
+/*-------------------------------------------------------------	-
 # service
 --------------------------------------------------------------*/
 .service-one {
@@ -4232,8 +4232,7 @@ a:focus {
 .service-one .container {
 	position: relative;
 	z-index: 10;
-	padding-top: 100px;
-	margin-top: 20px;
+	padding-top: 80px;
 }
 
 .service-one__single {
