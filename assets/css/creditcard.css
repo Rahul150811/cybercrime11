@@ -261,7 +261,7 @@ a:focus {
 	cursor: pointer;
 }
 
-/* preloader */
+/* Loader Styles */
 .preloader {
 	position: fixed;
 	top: 0;
@@ -270,10 +270,25 @@ a:focus {
 	height: 100%;
 	z-index: 9999;
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .loader-icon {
 	background-position: center center;
 	background-repeat: no-repeat;
-}
-
+	width: 50px; /* Set the width of the loader icon */
+	height: 50px; /* Set the height of the loader icon */
+  }
+  
+  .loading-text {
+	margin-top: 10px;
+	font-size: 18px;
+	color: #333; 
+  }
+  
 .scroll-to-top {
 	display: inline-block;
 	width: 50px;
@@ -1677,7 +1692,7 @@ a:focus {
 	margin: 0 auto;
 	border-radius: 5px;
 	margin-bottom: 200px;
-	margin-top: 60px;
+	margin-top: 40px;
   }
   
   .accordion-header,
