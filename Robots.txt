@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /maps/
 
 Sitemap: https://www.protectnow.info/sitemap.xml
