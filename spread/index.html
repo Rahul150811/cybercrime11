@@ -353,19 +353,45 @@
     <script src="/assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/automate_topbar.js"></script>
+    <!----------------- visitor counter ------------------>
     <script>
-        var counterContainer = document.querySelector(".visitor");
-        var visitCount = localStorage.getItem("page_view");
-
-        // Check if page_view entry is present
-        if (visitCount) {
-          visitCount = Number(visitCount) + 1;
-          localStorage.setItem("page_view", visitCount);
-        } else {
-          visitCount = 1;
-          localStorage.setItem("page_view", 1);
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "") + expires + "; path=/";
         }
-        counterContainer.innerHTML = visitCount;
+    
+        function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+          }
+          return null;
+        }
+    
+        function incrementVisits() {
+          var visits = parseInt(getCookie("unique_visits") || "0");
+          if (visits === 0) {
+            setCookie("unique_visits", "1", 365); // Set cookie for one year
+          } else {
+            setCookie("unique_visits", (visits + 1).toString(), 365); // Increment cookie value
+          }
+        }
+    
+        function displayTotalVisits() {
+          var visits = getCookie("unique_visits") || "0";
+          document.querySelector(".visitor").textContent = visits;
+        }
+    
+        incrementVisits();
+        displayTotalVisits();
     </script>
 
 </body>
