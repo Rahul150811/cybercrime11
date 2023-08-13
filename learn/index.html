@@ -11,7 +11,7 @@
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Learning Center",
+          "name": "Learning Cente | PROTECT",
           "url": "https://www.protectnow.info/learn/",
           "logo": "https://www.protectnow.info/assets/images/resources/1.png"
         }
@@ -275,8 +275,7 @@
                             <i class="fab fa-brands fa-google" style="color: #ec8713;"></i>
                             <a href="https://phishingquiz.withgoogle.com/">Phish Quiz with Google</a>
                         </h3>
-                        <p>Google's Jigsaw team developed a quiz to help people learn to spot phishing attempts. The quiz is called "Phishing Quiz: Jigsaw - Google". 
-                            You can take the quiz to test your ability to identify phishing emails.</p>
+                        <p>Google's interactive game. Learn phishing protection. Master scam detection. Play, learn, guard your online world!</p>
                     </div><!-- /.service-four__single -->
                 </div><!-- /.item -->
                 <div class="item">
@@ -293,8 +292,7 @@
                             <i class="fab fa-brands fa-google" style="color: #ec8713;"></i>
                             <a href="https://beinternetawesome.withgoogle.com/en_ie/interland">Google - Play Interland</a>
                         </h3>
-                        <p>Interland is an online adventure that teaches the key lessons of internet safety through four fun, challenging games.
-                        </p>
+                        <p>Explore online safety via games. Teach digital responsibility to kids and teens. Learn key internet lessons interactively. Have fun, stay secure!</p>
                     </div><!-- /.service-four__single -->
                 </div><!-- /.item -->
                 <div class="item">
@@ -303,36 +301,37 @@
                             <i class="fab fa-brands fa-google" style="color: #ec8713;"></i>
                             <a href="https://spaceshelter.withgoogle.com/">Google - Space Shelter</a>
                         </h3>
-                        <p></p>
+                        <p>Navigate, protect, and conquer in a cosmic game. Learn cyber awareness through challenges, securing access codes, and outsmarting space pirates. Embark on an epic cyber journey!</p>
                     </div><!-- /.service-four__single -->
                 </div><!-- /.item -->
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.service-four -->
+    
 
-    <div class="panel-container">
-        <div class="panel">
-            <a href="https://it.tamu.edu/cybercircus/">
-                <img src="/assets/images/learn/cybersecurity circus.png">
-            </a>
+    
+
+
+    <div class="container">
+        <div class="block-title text-center" style="margin-top: 50px;">
+            <h3>More Simulation <span style="color: #ec8713;">Games</span></h3>
         </div>
-        <div class="panel">
-            <a href="https://it.tamu.edu/footballfever/about/">
-                <img src="/assets/images/learn/football fever.png">
-            </a>
+        <div class="panel-container">
+            <a href="https://it.tamu.edu/cybercircus/" target="_blank" class="external-link" data-redirect-url="https://it.tamu.edu/cybercircus/"><img src="/assets/images/learn/cybersecurity circus.png" alt="Cybersecurity Circus"></a>
+            <a href="https://it.tamu.edu/footballfever/about/" target="_blank" class="external-link" data-redirect-url="https://it.tamu.edu/footballfever/about/"><img src="/assets/images/learn/football fever.png" alt="Football Fever"></a>
+            <a href="https://public.cyber.mil/training/cyber-awareness-challenge/" target="_blank" class="external-link" data-redirect-url="https://public.cyber.mil/training/cyber-awareness-challenge/"><img src="/assets/images/learn/gov training.jpg" alt="Government Training"></a>
+            <a href="https://keeptraditionsecure.tamu.edu/" target="_blank" class="external-link" data-redirect-url="https://keeptraditionsecure.tamu.edu/"><img src="/assets/images/learn/games.png" alt="Games"></a>
         </div>
-        <div class="panel">
-            <a href="https://public.cyber.mil/training/cyber-awareness-challenge/">
-                <img src="/assets/images/learn/gov training.jpg">
-            </a>
-        </div>
-        <div class="panel">
-            <a href="https://keeptraditionsecure.tamu.edu/"></a>
-            <img src="/assets/images/learn/games.png">
+        
+        <div class="popup-overlay" id="popupOverlay"></div>
+        <div class="popup-container" id="popupContainer">
+            <p id="redirectText"></p>
+            <p id="popupTimer">You will be redirected in <span id="popupSeconds">10</span> seconds.</p>
+            <p>If you are not redirected, <a id="redirectLink" href="#" target="_blank">click here</a>.</p>
         </div>
     </div>
-
-
+    
+    
         <section class="site-footer__wrapper site-footer__style-two ">
             <div class="site-footer__upper">
                 <div class="container">
@@ -504,9 +503,9 @@
         function incrementVisits() {
           var visits = parseInt(getCookie("unique_visits") || "0");
           if (visits === 0) {
-            setCookie("unique_visits", "1", 365); // Set cookie for one year
+            setCookie("unique_visits", "1", 365);
           } else {
-            setCookie("unique_visits", (visits + 1).toString(), 365); // Increment cookie value
+            setCookie("unique_visits", (visits + 1).toString(), 365);
           }
         }
     
@@ -517,6 +516,51 @@
     
         incrementVisits();
         displayTotalVisits();
+    </script>
+
+    <!------------------------Redirection link----------------------->
+    <script>
+        var externalLinks = document.querySelectorAll('.external-link');
+        var popupOverlay = document.getElementById('popupOverlay');
+        var popupContainer = document.getElementById('popupContainer');
+        var popupSeconds = document.getElementById('popupSeconds');
+        var redirectLink = document.getElementById('redirectLink');
+        var redirectText = document.getElementById('redirectText');
+        var total = parseInt(popupSeconds.textContent);
+        var timeinterval;
+    
+        function startTimerAndRedirect(redirectUrl) {
+            redirectLink.href = redirectUrl;
+            redirectText.innerHTML = '<strong>Redirecting to:</strong> ' + redirectUrl;
+            
+            popupContainer.style.display = 'block';
+            popupOverlay.style.display = 'block';
+    
+            timeinterval = setInterval(function () {
+                total = --total;
+                popupSeconds.textContent = total;
+                if (total <= 0) {
+                    clearInterval(timeinterval);
+                    window.location.href = redirectUrl;
+                }
+            }, 1000);
+        }
+    
+        externalLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                var redirectUrl = link.getAttribute('data-redirect-url');
+                startTimerAndRedirect(redirectUrl);
+            });
+        });
+    
+        popupOverlay.addEventListener('click', function () {
+            popupContainer.style.display = 'none';
+            popupOverlay.style.display = 'none';
+            clearInterval(timeinterval);
+            total = 10; // Reset the timer to 10 seconds
+            popupSeconds.textContent = total;
+        });
     </script>
     
     
