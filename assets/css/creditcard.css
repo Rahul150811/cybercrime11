@@ -1700,6 +1700,7 @@ a:focus {
   }
 
   .accordion-body__contents {
+	width: auto;
     font-size: 1.6vw;
     line-height: 1.5;
     margin-top: 15px;
