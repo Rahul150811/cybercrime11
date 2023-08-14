@@ -1687,7 +1687,6 @@ a:focus {
 
   /*-------------------------------*/
   .accordion {
-	font-size: 1rem;
 	width: 60vw;
 	margin: 0 auto;
 	border-radius: 5px;
@@ -1699,40 +1698,36 @@ a:focus {
   .accordion-body {
 	background: white;
   }
-  
+
+  .accordion-body__contents {
+    font-size: 1.6vw;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+
+
   .accordion-header {
 	padding: 1.5em 1.5em;
 	background: white;
 	color: black;
-	cursor: pointer;
-	letter-spacing: .1em;
 	transition: all .3s;
 	text-transform: uppercase;
   }
   .accordion-header i {
     margin-top: -40px;
     margin-right: 20px;
-	color: var(--thm-black);
+	font-size: 2vw;
 }
 .accordion-header .image-icon-container h4{
-	font-size: 30px;
+	font-size: 2vw;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .accordion-header i {
-        margin-top: -3vw; /* Adjust the icon's top margin for smaller screens */
-        margin-right: 3vw; /* Adjust the icon's right margin for smaller screens */
-    }
-}
 
-@media (max-width: 576px) {
-    .accordion-header i {
-        margin-top: -4vw; /* Further adjust the icon's top margin for even smaller screens */
-        margin-right: 4vw; /* Further adjust the icon's right margin for even smaller screens */
-    }
+.image-icon-container .image {
+    max-width: 100%;
+    height: auto;
 }
-
 .image-icon-container {
 	display: flex;
 }
@@ -1748,23 +1743,62 @@ a:focus {
     font-size: 2vw;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .image-icon-container h4 {
-        margin-left: 5vw; /* Adjust the left margin for smaller screens */
-        font-size: 3vw; /* Adjust the font size for smaller screens */
+        margin-left: 5vw;
+        font-size: 3vw;
     }
 }
 
 @media (max-width: 576px) {
     .image-icon-container h4 {
-        margin-left: 3vw; /* Further adjust the left margin for even smaller screens */
-        font-size: 4vw; /* Further adjust the font size for even smaller screens */
+        margin-left: 3vw;
+        font-size: 4vw;
     }
 }
 
 
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .accordion-header i {
+        margin-top: -3vw;
+        margin-right: 3vw;
+    }
+}
+@media (min-width: 1200px) {
+    .accordion-header .image-icon-container h4, .accordion-header i {
+        font-size: 1.5vw;
+    }
+	.accordion-body__contents{
+		font-size: 18px; 
+	}
+}
 
+@media (max-width: 576px) {
+	
+	.accordion-header .image-icon-container h4, .accordion-header i {
+        font-size: 18px;
+	}
+	.accordion-body__contents {
+		font-size: 16px;
+		display: flex;
+        flex-direction: column;
+	}
+    .accordion-header i {
+        margin-top: -4vw; 
+        margin-right: 4vw;
+    }
+}
+@media (max-width: 576px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info strong,
+    .contact-info a {
+        display: block;
+    }
+}
   .accordion__item {
 	  border-bottom: 1px solid #3a4ba4;
   }
@@ -1786,7 +1820,7 @@ a:focus {
   }
   
   .accordion-body__contents {
-	padding: 1.5em 1.5em;
+	padding: 1.5em 0;
 	font-size: 1.2em;
   }
   
@@ -1829,7 +1863,6 @@ a:focus {
     margin: 0 auto;
   }
 
-  /* Styles for the cloned accordion items in search results */
   .search-result-accordion {
     font-size: 1rem;
     width: 80vw;
@@ -1841,8 +1874,6 @@ a:focus {
     padding: 1.5em 1.5em;
     background: #245da2;
     color: white;
-    cursor: pointer;
-    letter-spacing: .1em;
     transition: all .3s;
     text-transform: uppercase;
   }
@@ -1877,7 +1908,17 @@ a:focus {
     .search-result-accordion {
       width: 100%;
     }
-  } 
+  }
+  @media screen and (max-width: 576px){
+	.search-result-accordion {
+		width: 100%;
+	  }
+  }
+  @media screen and (max-width: 768px) {
+    .search-result-accordion {
+        width: 100%;
+    }
+}
   /*--------- Credit card search ------------------------------*/
   .height {
     height: 10vh;
