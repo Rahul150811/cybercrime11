@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Categories</title>
+    <title>Cyber Incident Guidance</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
@@ -42,6 +42,21 @@
     <!-- main styles -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <style>
+        .card{
+            text-align: center;
+        }
+        .card .card-body{
+            text-decoration: none;
+        }
+        .card .card-body a{
+            color: white;
+            background-color: #114f9a;
+        }
+        .card .card-body a:hover{
+            background-color: #cd2828;
+        }
+    </style>
 </head>
 
 <body>
@@ -86,15 +101,21 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="main-navigation main-nav__main-navigation">
                             <ul class=" navigation-box ">
-                                <li class="current">
+                                <li>
                                     <a href="/home/">Home</a>
                                 </li>
                                 <li>
                                     <a href="/about/">About</a>
                                 </li>
                                 
-                                <li>
-                                    <a href="https://www.docs.protectnow.info/" target="_blank">What-to-do Guide</a>
+                                <li class="dropdown">
+                                    <a href="/what_to_do/" target="_blank">What-to-do Guide</a>
+                                    <ul>
+                                        <li><a href="https://www.protectnow.info/if_you_become_a_victim/">Documentation</a></li>
+                                        <li><a href="https://www.protectnow.info/if_you_become_a_victim/">After you become a victim?</a></li>
+                                        <li><a href="https://www.protectnow.info/if_you_become_a_victim/">To protect yourself?</a></li>
+                                        <li><a href="https://www.protectnow.info/if_you_become_a_victim/">to deal with Cyber Incidents?</a></li>
+                                    </ul>
                                 </li>
 
                                 <li class="dropdown"><a href="/resource/">Resources</a>
@@ -131,146 +152,67 @@
         </div><!-- /.site-header__header-one-wrapper -->
 
 
-        <section class="inner-banner" style="background-image: url(/assets/images/backgrounds/14.png);">
+        <section class="inner-banner" style="background-image: url(/assets/images/backgrounds/wallpaper1.png);">
             <div class="container text-center">
                 <i class="inner-banner__icon politaro-icon-star-2"></i>
-                <h2 class="inner-banner__title">Categories</h2><!-- /.inner-banner__title -->
+                <h2 class="inner-banner__title">Cyber Incident Guidance</h2><!-- /.inner-banner__title -->
                 <ul class="list-unstyled thm-breadcrumb">
                     <li><a href="/home/">Home</a></li>
-                    <li>More Categories</li>
+                    <li>What to do</li>
                 </ul><!-- /.thm-breadcrumb -->
             </div><!-- /.container -->
         </section><!-- /.inner-banner -->
 
-        <section class="service-one" style="margin-top: 50px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 wow">
-                        <div class="service-one__single">
-                            <div class="service-one__image">
-                                <img src="/assets/images/services/dating_scam.jpg" alt="Awesome Image" />
-                            </div><!-- /.service-one__image -->
-                            <div class="service-one__content">
-                                <div class="service-one__top">
-                                    <h3><a href="#!">Dating Catfishing</a></h3>
-                                </div>
-                                    <div class="row">
-                                        <div class="col-lg slider-one__btn-block">
-                                            <a href="https://www.protectnow.info/404.html"  class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
-                                        </div>
-                                        <div class="col slider-one__btn-block">
-                                            <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
-                                        </div>
-                                    </div>
-                            </div><!-- /.service-one__content -->
-                        </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 wow" >
-                        <div class="service-one__single">
-                            <div class="service-one__image">
-                                <img src="/assets/images/services/jobscam.jpg" alt="Awesome Image" />
-                            </div><!-- /.service-one__image -->
-                            <div class="service-one__content">
-                                <div class="service-one__top">
-                                    <h3><a href="#!">Employment Scams</a></h3>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg slider-one__btn-block">
-                                        <a href="https://www.protectnow.info/404.html" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
-                                    </div>
-                                    <div class="col slider-one__btn-block">
-                                        <a href="https://ransomware.ic3.gov/default" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- /.service-one__content -->
-                        </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 wow" >
-                        <div class="service-one__single">
-                            <div class="service-one__image">
-                                <img src="/assets/images/services/scam.jpg" alt="Awesome Image" />
-                            </div><!-- /.service-one__image -->
-                            <div class="service-one__content">
-                                <div class="service-one__top">
-                                    <h3><a href="#!">Investment Scams</a></h3>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg slider-one__btn-block">
-                                        <a href="https://www.protectnow.info/404.html" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
-                                    </div>
-                                    <div class="col slider-one__btn-block">
-                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- /.service-one__content -->
-                        </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 wow" >
-                        <div class="service-one__single">
-                            <div class="service-one__image">
-                                <img src="/assets/images/services/extortion.jpg" alt="Awesome Image" />
-                            </div><!-- /.service-one__image -->
-                            <div class="service-one__content">
-                                <div class="service-one__top">
-                                    <h3><a href="#!">Online Extortion</a></h3>
-                                </div><!-- /.service-one__top -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Taking Action after Cyber Incidents</h5>
+                            <p class="card-text">Discover what to do after becoming a cyber victim.</p>
+                            <div style="text-align: center;">
+                                <a href="/if_you_become_a_victim/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Dealing with Cyber Incidents</h5>
+                            <p class="card-text">Learn how to respond before it becomes an incident.</p>
+                            <div style="text-align: center;">
+                                <a href="/To_deal_with_cyber_incident/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Preventing Cyber Incidents</h5>
+                            <p class="card-text">Learn how to protect yourself from becoming a cyber victim.</p>
+                            <div style="text-align: center;">
+                                <a href="/To_protect_yourself/" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Comprehensive Documentation</h5>
+                            <p class="card-text">Access step-by-step guides for all categories.</p>
+                            <div style="text-align: center;">
+                                <a href="https://docs.protectnow.info/" target="_blank" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                <div class="row">
-                                    <div class="col-lg slider-one__btn-block">
-                                        <a href="https://www.protectnow.info/404.html" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
-                                    </div>
-                                    <div class="col slider-one__btn-block">
-                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- /.service-one__content -->
-                        </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 wow" >
-                        <div class="service-one__single">
-                            <div class="service-one__image">
-                                <img src="/assets/images/services/child.jpg" alt="Awesome Image" />
-                            </div><!-- /.service-one__image -->
-                            <div class="service-one__content">
-                                <div class="service-one__top">
-                                    <h3><a href="#!">Child Pornography</a></h3>
-                                </div><!-- /.service-one__top -->
 
-                                <div class="row">
-                                    <div class="col-lg slider-one__btn-block">
-                                        <a href="https://www.protectnow.info/404.html" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
-                                    </div>
-                                    <div class="col slider-one__btn-block">
-                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- /.service-one__content -->
-                        </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4 wow" >
-                        <div class="service-one__single">
-                            <div class="service-one__image">
-                                <img src="/assets/images/services/revenge.jpg" alt="Awesome Image" />
-                            </div><!-- /.service-one__image -->
-                            <div class="service-one__content">
-                                <div class="service-one__top">
-                                    <h3><a href="#!">Revenge Porn</a></h3>
-                                </div><!-- /.service-one__top -->
-
-                                <div class="row">
-                                    <div class="col-lg slider-one__btn-block">
-                                        <a href="https://www.protectnow.info/404.html" class="slider-one__btn  thm-btn" style="font-size: 16px;">More info</a>
-                                    </div>
-                                    <div class="col slider-one__btn-block">
-                                        <a href="https://www.cisa.gov/forms/report" class="slider-one__btn_1 thm-btn" style="font-size: 16px;">Report<i class="fa fa-arrow-right report-icon" style="font-size: 16px; color: aliceblue;"></i></a>
-                                    </div>
-                                </div>
-                            </div><!-- /.service-one__content -->
-                        </div><!-- /.service-one__single -->
-                    </div><!-- /.col-lg-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.service-one -->
 
         <section class="site-footer__wrapper site-footer__style-two ">
             <div class="site-footer__upper">
