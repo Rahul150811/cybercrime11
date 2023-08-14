@@ -4248,7 +4248,7 @@ a:focus {
 .service-one .container {
 	position: relative;
 	z-index: 10;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
 .service-one__single {
