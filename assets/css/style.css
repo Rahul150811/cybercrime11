@@ -7711,3 +7711,25 @@ a:focus {
   .article li{
 	padding-top:0.5rem;padding-bottom:0.5rem
   }
+
+  
+@media (min-width: 768px) and (max-width: 1180px) {
+  .slider-one__btn {
+    display: inline-block;
+    margin-right: 5px; /* Adjust this value to your preference */
+  }
+  .slider-one__btn_1 {
+    display: inline-block;
+  }
+  
+  /* Center-align buttons */
+  .slider-one__btn-block {
+    text-align: center;
+  }
+  
+  
+  .col-lg.slider-one__btn-block, .col.slider-one__btn-block {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+  }
+}
