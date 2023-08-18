@@ -3173,7 +3173,7 @@ a:focus {
 }
 
 .progress-one__box-top p {
-	color: yellow;
+	color: #1ae792;
 	font-size: 16px;
 	margin: 0;
 	line-height: 1em;
@@ -7501,7 +7501,9 @@ a:focus {
 	left:0
   }
 
-
+  .brand-one{
+	margin-top: -20px;
+  }
   .brand-one img {
 	width: 80px;
 	height: 80px;
@@ -7735,3 +7737,6 @@ a:focus {
     max-width: 50%; 
   }
 }
+
+
+/*--------------------About future goals---------------------*/

@@ -615,6 +615,15 @@
                             <img src="/assets/images/services/password.png">
                             <h3>Use Strong Passwords</h3>
                         </div><!-- /.service-three__single -->
+
+                        <!-------------------------------------------
+                        <div class="service-three__button text-center">
+                            <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true">
+                                Learn More
+                            </button>
+                        </div>
+                        ---------------------------------------------->
+                        
                     </div><!-- /.service-three__column -->
                     <div class="service-three__column">
                         <div class="service-three__single">
@@ -643,6 +652,7 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.service-three -->
+
 
         <section class="map-one">
             <div class="container">
@@ -1195,7 +1205,23 @@
   </script>
   <script src="/assets/js/feedback.js" type="text/javascript"></script>
   <!------------------------------------------------------------------------------------------>
-
+  <script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover({
+            content: function () {
+                return `
+                    <ul>
+                        <li>Use different passwords on different systems and accounts.</li>
+                        <li>Use the longest password or passphrase permissible by each password system.</li>
+                        <li>Develop mnemonics to remember complex passwords.</li>
+                        <li>Consider using a password manager program to keep track of your passwords. (See more information below.)</li>
+                        <li>Do not use passwords that are based on personal information that can be easily accessed or guessed.</li>
+                        <li>Do not use words that can be found in any dictionary of any language.</li>
+                    </ul>`;
+            }
+        });
+    });
 </script>
+
 </body>
 </html>
