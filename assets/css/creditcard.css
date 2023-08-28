@@ -2027,3 +2027,30 @@ a:focus {
 		margin: 10px 0;
 	}
 }
+
+/*-------------- Thank you for graphics page -------*/
+.service-three {
+	padding-bottom: 110px;
+}
+
+@media (min-width: 1200px) {
+	.service-three .container {
+		max-width: 1000px;
+	}
+}
+
+.service-three__content h4{
+	text-align: center;
+}
+
+.service-three__content li a{
+	color: red;
+	font-weight: bold;
+}
+
+.service-three__content p{
+	margin: 0;
+	font-size: 18px;
+	line-height: 28px;
+	color: #666666;
+}
