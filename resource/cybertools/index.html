@@ -909,7 +909,7 @@
         return null;
       }
   
-      function incrementVisits() {
+      function incrementVisits() {5
         var visits = parseInt(getCookie("unique_visits") || "0");
         if (visits === 0) {
           setCookie("unique_visits", "1", 365);
