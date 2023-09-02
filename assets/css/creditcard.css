@@ -1847,17 +1847,12 @@ a:focus {
   }
   
   @media screen and (max-width: 1000px) {
-	body {
-	  padding: 1em;
-	}
-	
 	.accordion {
 	  width: 100%;
 	}
   }
 
   #searchResults {
-    padding: 1em;
     background-color: white;
     border-radius: 5px;
     width: 80vw;
@@ -1900,11 +1895,7 @@ a:focus {
     font-size: .85em;
   }
 
-  /* Media query adjustments for the search results */
   @media screen and (max-width: 1000px) {
-    body {
-      padding: 1em;
-    }
 
     .search-result-accordion {
       width: 100%;
