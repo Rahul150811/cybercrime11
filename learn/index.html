@@ -247,52 +247,51 @@
       </section>
 
       <section class="service-four" style="background-image: url(/assets/images/backgrounds/baner.png);" id="games">
-        <!-- /.service-four__bg -->
         <div class="container">
             <div class="block-title text-left">
                 <i class="block-title__icon politaro-icon-star-2"></i>
                 <p>Learn through simulation world</p>
                 <h3>Cyber Awarness Games</h3>
-            </div><!-- /.block-title -->
+            </div>
             <div class="thm__owl-carousel owl-carousel owl-theme" data-options='{"items": 3, "margin": 30, "dots": false, "loop": true, "autoplay": true, "autoplayTimeout": 5000, "autoplayHoverPause": true, "smartSpeed": 700, "responsive": {"0": {"items": 1}, "767": {"items": 2}, "991": {"items": 2}, "1199": {"items": 3}}}'>
                 <div class="item">
                     <div class="service-four__single">
                         <h3>
                             <i class="fab fa-brands fa-google" style="color: #ec8713;"></i>
-                            <a href="https://phishingquiz.withgoogle.com/">Phish Quiz with Google</a>
+                            <a href="https://phishingquiz.withgoogle.com/" target="_blank">Phish Quiz with Google</a>
                         </h3>
                         <p>Google's interactive game. Learn phishing protection. Master scam detection. Play, learn, guard your online world!</p>
-                    </div><!-- /.service-four__single -->
-                </div><!-- /.item -->
+                    </div>
+                </div>
                 <div class="item">
                     <div class="service-four__single">
                         <h3>
-                            <a href="https://www.opendns.com/phishing-quiz/#:~:text=Can%20you%20tell%20the%20difference%20between%20a,out%20how%20you%20stack%20up%20against%20hackers.">OpenDNS - Phishing Quiz</a>
+                            <a href="https://www.opendns.com/phishing-quiz/#:~:text=Can%20you%20tell%20the%20difference%20between%20a,out%20how%20you%20stack%20up%20against%20hackers." target="_blank">OpenDNS - Phishing Quiz</a>
                         </h3>
                         <p>You can also take the OpenDNS Phishing Quiz to see how you stack up against hackers.</p>
-                    </div><!-- /.service-four__single -->
-                </div><!-- /.item -->
+                    </div>
+                </div>
                 <div class="item">
                     <div class="service-four__single">
                         <h3>
                             <i class="fab fa-brands fa-google" style="color: #ec8713;"></i>
-                            <a href="https://beinternetawesome.withgoogle.com/en_ie/interland">Google - Play Interland</a>
+                            <a href="https://beinternetawesome.withgoogle.com/en_ie/interland" target="_blank">Google - Play Interland</a>
                         </h3>
                         <p>Explore online safety via games. Teach digital responsibility to kids and teens. Learn key internet lessons interactively. Have fun, stay secure!</p>
-                    </div><!-- /.service-four__single -->
-                </div><!-- /.item -->
+                    </div>
+                </div>
                 <div class="item">
                     <div class="service-four__single">
                         <h3>
                             <i class="fab fa-brands fa-google" style="color: #ec8713;"></i>
-                            <a href="https://spaceshelter.withgoogle.com/">Google - Space Shelter</a>
+                            <a href="https://spaceshelter.withgoogle.com/" target="_blank">Google - Space Shelter</a>
                         </h3>
                         <p>Learn cyber awareness through challenges, securing access codes, and outsmarting space pirates. Embark on an epic cyber journey!</p>
-                    </div><!-- /.service-four__single -->
-                </div><!-- /.item -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.service-four -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
 
     
@@ -467,52 +466,48 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!------------------------Redirection link----------------------->
     <script>
-      var externalLinks = document.querySelectorAll('.external-link');
-      var popupOverlay = document.getElementById('popupOverlay');
-      var popupContainer = document.getElementById('popupContainer');
-      var popupSeconds = document.getElementById('popupSeconds');
-      var redirectLink = document.getElementById('redirectLink');
-      var redirectWebsite = document.getElementById('redirectWebsite');
-      var redirectUrlDisplay = document.getElementById('redirectUrlDisplay');
-      var total = popupSeconds.textContent;
-      var timeinterval;
-  
-      function startTimerAndRedirect(redirectUrl, websiteName) {
-          redirectLink.href = redirectUrl;
-          redirectLink.textContent = "click here";
-          redirectWebsite.textContent = websiteName;
-          redirectUrlDisplay.textContent = redirectUrl;
-  
-          popupContainer.style.display = 'block';
-          popupOverlay.style.display = 'block';
-  
-          timeinterval = setInterval(function () {
-              total = --total;
-              popupSeconds.textContent = total;
-              if (total <= 0) {
-                  clearInterval(timeinterval);
-                  window.location.href = redirectUrl;
-              }
-          }, 1000);
-      }
-  
-      externalLinks.forEach(function (link) {
-          link.addEventListener('click', function (event) {
-              event.preventDefault();
-              var redirectUrl = link.getAttribute('data-redirect-url');
-              var websiteName = link.querySelector('.card-title').textContent;
-              startTimerAndRedirect(redirectUrl, websiteName);
-          });
-      });
-  
-      popupOverlay.addEventListener('click', function () {
-          popupContainer.style.display = 'none';
-          popupOverlay.style.display = 'none';
-          clearInterval(timeinterval);
-          total = 10;
-          popupSeconds.textContent = total;
-      });
-  </script>
+        var externalLinks = document.querySelectorAll('.external-link');
+        var popupOverlay = document.getElementById('popupOverlay');
+        var popupContainer = document.getElementById('popupContainer');
+        var popupSeconds = document.getElementById('popupSeconds');
+        var redirectLink = document.getElementById('redirectLink');
+        var redirectText = document.getElementById('redirectText');
+        var total = parseInt(popupSeconds.textContent);
+        var timeinterval;
+    
+        function startTimerAndRedirect(redirectUrl) {
+            redirectLink.href = redirectUrl;
+            redirectText.innerHTML = '<strong>Redirecting to:</strong> ' + redirectUrl;
+            
+            popupContainer.style.display = 'block';
+            popupOverlay.style.display = 'block';
+    
+            timeinterval = setInterval(function () {
+                total = --total;
+                popupSeconds.textContent = total;
+                if (total <= 0) {
+                    clearInterval(timeinterval);
+                    window.location.href = redirectUrl;
+                }
+            }, 1000);
+        }
+    
+        externalLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                var redirectUrl = link.getAttribute('data-redirect-url');
+                startTimerAndRedirect(redirectUrl);
+            });
+        });
+    
+        popupOverlay.addEventListener('click', function () {
+            popupContainer.style.display = 'none';
+            popupOverlay.style.display = 'none';
+            clearInterval(timeinterval);
+            total = 10;
+            popupSeconds.textContent = total;
+        });
+    </script>
 
   <!----------------- visitor counter ------------------>
   <script>
