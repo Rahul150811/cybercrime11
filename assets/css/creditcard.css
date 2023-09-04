@@ -55,6 +55,11 @@ a:focus {
 .block-title {
 	margin-bottom: 40px;
 }
+@media (min-width: 1024px) {
+	.block-title {
+		margin-top: 10vh;
+	}
+}
 
 .block-title__icon {
 	color: var(--thm-base);
@@ -1855,7 +1860,7 @@ a:focus {
   #searchResults {
     background-color: white;
     border-radius: 5px;
-    width: 80vw;
+    width: 100vw;
     margin: 0 auto;
   }
 
