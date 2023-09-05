@@ -1860,7 +1860,7 @@ a:focus {
   #searchResults {
     background-color: white;
     border-radius: 5px;
-    width: 100vw;
+    width: 60vw;
     margin: 0 auto;
   }
 
@@ -1905,9 +1905,15 @@ a:focus {
     .search-result-accordion {
       width: 100%;
     }
+	#searchResults {
+		width: 100%;
+	  }
   }
   @media screen and (max-width: 576px){
 	.search-result-accordion {
+		width: 100%;
+	  }
+	  #searchResults {
 		width: 100%;
 	  }
   }
@@ -1915,6 +1921,9 @@ a:focus {
     .search-result-accordion {
         width: 100%;
     }
+	#searchResults {
+		width: 100%;
+	  }
 }
   /*--------- Credit card search ------------------------------*/
   .height {
