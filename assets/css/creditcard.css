@@ -1772,8 +1772,11 @@ a:focus {
     }
 }
 @media (min-width: 1200px) {
-    .accordion-header .image-icon-container h4, .accordion-header i {
+    .accordion-header .image-icon-container h4 {
         font-size: 1.5vw;
+    }
+	.accordion-header i {
+        font-size: 18px;
     }
 	.accordion-body__contents{
 		font-size: 18px; 
