@@ -1772,8 +1772,11 @@ a:focus {
     }
 }
 @media (min-width: 1200px) {
-    .accordion-header .image-icon-container h4, .accordion-header i {
+    .accordion-header .image-icon-container h4 {
         font-size: 1.5vw;
+    }
+	.accordion-header i {
+        font-size: 18px;
     }
 	.accordion-body__contents{
 		font-size: 18px; 
@@ -1860,7 +1863,7 @@ a:focus {
   #searchResults {
     background-color: white;
     border-radius: 5px;
-    width: 100vw;
+    width: 60vw;
     margin: 0 auto;
   }
 
@@ -1905,9 +1908,15 @@ a:focus {
     .search-result-accordion {
       width: 100%;
     }
+	#searchResults {
+		width: 100%;
+	  }
   }
   @media screen and (max-width: 576px){
 	.search-result-accordion {
+		width: 100%;
+	  }
+	  #searchResults {
 		width: 100%;
 	  }
   }
@@ -1915,6 +1924,9 @@ a:focus {
     .search-result-accordion {
         width: 100%;
     }
+	#searchResults {
+		width: 100%;
+	  }
 }
   /*--------- Credit card search ------------------------------*/
   .height {
