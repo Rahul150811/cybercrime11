@@ -4651,12 +4651,9 @@ a:focus {
 	-webkit-box-flex: 1;
 	flex: 1 1 20%;
 	max-width: 20%;
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 .service-three__single {
-	text-align: center;
 	border-radius: 3px;
 	width: 170px;
 	margin-top: 30px;
