@@ -7752,4 +7752,86 @@ a:focus {
 }
 
 
-/*--------------------About future goals---------------------*/
+/*--------------------Risk Assessment---------------------*/
+.center-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.calculate-btn {
+	margin-top: 40px;
+	display: inline-block;
+	padding: 1rem 2rem;
+	background-color: #114f9a;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	transition: background-color 0.3s;
+}
+
+.calculate-btn:hover {
+	background-color: red;
+}
+
+#assessment {
+    margin-top: 40px;
+	padding: 0 40px;
+}
+
+#assessment-form{
+    padding-top: 20px;
+}
+
+#assessment h3{
+	color: black;
+	margin-top: 40px;
+}
+
+#assessment li{
+	margin-top: 15px;
+}
+
+#results {
+    margin-top: 40px;
+    margin-bottom: 200px;
+    padding: 0 50px;
+}
+
+#results h2 {
+    color: black;
+	font-weight: bold;
+}
+
+#total-score {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#risk-level-text{
+	font-size: 25px;
+    font-weight: bold;
+}
+
+#recommendations-title {
+    color: black;
+	margin-top: 50px;
+	font-size: 30px;
+	text-align: left;
+	font-weight: bold;
+}
+
+#recommendations {
+    color: black;
+    text-align: left;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.arrow {
+    font-weight: bold;
+}
