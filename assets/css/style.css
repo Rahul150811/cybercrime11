@@ -7775,16 +7775,28 @@ a:focus {
 }
 
 #assessment {
-    margin-top: 40px;
-	padding: 0 60px;
+	padding: 0 20px;
 }
 
+@media screen and (min-width: 768px) {
+    #assessment {
+        padding: 0 60px; 
+    }
+}
 
 #assessment h3{
 	color: black;
 	margin-top: 40px;
 	font-size: 22px;
 	font-weight: bold;
+}
+#assessment-form{
+	padding-top: 60px;
+}
+@media screen and (min-width: 768px) {
+    #assessment-form {
+        padding-top: 0px;
+    }
 }
 
 #assessment li{
@@ -7794,7 +7806,12 @@ a:focus {
 #results {
     margin-top: 40px;
     margin-bottom: 200px;
-    padding: 0 60px;
+    padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+    #results {
+        padding: 0 60px;
+    }
 }
 
 #results h2 {
