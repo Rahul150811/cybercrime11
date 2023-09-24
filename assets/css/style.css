@@ -7776,16 +7776,15 @@ a:focus {
 
 #assessment {
     margin-top: 40px;
-	padding: 0 40px;
+	padding: 0 60px;
 }
 
-#assessment-form{
-    padding-top: 20px;
-}
 
 #assessment h3{
 	color: black;
 	margin-top: 40px;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 #assessment li{
@@ -7795,7 +7794,7 @@ a:focus {
 #results {
     margin-top: 40px;
     margin-bottom: 200px;
-    padding: 0 50px;
+    padding: 0 60px;
 }
 
 #results h2 {
@@ -7831,4 +7830,13 @@ a:focus {
 
 .arrow {
     font-weight: bold;
+}
+
+#recommendations h3{
+    margin-top: 20px !important;
+    font-size: 25px !important;
+}
+
+#help-button{
+	margin-top: 5vh;
 }

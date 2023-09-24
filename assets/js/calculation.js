@@ -1,8 +1,29 @@
 // Define the scoring system for each question (adjust weights as needed)
 const questionScores = {
-    'password1': { 'yes': 5, 'no': 0, 'recommendation': 'You should improve your password security.' },
-    'password2': { 'frequently': 3, 'occasionally': 2, 'rarely': 1, 'no': 0, 'recommendation': 'Using a password manager can help improve your password security.' },
-    'password3': { 'yes': 5, 'no': 0, 'recommendation': 'Consider using stronger passwords and changing them regularly.' },
+    'password1': { 
+        'yes': 5, 
+        'no': 0, 
+        'recommendation': 'Implement a password manager to create and manage strong, unique passwords for each of your online accounts.',
+        'bestPractices': [
+            'Use long and complex passwords with a combination of letters, numbers, and symbols.',
+            'Consider using a reputable password manager to store and generate passwords.'
+        ],
+    },
+    'password2': { 
+        'frequently': 3, 
+        'occasionally': 2, 
+        'rarely': 1, 
+        'no': 0, 
+        'recommendation': 'Using a password manager can help improve your password security.',
+        'bestPractices': [
+            'Either change your password once a month or use a password manager.'
+        ],
+    },
+    'password3': { 
+        'yes': 5, 
+        'no': 0, 
+        'recommendation': 'Using password manager will make your life easy' 
+    },
     'mfa1': { 'yes': 5, 'no': 0, 'recommendation': 'Enable Multi-Factor Authentication (MFA) for added security.' },
     'mfa2': { 'yes': 5, 'no': 0, 'recommendation': 'Consider enabling Multi-Factor Authentication (MFA) for added security.' },
     'device1': { 'yes': 5, 'no': 0, 'recommendation': 'Regularly update and secure your devices.' },
@@ -57,7 +78,7 @@ function calculateScore() {
     return { totalScore, categoryScores, recommendations };
 }
 
-// Calculate the risk level and display the results
+// Modify the calculateRisk function to display best practices and recommendations
 function calculateRisk() {
     // Get the total score and category scores
     const { totalScore, categoryScores, recommendations } = calculateScore();
@@ -98,27 +119,30 @@ function calculateRisk() {
     recommendationsElement.innerHTML = '';
 
     // Display recommendations based on user answers
-   
     if (totalScore > 80) {
         recommendationsElement.innerHTML += '<p>No recommendations available for this score.</p>';
     } else {
-        // Check if there are recommendations for the given score
-        if (totalScore >= 0 && totalScore < 80) {
-            recommendationsElement.innerHTML += '<ul>';
-            Object.keys(recommendations).forEach(questionId => {
-                const recommendation = recommendations[questionId];
-                if (recommendation) {
-                    recommendationsElement.innerHTML += `<li>${recommendation}</li>`;
-                }
-            });
-            recommendationsElement.innerHTML += '</ul>';
-        } else if (totalScore >= 0) {
-            // If score is 70 or higher, only display the first recommendation
-            const firstRecommendation = recommendations[Object.keys(recommendations)[0]];
-            if (firstRecommendation) {
-                recommendationsElement.innerHTML += `<ul><li>${firstRecommendation}</li></ul>`;
+        recommendationsElement.innerHTML += '<h3>Best Practices:</h3>';
+        recommendationsElement.innerHTML += '<ul>';
+        Object.keys(recommendations).forEach(questionId => {
+            const bestPractices = questionScores[questionId]['bestPractices'];
+            if (bestPractices && Array.isArray(bestPractices)) {
+                bestPractices.forEach(bestPractice => {
+                    recommendationsElement.innerHTML += `<li>${bestPractice}</li>`;
+                });
             }
-        }
+        });
+        recommendationsElement.innerHTML += '</ul>';
+        
+        recommendationsElement.innerHTML += '<h3>Recommendations:</h3>';
+        recommendationsElement.innerHTML += '<ul>';
+        Object.keys(recommendations).forEach(questionId => {
+            const recommendation = questionScores[questionId]['recommendation'];
+            if (recommendation) {
+                recommendationsElement.innerHTML += `<li>${recommendation}</li>`;
+            }
+        });
+        recommendationsElement.innerHTML += '</ul>';
     }
 
     // Display category scores (optional)
@@ -136,3 +160,4 @@ function calculateRisk() {
 document.getElementById('calculate-button').addEventListener('click', calculateRisk);
 
 calculateRisk();
+
