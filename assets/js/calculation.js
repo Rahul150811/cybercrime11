@@ -55,7 +55,7 @@ const questionScores = {
         'no': 0, 
         'recommendation': '<b><span style="color: red">Regularly update security software: </span></b> Keep your security software updated for optimal protection.',
         'bestPractices': [
-            '<b><span style="color: red">Install security software: Use reputable security software to safeguard your devices.</span></b>'
+            '<b><span style="color: red">Install security software: </span></b>Use reputable security software to safeguard your devices.'
         ],
     },
     'device3': { 
@@ -71,7 +71,7 @@ const questionScores = {
         'no': 0, 
         'recommendation': '<b><span style="color: red">Practice safe information sharing: </span></b> Be especially careful when asked for personal information online or over the phone..',
         'bestPractices': [
-            '<b><b><span style="color: red">Exercise caution with personal information: </span></b> Avoid sharing sensitive personal details on the internet or with unknown callers.</b>'
+            '<b><b><span style="color: red">Exercise caution with personal information: </span></b> Avoid sharing sensitive personal details on the internet or with unknown callers.'
         ],
     },
     'social2': { 
@@ -250,7 +250,7 @@ function calculateRisk() {
     if (totalScore > 80) {
         recommendationsElement.innerHTML += ' ';
     } else {
-        recommendationsElement.innerHTML += '<h3><b>Based on your score here are some Best Practices:</b></h3>';
+        recommendationsElement.innerHTML += '<h3><b>Based on your score here are some Best Practices: </b></h3>';
         recommendationsElement.innerHTML += '<ul>';
         Object.keys(recommendations).forEach(questionId => {
             const bestPractices = questionScores[questionId]['bestPractices'];
@@ -262,7 +262,7 @@ function calculateRisk() {
         });
         recommendationsElement.innerHTML += '</ul>';
         
-        recommendationsElement.innerHTML += '<h3><b>Based on your score here are some Recommendations:</b></h3>';
+        recommendationsElement.innerHTML += '<h3><b>Based on your score here are some Recommendations: </b></h3>';
         recommendationsElement.innerHTML += '<ul>';
         Object.keys(recommendations).forEach(questionId => {
             const recommendation = questionScores[questionId]['recommendation'];
