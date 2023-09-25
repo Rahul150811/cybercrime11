@@ -71,7 +71,7 @@ const questionScores = {
         'no': 0, 
         'recommendation': '<b><span style="color: red">Practice safe information sharing: </span></b> Be especially careful when asked for personal information online or over the phone..',
         'bestPractices': [
-            '<b><b><span style="color: red">Exercise caution with personal information: </span></b> Avoid sharing sensitive personal details on the internet or with unknown callers.'
+            '<b><span style="color: red">Exercise caution with personal information: </span></b> Avoid sharing sensitive personal details on the internet or with unknown callers.'
         ],
     },
     'social2': { 
