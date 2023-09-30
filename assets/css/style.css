@@ -7201,7 +7201,7 @@ a:focus {
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 20px;
-    height: 400px; /* Set a fixed height for all shuffle items */
+    height: 400px;
     overflow: hidden; /* Hide overflow content if needed */
 }
 
@@ -7233,12 +7233,28 @@ a:focus {
 /*---------------New learning Page -------------------------*/
 
 .learn-shuffle .shuffle-item {
-	display: flex;
-  	flex-direction: column;
+    display: flex;
     align-items: center;
-    margin-bottom: 10px;
-	height: auto;
+    margin-bottom: 50px;
+    min-height: 550px; /* Set a minimum height for the card */
+    box-sizing: border-box;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .learn-shuffle .shuffle-item {
+        height: auto;
+        width: 100%;
+    }
+    .learn-shuffle .shuffle-item h3 {
+        font-size: 18px;
+    }
+
+    .learn-link-custom a {
+        padding: 5px;
+    }
+}
+
 
 .learn-shuffle .shuffle-item img {
     height: 200px;
