@@ -4139,7 +4139,7 @@ a:focus {
 }
 
 .team-two__single:hover .team-two__content p {
-	color: var(--thm-base);
+	color: #20c997;
 }
 
 .team-two__image {
@@ -4148,7 +4148,7 @@ a:focus {
 
 .team-two__image>img {
 	width: 100%;
-	opacity: 1;
+	opacity: 100;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: all 500ms ease;
@@ -4169,7 +4169,7 @@ a:focus {
 
 .team-two__social {
 	position: absolute;
-	top: 50px;
+	top: 25px;
 	right: 30px;
 	display: -webkit-box;
 	display: flex;
@@ -4186,7 +4186,7 @@ a:focus {
 }
 
 .team-two__social a {
-	color: rgba(255, 255, 255, 0.3);
+	color: white; 
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
 }
@@ -4196,7 +4196,7 @@ a:focus {
 }
 
 .team-two__social a:hover {
-	color: #fff;
+	color: #007bff;
 }
 
 .team-two__content {
@@ -4237,7 +4237,6 @@ a:focus {
 .team-two__content p:hover {
 	color: var(--thm-base);
 }
-
 /*-------------------------------------------------------------	-
 # service
 --------------------------------------------------------------*/
