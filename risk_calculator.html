@@ -11,7 +11,7 @@
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Risk Assessment Calculator",
-          "url": "https://www.protectnow.info/risk-assessment.html",
+          "url": "https://www.protectnow.info/risk-calculator.html",
           "logo": "https://www.protectnow.info/assets/images/resources/1.png"
         }
     </script>
@@ -20,7 +20,7 @@
     <meta name="description" content="At Protect, our mission is clear: to empower individuals and businesses in the relentless fight against cyber threats. We stand apart by offering a seamless reporting experience paired with a wealth of targeted resources and active community engagement. ">
     <meta property="og:description" content="At Protect, our mission is clear: to empower individuals and businesses in the relentless fight against cyber threats. We stand apart by offering a seamless reporting experience paired with a wealth of targeted resources and active community engagement. " />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.protectnow.info/risk-assessment.html" />
+    <meta property="og:url" content="https://www.protectnow.info/risk-calculator.html" />
     <meta property="og:image" content="https://www.protectnow.info/assets/images/favicon/fav2.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
@@ -57,6 +57,113 @@
     <!-- main styles -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
+    <style>
+        /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.risk-calculator-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Add responsive styles */
+@media screen and (min-width: 768px) {
+    .risk-calculator-container {
+        padding-top: 0px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .risk-calculator {
+        width: 48%;
+    }
+}
+
+/* Calculator Styles */
+.risk-calculator {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 80%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.risk-calculator label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.risk-calculator input[type="number"],
+.risk-calculator select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.risk-calculator button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.risk-calculator button:hover {
+    background-color: #005aa5;
+}
+
+/* Term Explanations Styles */
+.term-explanations {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .term-explanations {
+        padding: 0 60px; 
+    }
+}
+
+.term-explanations ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.term-explanations li {
+    margin-bottom: 20px;
+}
+
+.term-explanations strong {
+    font-weight: bold;
+}
+
+/* Center the "Calculate" button */
+.center-button {
+    text-align: center;
+}
+
+    </style>
 </head>
 
 <body>
@@ -70,7 +177,7 @@
             <div class="topbar-one">
                 <div class="container">
                     <div class="topbar-one__left">
-                        <span style="color: black;"><i class="fa fa-rss"></i> Updates: &nbsp;</span><p></p>
+                        <span style="color: black;"><i class="fa fa-rss"></i> Updates: &nbsp;</span><p>This website would be ready to launch in 3 weeks.</p>
                     </div>
                     <div class="topbar-one__right">
                         <a href="https://form.jotform.com/232297439320154">Donate</a>
@@ -161,7 +268,7 @@
                             <div class="about-me-header__icon">
                                 <i class="politaro-icon-star-2"></i>
                             </div>
-                            <h3>Risk Assessment</h3>
+                            <h3>Risk Calculator</h3>
                         </div>
                     </div>
                 </div>
@@ -171,218 +278,90 @@
         <section class="service-three">
             <div class="service-three__content">
                 <p style="margin-top: -60px; margin-bottom: -200px; font-size: 20px; padding: 0 40px;">
-                    Welcome to our Cybersecurity Risk Assessment platform, where your online safety is our top priority. 
-                    Our comprehensive assessment helps you understand and enhance your digital security practices. 
-                    We evaluate your online habits, guide you on best practices, and provide recommendations tailored to your needs. 
-                    Take control of your digital life and protect what matters most with our expert guidance. Get started now for a safer online experience.
+                    Welcome to our Risk Assessment Calculator—a powerful tool designed to 
+                    help individuals and small businesses evaluate potential risks and make informed decisions about security measures.
                 </p>
             </div>
-        </section>
-
-        <section id="assessment">
-            <form id="assessment-form">
-                <div class="question">
-                    <h3>1. Password Security:</h3>
-                    <ul>
-                        <li>
-                            Do you use strong and unique passwords for your online accounts?
-                            <select id="password1" name="password1">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            How often do you change your passwords?
-                            <select id="password2" name="password2">
-                                <option value="frequently">Frequently</option>
-                                <option value="occasionally">Occasionally</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Do you use a password manager to store and generate complex passwords?
-                            <select id="password3" name="password3">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>2. Multi-Factor Authentication (MFA):</h3>
-                    <ul>
-                        <li>
-                            Do you enable multi-factor authentication (MFA) wherever possible?
-                            <select id="mfa1" name="mfa1">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Are you aware of the types of MFA available (e.g., SMS codes, authenticator apps, hardware tokens)?
-                            <select id="mfa2" name="mfa2">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>3. Device Security:</h3>
-                    <ul>
-                        <li>
-                            Do you keep your computer, smartphone, and other devices up to date with the latest security patches and updates?
-                            <select id="device1" name="device1">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Do you use security software (e.g., antivirus) on your devices?
-                            <select id="device2" name="device2">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Is your smartphone protected with a PIN, password, or biometric authentication?
-                            <select id="device3" name="device3">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>4. Social Engineering Awareness:</h3>
-                    <ul>
-                        <li>
-                            Are you cautious about sharing personal information online or over the phone?
-                            <select id="social1" name="social1">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Do you know how to recognize phishing emails and scam calls?
-                            <select id="social2" name="social2">                             
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>5. Data Backup:</h3>
-                    <ul>
-                        <li>
-                            Do you regularly back up your important data and files?
-                            <select id="data1" name="data1">                         
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            How often do you test your backups to ensure they can be restored?
-                            <select id="data2" name="data2">                         
-                                <option value="frequently">Frequently</option>
-                                <option value="occasionally">Occasionally</option>
-                                <option value="rarely">Rarely</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>6. Software and App Downloads:</h3>
-                    <ul>
-                        <li>
-                            Do you only download software and apps from reputable sources (e.g., official app stores)?
-                            <select id="download1" name="download1">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Are you cautious about granting permissions to apps on your devices?
-                            <select id="download2" name="download2">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>7. Social Media Privacy:</h3>
-                    <ul>
-                        <li>
-                            Have you reviewed and adjusted your privacy settings on social media platforms?
-                            <select id="privacy1" name="privacy1">
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Do you limit the amount of personal information you share publicly on social media?
-                            <select id="privacy2" name="privacy2">                               
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="question">
-                    <h3>8. Do you visit unknown websites</h3>
-                    <ul>
-                        <li>
-                            Do you download or watch movies on unknown websites?
-                            <select id="watch1" name="watch1">                           
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                        <li>
-                            Do you know it is safe to visit unknown websites?
-                            <select id="watch2" name="watch2">                           
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-            </form>
-            <div class="center-button">
-                <button id="calculate-button" class="calculate-btn">Calculate Risk Score</button>
-            </div>
-        </section>
-
-        <section id="results">
-            <h2>Your Risk Assessment Results <span class="arrow">&darr;</span></h2>
-            <p id="total-score"><span id="total-score-heading">Total Score: </span><span id="calculated-score"> -</span></p>
-            <p id="risk-level-text"><span id="risk-level-heading">Risk Level: </span><span id="risk-level-value">-</span></p>
-            <div id="recommendations">
-            </div>
-        </section>
-
-        <section class="service-four" style="background-image: url(/assets/images/resources/validation.jpg);" id="games">
-            <div class="container">
-                <div class="block-title text-left">
-                    <i class="block-title__icon politaro-icon-star-2"></i>
-                    <h3>Need Expert Help?</h3>
-                    <p style="margin-top: 10px; font-size: 20px;">Protect your digital life. Consult with cybersecurity professionals to enhance your online security.</p>
-                    <a href="mailto:protect4help@gmail.com" class="thm-btn slider-one__btn" id="help-button">Request Help</a>
-                </div>
-            </div>
-        </section>
+        </section> 
         
+        <div class="risk-calculator-container">
+            <div class="risk-calculator">
+                <label for="assetValue">Asset Value ($): <i>Enter the total value of the asset(s) you want to assess.</i></label>
+                <input type="number" id="assetValue" value="10000">
+    
+                <label for="efCategory">Exposure Factor: <i>Select an exposure factor category that best describes your risk exposure.</i></label>
+                <select id="efCategory">
+                    <option value="0.1">Low (EF: 0.1) <i>Low exposure to risk, strong security measures in place.</i></option>
+                    <option value="0.3">Moderate (EF: 0.3) <i>Moderate exposure to risk, some security measures in place.</i></option>
+                    <option value="0.5">High (EF: 0.5) <i>High exposure to risk, limited security measures in place.</i></option>
+                </select>
+    
+                <label for="threat">Threat Frequency (per year): <i>Estimate how often you expect security incidents or threats to occur in a given year.</i></label>
+                <input type="number" id="threat" value="10">
+    
+                <label for="securityCost">Cost of Security Measure ($): <i>Enter the cost of implementing a security measure you are considering.</i></label>
+                <input type="number" id="securityCost" value="0">
+
+                <div class="center-button">
+                    <button id="calculate-button" class="calculate-btn" onclick="calculateRisk()">Calculate Risk Score</button>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 50px; padding: 0 50px;"><strong>Results:</strong></h2>
+            <p style="padding: 0 50px;" id="recommendation"></p>
+            <p style="padding: 0 50px;" id="sleResult"></p>
+            <p style="padding: 0 50px;" id="aleResult"></p>
+            <p style="padding: 0 50px;" id="costResult"></p>
+    
+            <!-- Explanation of Terms -->
+            <div class="term-explanations">
+                <h2><strong>Why Use the Risk Assessment Calculator?</strong></h2>
+                <p>In today's world, it's essential to protect your assets, whether they are personal belongings or valuable equipment for your business. 
+                    However, implementing security measures can come at a cost. 
+                    This calculator empowers you to assess the financial implications of security decisions and determine whether the investment is justified.</p>
+                <h2><strong>How does it Work: </strong>Explanation of Terms</h2>
+                <ul>
+                    <li>
+                        <strong>Asset Value ($):</strong>
+                        <p>The total financial value of the asset(s) you want to assess.</p>
+                        <p>Example: If you are assessing five laptops, and each laptop is valued at $1,000, the total asset value would be $5,000.</p>
+                    </li>
+                    <li>
+                        <strong>Exposure Factor (EF):</strong>
+                        <p>A measure of how vulnerable your assets are to a potential risk or threat. It represents the portion of an asset's value that could be lost in a security incident.</p>
+                        <p>Example: If you estimate that 30% of the value of your laptops could be lost in a theft (EF: 0.3), then the exposure factor is 0.3.</p>
+                    </li>
+                    <li>
+                        <strong>Threat Frequency (per year):</strong>
+                        <p>An estimate of how often you expect security incidents or threats to occur in a given year.</p>
+                        <p>Example: If you expect that, on average, there might 10 theft incidents involving laptops in your area per year, the threat frequency would be 10 per year.</p>
+                    </li>
+                    <li>
+                        <strong>Single Loss Expectancy (SLE):</strong>
+                        <p>The expected financial loss that would result from a single security incident or threat.</p>
+                        <p>Formula: SLE = Asset Value ($) * Exposure Factor (EF)</p>
+                        <p>Example: With an asset value of $5,000 and an exposure factor of 0.3, the SLE for a single laptop theft incident would be $1,500.</p>
+                    </li>
+                    <li>
+                        <strong>Annual Loss Expectancy (ALE):</strong>
+                        <p>The expected annual financial loss due to security incidents or threats. It accounts for the likelihood of multiple incidents occurring over a year.</p>
+                        <p>Formula: ALE = SLE * Threat Frequency (per year)</p>
+                        <p>Example: If you expect 10 laptop theft incidents per year and the SLE for a single incident is $1,500, the ALE would be $15,000 per year.</p>
+                    </li>
+                    <li>
+                        <strong>Cost of Security Measure ($):</strong>
+                        <p>The expense associated with implementing a security measure to mitigate or prevent security incidents.</p>
+                        <p>Example: If you plan to invest $500 in laptop cable locks as a security measure, the cost of the security measure would be $500.</p>
+                    </li>
+                </ul>
+
+                <h2>Make informed security decisions</h2>
+                <p>With the Risk Assessment Calculator, you can make informed decisions about protecting your assets. 
+                    Whether you're a small business owner considering security investments or an individual safeguarding personal belongings, 
+                    our tool will help you evaluate risks and costs, enabling you to take the right steps toward security and peace of mind.
+                    Start assessing your risks and securing your assets today with our Risk Assessment Calculator.</p>
+            </div>
+        </div>
         
         
 
@@ -503,6 +482,7 @@
     </div>
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
+
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/bootstrap-datepicker.min.js"></script>
@@ -525,7 +505,6 @@
     <script src="/assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/automate_topbar.js"></script>
-    <script src="/assets/js/calculation.js"></script>
     <!----------------- visitor counter ------------------>
     <script>
         function setCookie(name, value, days) {
@@ -566,6 +545,8 @@
         incrementVisits();
         displayTotalVisits();
     </script>
+    
+    <script src="/assets/js/risk-calculator.js"></script>
 
 </body>
 </html>
