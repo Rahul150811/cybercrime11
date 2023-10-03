@@ -5069,7 +5069,6 @@ a:focus {
 	font-style: italic;
 	font-family: "Merriweather";
 }
-
 .about-two {
 	padding-top: 120px;
 	padding-bottom: 120px;
@@ -7871,4 +7870,11 @@ a:focus {
 
 #help-button{
 	margin-top: 5vh;
+}
+
+/*----------------------------------------*/
+.youtube-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
