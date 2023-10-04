@@ -14,7 +14,7 @@ function calculateRisk() {
 
     if (ale >= 0) {
         if (ale >= securityCost) {
-            recommendationText = "It's advisable to implement the security measure to mitigate potential losses.";
+            recommendationText = "It's advisable to implement the security measure to mitigate financial risk.";
         } else {
             recommendationText = "The cost of the security measure might not be a good investment considering the possible losses";
         }
