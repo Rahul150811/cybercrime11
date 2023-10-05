@@ -2658,7 +2658,93 @@ a:focus {
 	margin: 0;
 	margin-top: 10px;
 }
+/*--------------------------------------------------------------
+# More Info Emergency link Style
+--------------------------------------------------------------*/
 
+
+.more-info .inner-container {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	border-radius: 3px;
+	background-attachment: local;
+	background-position: center center;
+	padding-top: 52.5px;
+	padding-bottom: 52.5px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06)
+}
+
+
+@media (min-width: 992px) {
+	.more-info .inner-container {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	.more-info__content {
+        justify-content: space-between;
+		padding-right: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+	.more-info .inner-container {
+		padding-left: 15px;
+		padding-right: 15px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		flex-direction: column;
+		-webkit-box-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		justify-content: center;
+		text-align: center;
+		color: white;
+	}
+	.more-info__content{
+		margin-top: 20px;
+	}
+}
+
+.more-info__content h4 {
+	color: white;
+	margin: 0;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.more-info__content h3 {
+	color: white;
+	margin: 0;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.more-info__content a {
+	color: yellow;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.more-info__content p {
+	color: white;
+	font-size: 16px;
+	line-height: 28px;
+	margin: 0;
+}
+
+/*--------------------------------------------------------------
+--------------------------------------------------------------*/
 .cta-one__btn-block {
 	display: -webkit-box;
 	display: flex;
