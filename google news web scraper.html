@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity News</title>
+</head>
+<body>
+    <h1>Cybersecurity News</h1>
+    <ul id="news-list"></ul>
+
+    <script>
+        fetch('http://your-server-domain-or-ip/cybersecurity-news')
+            .then((response) => response.json())
+            .then((data) => {
+                const newsList = document.getElementById('news-list');
+                data.forEach((item) => {
+                    const title = item.title;
+                    const link = item.link;
+
+                    const listItem = document.createElement('li');
+                    const linkElement = document.createElement('a');
+                    linkElement.href = link;
+                    linkElement.textContent = title;
+
+                    listItem.appendChild(linkElement);
+                    newsList.appendChild(listItem);
+                });
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>
