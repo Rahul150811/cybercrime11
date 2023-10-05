@@ -152,12 +152,7 @@
                     <li>News</li>
                 </ul><!-- /.thm-breadcrumb -->
             </div><!-- /.container -->
-        </section>
-
-        <h1>Top 10 Hacker News Articles</h1>
-        <ul id="article-list">
-            <!-- Articles will be dynamically added here using JavaScript -->
-        </ul>
+        </section><!-- /.inner-banner -->
 
         <section class="blog-one">
             <div class="container">
@@ -412,68 +407,6 @@
         </div><!-- /.search-popup__inner -->
     </div><!-- /.search-popup -->
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
-
-    <script>
-        // Function to fetch and parse an RSS feed
-        function fetchAndDisplayRSSFeed() {
-            // URL of the RSS feed
-            const rssFeedUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://therecord.media/feed');
-
-            // Select the container where you want to display the feed
-            const articleList = document.getElementById('article-list');
-
-            // Keywords to filter articles
-            const keywordsToFilter = ['cybercrime', 'security', 'hacking'];
-
-            // Make a GET request to fetch the RSS feed
-            fetch(rssFeedUrl)
-                .then((response) => response.json())
-                .then((data) => {
-                    // Parse the XML data into a DOM object
-                    const parser = new DOMParser();
-                    const xmlDoc = parser.parseFromString(data.contents, 'text/xml');
-
-                    // Get all the items (articles) from the RSS feed
-                    const items = xmlDoc.querySelectorAll('item');
-
-                    // Loop through the items and filter/display them based on keywords
-                    items.forEach((item) => {
-                        // Extract relevant data from the item
-                        const title = item.querySelector('title').textContent;
-                        const link = item.querySelector('link').textContent;
-                        const description = item.querySelector('description').textContent;
-
-                        // Check if the article contains any of the keywords
-                        const containsKeyword = keywordsToFilter.some(keyword =>
-                            title.toLowerCase().includes(keyword) ||
-                            description.toLowerCase().includes(keyword)
-                        );
-
-                        // If it contains a keyword, create and display the article
-                        if (containsKeyword) {
-                            const articleDiv = document.createElement('div');
-                            articleDiv.className = 'col-lg-4 col-md-6 col-sm-12 blog-one__single'; // Add your custom class
-                            articleDiv.innerHTML = `
-                                <h3><a href="${link}" target="_blank">${title}</a></h3>
-                                <p>${description}</p>
-                            `;
-                            articleList.appendChild(articleDiv);
-                        }
-                    });
-                })
-                .catch((error) => {
-                    console.error('Error fetching RSS feed:', error);
-                });
-        }
-
-        // Call the function to fetch and display the RSS feed
-        fetchAndDisplayRSSFeed();
-    </script>
-    
-
-
-
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/bootstrap-datepicker.min.js"></script>
