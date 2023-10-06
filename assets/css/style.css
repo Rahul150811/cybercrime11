@@ -7965,3 +7965,72 @@ a:focus {
     justify-content: center;
     align-items: center;
 }
+/*---------- Cybercrime Tool -----------*/
+.searchbar-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.searchbar-form {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar-form select,
+.searchbar-form input,
+.searchbar-form button {
+	margin: 5px;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+}
+
+.searchbar-form select {
+	flex-grow: 2;
+	max-width: 40%;
+}
+
+.searchbar-form input {
+	flex-grow: 5;
+	max-width: 50%;
+}
+
+.searchbar-form button {
+	flex-grow: 1;
+	max-width: 40%;
+	cursor: pointer;
+	background-color: #007bff;
+	color: #fff;
+}
+
+#content {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 100px;
+}
+
+.image-container {
+	flex: 0 0 calc(33.33% - 20px); /* Three images per row with spacing */
+	margin: 10px;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+/*------------------------------------------*/
