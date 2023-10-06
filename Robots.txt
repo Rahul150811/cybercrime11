@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /maps/
+Disallow: /privacypolicy/
+Disallow: /team.html
+Disallow: /stillworking.html
+Disallow: /404.html
+Disallow: /unused pages/
 
 Sitemap: https://www.protectnow.info/sitemap.xml
