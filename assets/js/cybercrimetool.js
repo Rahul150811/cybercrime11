@@ -73,3 +73,46 @@ const examples = {
                 return `<div class="image-container"><img src="${imageUrl}" alt="Image"></div>`;
             }).join("");
         });
+
+        // Handle image click to open the pop-out gallery
+        const imageGallery = document.getElementById("content");
+        const imagePopup = document.getElementById("imagePopup");
+        const popupImage = document.querySelector(".popup-image");
+        const closePopup = document.getElementById("closePopup");
+
+        imageGallery.addEventListener("click", function (e) {
+            if (e.target.tagName === "IMG") {
+                popupImage.src = e.target.src;
+                imagePopup.style.display = "flex";
+            }
+        });
+
+        // Handle close button click to close the pop-out gallery
+        closePopup.addEventListener("click", function () {
+            imagePopup.style.display = "none";
+        });
+
+        // Close the pop-out gallery when clicking outside the image
+        imagePopup.addEventListener("click", function (e) {
+            if (e.target === imagePopup) {
+                imagePopup.style.display = "none";
+            }
+        });
+
+        // Ensure the pop-out gallery is responsive on window resize
+        window.addEventListener("resize", function () {
+            if (imagePopup.style.display === "flex") {
+                adjustPopupSize();
+            }
+        });
+
+        // Function to adjust the size of the pop-out gallery
+        function adjustPopupSize() {
+            const windowHeight = window.innerHeight;
+            const imageHeight = popupImage.offsetHeight;
+            if (imageHeight >= windowHeight) {
+                popupImage.style.maxHeight = `${windowHeight - 40}px`; // Adjusted for padding
+            } else {
+                popupImage.style.maxHeight = "80vh"; // Adjust as needed
+            }
+        }
