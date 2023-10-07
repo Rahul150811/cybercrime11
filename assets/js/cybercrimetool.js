@@ -1,15 +1,24 @@
 const examples = {
             phishing: {
-                urgentEmail: "/assets/images/resources/1password.png",
-                blackmailEmail: "/assets/images/resources/avast.png",
-                securityEmail: "/assets/images/resources/brave.png",
+                "Received an email to blackmail you?": "/assets/images/resources/1password.png",
+                "Received an email to take an immediate action?": "/assets/images/resources/avast.png",
+                "Received an email with attachments?": "/assets/images/resources/brave.png",
             },
             scams: {
-                example1: "/assets/images/resources/dashlane.png",
-                example2: "/assets/images/resources/duckduck.png",
-                // Add more scam examples here
+                "Tech Support": "/assets/images/resources/dashlane.png",
+                "Impersonation ": "/assets/images/resources/duckduck.png",
+                "Healthcare": "/assets/images/resources/dashlane.png",
+                "Employment": "/assets/images/resources/duckduck.png",
             },
-            // Add more categories and subcategories with image URLs
+            ransomware: {
+                "Locked all files and data": "/assets/images/resources/dashlane.png",
+                "Asking for a payment": "/assets/images/resources/duckduck.png",
+            },
+            "Identity Theft": {
+                "Finnace": "/assets/images/resources/dashlane.png",
+                "Fraud": "/assets/images/resources/duckduck.png",
+            },
+
         };
 
         // Populate subcategory options based on the selected category
