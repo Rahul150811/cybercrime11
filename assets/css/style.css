@@ -8106,4 +8106,17 @@ a:focus {
 	font-weight: bold;
 }
 
+#resultMessage{
+	margin-top:20px;
+	color: black;
+	margin-left: 120px;
+}
+@media screen and (max-width: 767px) {
+    #resultMessage{
+		width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+		margin-left: 10px;
+	}
+}
 /*------------------------------------------*/
