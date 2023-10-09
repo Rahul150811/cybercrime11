@@ -9,6 +9,7 @@ const questionScores = {
         ],
     },
     'password2': { 
+        'yes': 5,
         'frequently': 3, 
         'occasionally': 2, 
         'rarely': 1, 
@@ -91,7 +92,8 @@ const questionScores = {
         ],
     },
     'data2': { 
-        'frequently': 3, 
+        'yes': 5,
+        'frequently': 4, 
         'occasionally': 2, 
         'rarely': 1, 
         'no': 0, 
@@ -213,10 +215,10 @@ function calculateRisk() {
 
     // Calculate the risk level
     let riskLevel;
-    if (totalScore > 80) {
-        riskLevel = 'You are a nice person, You know stuff :)';
+    if (totalScore > 85) {
+        riskLevel = 'Congratulations, You have low risk of being a victim 😊';
     }
-    else if (totalScore <= 80 && totalScore >= 70) {
+    else if (totalScore <= 85 && totalScore >= 70) {
         riskLevel = 'Low Risk';
     }
     else if (totalScore <= 69 && totalScore >= 60) {
@@ -247,8 +249,8 @@ function calculateRisk() {
     recommendationsElement.innerHTML = '';
 
     // Display recommendations based on user answers
-    if (totalScore > 80) {
-        recommendationsElement.innerHTML += ' ';
+    if (totalScore >= 90) {
+        // Don't display any recommendations or best practices
     } else {
         recommendationsElement.innerHTML += '<h3><b>Based on your score here are some Best Practices: </b></h3>';
         recommendationsElement.innerHTML += '<ul>';

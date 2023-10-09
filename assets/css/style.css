@@ -7322,7 +7322,7 @@ a:focus {
     display: flex;
     align-items: center;
     margin-bottom: 50px;
-    min-height: 550px; /* Set a minimum height for the card */
+    min-height: 500px;
     box-sizing: border-box;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -7851,6 +7851,9 @@ a:focus {
 
 
 /*--------------------Risk Assessment---------------------*/
+#assessment{
+	font-family: Raleway,sans-serif;
+}
 .center-button {
 	display: flex;
 	justify-content: center;
