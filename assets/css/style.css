@@ -8132,8 +8132,7 @@ a:focus {
 .translator-container {
     font-family: verdana;
     font-size: 15px;
-	border-radius: 72% 28% 100% 0% / 19% 84% 16% 81%  ;
-	
+	border-radius: 72% 28% 100% 0% / 19% 84% 16% 81% ;
     position: fixed;
     bottom: 85px;
 	left: 28px;
