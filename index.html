@@ -124,6 +124,7 @@
                             <a href="https://www.instagram.com/protect.nyc/" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a href="mail:protect4help@gmail.com"><i class="fa fa-envelope"></i></a>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -189,6 +190,7 @@
                         <div class="right-side-box">
                             <a href="#report" class="thm-btn header-donation__btn">Report</a>
                         </div>
+                        
                     </div>
                     
                 </nav>
@@ -1010,7 +1012,7 @@
                                 <h3 class="footer-widget__title">Project</h3>
                                 <ul class="footer-widget__links list-unstyled">
                                     <li><a href="/about/">Our Missions</a></li>
-                                    <li><a href="/spread/">Spread Us</a></li>
+                                    <li><a href="/spread/">Share with others</a></li>
                                     <li><a href="/privacypolicy/" target="_blank">Privacy Policy</a></li>
                                 </ul>
                             </div>
@@ -1021,7 +1023,7 @@
                                 <ul class="footer-widget__links list-unstyled">
                                     <li><a href="https://www.docs.protectnow.info/" target="_blank">Documentation</a></li>
                                     <li><a href="/events/">Main Events</a></li>
-                                    <li><a href="/news/">Latest News</a></li>
+                                    <li><a href="/news/">Cyber News</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1035,7 +1037,8 @@
                                     </li>-->
                                     <li>
                                         <i class="fa fa-envelope-open"></i>
-                                        <a href="mailto:protect4help@gmail.com">protect4help@gmail.com</a>
+                                        <a href="mailto:protect4help@gmail.com">protect4help@gmail.com</a><br><br>
+                                        <a href="javascript:void(window.open('https://form.jotform.com/232167373167156','blank','scrollbars=yes,toolbar=no,width=auto,height=auto'))">Submit your Feedback</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1089,6 +1092,36 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
     
+    <div class="translator-container">
+        <div class="language-text">Translate this Page</div>
+        <div id="google_translate_element"></div>
+    </div>
+    
+    <button id="toggleTranslator" class="translator-button">
+        <i class="fas fa-language"></i> Translate
+    </button>
+    
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    
+        const translatorContainer = document.querySelector('.translator-container');
+        const toggleTranslatorButton = document.getElementById('toggleTranslator');
+    
+        toggleTranslatorButton.addEventListener('click', function() {
+            if (translatorContainer.style.display === 'none' || translatorContainer.style.display === '') {
+                translatorContainer.style.display = 'block';
+            } else {
+                translatorContainer.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
@@ -1113,7 +1146,7 @@
     <script src="assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/automate_topbar.js"></script>
-
+    
     
     <!----------------- visitor counter ------------------>
     <script>
@@ -1156,46 +1189,7 @@
         displayTotalVisits();
     </script>
   
-
-
-<!--------------------------------Feedback form ---------------------------------------->
-  <script src="https://form.jotform.com/static/feedback2.js"></script>
-  <script>
-    new JotformFeedback({
-      
-      type: false,
-      width: 700,
-      height: 500,
-      fontColor: "#FFFFFF",
-      background: "#F59202",
-      isCardForm: false,
-      formId: "232167373167156"
-      ,
-          buttonText: "Feedback",
-          buttonSide: "bottom",
-          buttonAlign: "left",
-          base: "https://form.jotform.com/",
-        });
-  </script>
-  <script src="/assets/js/feedback.js" type="text/javascript"></script>
   <!------------------------------------------------------------------------------------------>
-  <script>
-    $(document).ready(function () {
-        $('[data-toggle="popover"]').popover({
-            content: function () {
-                return `
-                    <ul>
-                        <li>Use different passwords on different systems and accounts.</li>
-                        <li>Use the longest password or passphrase permissible by each password system.</li>
-                        <li>Develop mnemonics to remember complex passwords.</li>
-                        <li>Consider using a password manager program to keep track of your passwords. (See more information below.)</li>
-                        <li>Do not use passwords that are based on personal information that can be easily accessed or guessed.</li>
-                        <li>Do not use words that can be found in any dictionary of any language.</li>
-                    </ul>`;
-            }
-        });
-    });
-</script>
 
 </body>
 </html>

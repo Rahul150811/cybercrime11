@@ -1063,6 +1063,37 @@
         </div><!-- /.search-popup__inner -->
     </div><!-- /.search-popup -->
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    
+    <div class="translator-container">
+        <div class="language-text">Translate this Page</div>
+        <div id="google_translate_element"></div>
+    </div>
+    
+    <button id="toggleTranslator" class="translator-button">
+        <i class="fas fa-language"></i> Translate
+    </button>
+    
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    
+        const translatorContainer = document.querySelector('.translator-container');
+        const toggleTranslatorButton = document.getElementById('toggleTranslator');
+    
+        toggleTranslatorButton.addEventListener('click', function() {
+            if (translatorContainer.style.display === 'none' || translatorContainer.style.display === '') {
+                translatorContainer.style.display = 'block';
+            } else {
+                translatorContainer.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
