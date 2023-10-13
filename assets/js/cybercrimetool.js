@@ -1,23 +1,25 @@
 const examples = {
     Phishing: {
+        "": "/assets/images/threatwatch/Phishing.png",
+        "Sensational": "/assets/images/threatwatch/sensational phishing.png",
         "Received an email to blackmail you?": "/assets/images/threatwatch/T-Mobile Phish Email.png",
         "Received an email to take an immediate action?": "/assets/images/threatwatch/UPS scam.png",
         "Received an email with attachments?": "/assets/images/threatwatch/ups_scam2.png",
         "Fake UPS?": "/assets/images/threatwatch/package_delivery2.png",
     },
     Scams: {
-        "Tech Support": "/assets/images/resources/dashlane.png",
-        "Impersonation ": "/assets/images/resources/duckduck.png",
-        "Healthcare": "/assets/images/resources/dashlane.png",
-        "Employment": "/assets/images/resources/duckduck.png",
+        "Tech Support": "",
+        "Impersonation ": "",
+        "Healthcare": "",
+        "Employment": "",
     },
     Ransomware: {
-        "Locked all files and data": "/assets/images/resources/dashlane.png",
-        "Asking for a payment": "/assets/images/resources/duckduck.png",
+        "Locked all files and data": "",
+        "Asking for a payment": "",
     },
     "Identity Theft": {
-        "Finnace": "/assets/images/resources/dashlane.png",
-        "Fraud": "/assets/images/resources/duckduck.png",
+        "Finnace": "",
+        "Fraud": "",
     },
 
 };
