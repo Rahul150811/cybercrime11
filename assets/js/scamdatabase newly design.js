@@ -9,10 +9,10 @@ const examples = {
         "Fake UPS?": "/assets/images/threatwatch/package_delivery2.png",
     },
     Scams: {
-        "Tech Support": "",
-        "Impersonation ": "",
-        "Healthcare": "",
-        "Employment": "",
+        "Tech Support": "/assets/images/threatwatch/package_delivery2.png",
+        "Impersonation ": "/assets/images/threatwatch/package_delivery2.png",
+        "Healthcare": "/assets/images/threatwatch/package_delivery2.png",
+        "Employment": "/assets/images/threatwatch/package_delivery2.png",
     },
     Ransomware: {
         "Locked all files and data": "",
@@ -116,16 +116,42 @@ const imagePopup = document.getElementById("imagePopup");
 const popupImage = document.querySelector(".popup-image");
 const closePopup = document.getElementById("closePopup");
 
+// Function to open the lightbox with two images
+function openLightbox(imageUrl) {
+    // Get the next image (you can modify this logic)
+    const nextImageUrl = imageUrl.replace('.png', '-2.png');
+
+    popupImage.src = imageUrl;
+    popupImage.dataset.nextImageUrl = nextImageUrl;
+
+    imagePopup.style.display = "flex";
+}
+
 imageGallery.addEventListener("click", function (e) {
     if (e.target.tagName === "IMG") {
-        popupImage.src = e.target.src;
-        imagePopup.style.display = "flex";
+        openLightbox(e.target.src);
     }
 });
 
-// Handle close button click to close the pop-out gallery
-closePopup.addEventListener("click", function () {
-    imagePopup.style.display = "none";
+// Function to navigate to the next image in the lightbox
+function navigateLightbox(direction) {
+    const currentImageUrl = popupImage.src;
+    const nextImageUrl = popupImage.dataset.nextImageUrl;
+
+    if (direction === "next" && nextImageUrl) {
+        popupImage.src = nextImageUrl;
+    } else {
+        // Implement logic for the previous image if needed
+    }
+}
+
+// Event listeners for the navigation buttons in the lightbox
+document.getElementById("nextLightboxBtn").addEventListener("click", function () {
+    navigateLightbox("next");
+});
+
+document.getElementById("prevLightboxBtn").addEventListener("click", function () {
+    // Implement logic for the previous image if needed
 });
 
 // Close the pop-out gallery when clicking outside the image
@@ -152,3 +178,4 @@ function adjustPopupSize() {
         popupImage.style.maxHeight = "80vh"; // Adjust as needed
     }
 }
+
