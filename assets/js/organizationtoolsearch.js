@@ -24,7 +24,7 @@ const examples = {
         {
             title: "No More Ransom",
             imageUrl: "/assets/images/resources/nomoreransom.png",
-            description: "A service that analyzes files and URLs for potential malware using multiple antivirus engines and provides detailed reports.",
+            description: "NoMoreRansom.org is a helpful website that offers free tools to unlock your files if they get locked by ransomware. It also shares tips to keep your digital life secure.",
             link: "https://www.nomoreransom.org/en/index.html",
         },
     ],
