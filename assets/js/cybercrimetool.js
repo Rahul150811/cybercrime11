@@ -1,12 +1,15 @@
 const examples = {
     Phishing: {
-        "": "/assets/images/threatwatch/Phishing.png",
+        "Phishing1": "/assets/images/threatwatch/Phishing.png",
+        "Security Alert Phish1": "/assets/images/threatwatch/Security Alert Phish1.png",
+        "Security Alert Phish2": "/assets/images/threatwatch/Security Alert Phish2.png",
         "Sensational": "/assets/images/threatwatch/sensational phishing.png",
         "Facebook Phishing": "/assets/images/threatwatch/facebook phishing.png",
         "Received an email to blackmail you?": "/assets/images/threatwatch/T-Mobile Phish Email.png",
         "Received an email to take an immediate action?": "/assets/images/threatwatch/UPS scam.png",
         "Received an email with attachments?": "/assets/images/threatwatch/ups_scam2.png",
         "Fake UPS?": "/assets/images/threatwatch/package_delivery2.png",
+        "Fake UPS2?": "/assets/images/threatwatch/UPS_Phish2.png",
     },
     Scams: {
         "Tech Support": "",
