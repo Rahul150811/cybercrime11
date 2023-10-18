@@ -1,6 +1,9 @@
 const examples = {
     Phishing: {
         "Phishing1": "/assets/images/threatwatch/Phishing.png",
+        "Phishing3": "/assets/images/threatwatch/Phishing3.png",
+        "Phishing4": "/assets/images/threatwatch/Phishing 4.png",
+        "Phishing5": "/assets/images/threatwatch/Phishing 5.png",
         "Security Alert Phish1": "/assets/images/threatwatch/Security Alert Phish1.png",
         "Security Alert Phish2": "/assets/images/threatwatch/Security Alert Phish2.png",
         "Sensational": "/assets/images/threatwatch/sensational phishing.png",
