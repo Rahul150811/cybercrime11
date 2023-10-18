@@ -66,6 +66,12 @@ const examples = {
     ],
     "Prevent sharing intimate images": [
         {
+            title: "Take It Down",
+            imageUrl: "/assets/images/resources/takeitdown.png",
+            description: "is a service that helps people remove sexually explicit images of themselves as minors from the internet. The service was launched by the National Center for Missing and Exploited Children (NCMEC). It's funded by Meta, the parent company of Facebook.",
+            link: "https://takeitdown.ncmec.org/",
+        },
+        {
             title: "StopNCII.org",
             imageUrl: "/assets/images/resources/stopncii.png",
             description: "StopNCII.org, run by the Revenge Porn Helpline, helps stop people from sharing intimate pictures without permission. They use smart technology to keep individuals safe online and have removed many such images from the internet.",
@@ -120,6 +126,20 @@ const examples = {
             link: "https://www.wipo.int/portal/en/index.html",
         },
     ],
+    "Fight Against Cybercrime":[
+        {
+            title: "Cybercrime Support Network",
+            imageUrl: "/assets/images/resources/fightcybercrime.png",
+            description: "The Cybercrime Support Network is an organization that assists individuals and businesses affected by cybercrime. They provide support, resources, and guidance to help victims navigate the aftermath of cybercrimes and recover from the impact.",
+            link: "https://fightcybercrime.org/",
+        },
+        {
+            title: "National Cyber Security Alliance",
+            imageUrl: "/assets/images/resources/staysafeonline.png",
+            description: "NCSA is a non-profit organization that promotes and educates people about safe and secure online practices, helping to protect individuals and businesses from cyber threats.",
+            link: "https://staysafeonline.org/",
+        }
+    ]
 };
 
 
