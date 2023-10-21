@@ -8168,3 +8168,52 @@ a:focus {
 .language-text {
     color: white;
 }
+/*-----------Page Search------------------------*/
+.search-results{
+	margin-top: 80px;
+}
+#results{
+	margin-top: -10px;
+}
+.search-results h3{
+	padding: 32px;
+	margin-top: 100px;
+}
+
+#inner-banner {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	padding-bottom: 200px;
+}
+
+#inner-banner:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 83px;
+	z-index: 10;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 100% auto;
+}
+
+@media (min-width: 1920px) {
+	#inner-banner:before {
+		left: 50%;
+		width: 110%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+}
+
+#inner-banner .container {
+	position: relative;
+	z-index: 10;
+}
+
+/*----------------------------------------------*/

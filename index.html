@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -179,11 +178,12 @@
                                     <a href="/contact/">Contact</a>
                                 </li>
 
-                            <!--- Search Bar
+                                <!--- Search Bar
                                 <li class="header__search search-popup__toggler">
                                     <a href="#"><i class="icon-magnifier"></i></a>
                                 </li>
-                            -->
+                                -->
+                            
 
                             </ul>
                         </div>
@@ -1110,6 +1110,22 @@
             </form>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".search-popup__form").submit(function(event) {
+                event.preventDefault();
+                var searchQuery = $("input[name='search']").val().toLowerCase();
+        
+                // Store search query in sessionStorage to pass it to the results page
+                sessionStorage.setItem("searchQuery", searchQuery);
+        
+                // Redirect to the search results page
+                window.location.href = "/search.html";
+            });
+        });
+    </script>
+
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
     
