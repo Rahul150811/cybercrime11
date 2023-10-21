@@ -175,6 +175,18 @@ function displayAllContents() {
 // Call the function to display all contents when the page loads
 displayAllContents();
 
+// Function to add a click event listener for external links
+function addClickEventListenersToLinks(links) {
+    links.forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            var redirectUrl = link.getAttribute('data-redirect-url');
+            var websiteName = link.querySelector('.card-title').textContent;
+            startTimerAndRedirect(redirectUrl, websiteName);
+        });
+    });
+}
+
 // Handle category dropdown change
 categoryDropdown.addEventListener("change", function () {
     const selectedCategory = categoryDropdown.value;
@@ -205,6 +217,10 @@ categoryDropdown.addEventListener("change", function () {
 
     // Update the result message
     updateResultMessage(selectedCategory, "");
+
+    // Add click event listeners to the new links
+    const externalLinks = document.querySelectorAll('.external-link');
+    addClickEventListenersToLinks(externalLinks);
 });
 
 // Handle form submission
