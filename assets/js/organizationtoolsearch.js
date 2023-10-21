@@ -18,6 +18,7 @@ const examples = {
             title: "Trend Micro Password Generator",
             imageUrl: "/assets/images/resources/trendmicro_password_generator.png",
             description: "It is a user-friendly tool that creates strong and secure passwords for your accounts. It helps protect your online information by generating complex passwords that are difficult for hackers to crack.",
+            link: "https://idprotect.trendmicro.com/vault/tool/password-generator",
         }
     ],
     "Help with Ransomware": [
