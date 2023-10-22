@@ -7751,7 +7751,7 @@ a:focus {
 
 /*--------Redirection Design ------------*/
 .popup-container {
-	display: none;
+    display: none;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -7767,9 +7767,16 @@ a:focus {
 	margin-bottom: 100px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
+
 .popup-container img {
     max-width: 200px;
-	margin-bottom: -30px;
+    margin-bottom: -30px;
+}
+@media screen and (max-width: 768px) {
+    .popup-container{
+		width: 100%;
+		height: auto;
+	}
 }
 
 .popup-overlay {
@@ -7870,6 +7877,7 @@ a:focus {
 
 .calculate-btn {
 	margin-top: 40px;
+	margin-bottom: 40px;
 	display: inline-block;
 	padding: 1rem 2rem;
 	background-color: #114f9a;
@@ -7897,6 +7905,10 @@ a:focus {
     #assessment {
         padding: 0 60px; 
     }
+	#assessment h4{
+		font-family: Raleway,sans-serif;
+		margin-top: 50px;
+	}
 }
 
 #assessment h3{
@@ -7906,7 +7918,7 @@ a:focus {
 	font-weight: bold;
 }
 #assessment-form{
-	padding-top: 60px;
+	padding-top: 0px;
 }
 @media screen and (min-width: 768px) {
     #assessment-form {

@@ -2204,3 +2204,121 @@ a:focus {
 	}
   }
   
+  /*Search Popup*/
+  /*--------------------------------------------------------------
+# search-popup
+--------------------------------------------------------------*/
+.search-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
+	-webkit-transition: -webkit-transform .7s ease;
+	transition: -webkit-transform .7s ease;
+	transition: transform .7s ease;
+	transition: transform .7s ease, -webkit-transform .7s ease;
+}
+
+.search-popup.active {
+	-webkit-transform-origin: top center;
+	transform-origin: top center;
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);
+}
+
+.search-popup__overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	opacity: .7;
+	cursor: none;
+}
+
+.search-popup__inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.search-popup__form {
+	position: relative;
+	z-index: 9991;
+	width: 100%;
+	padding: 15px;
+	max-width: 600px;
+	position: relative;
+}
+
+.search-popup__form input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 60px;
+	color: #222222;
+	font-size: 18px;
+	background-color: white;
+	padding-left: 30px;
+}
+
+.search-popup__form input::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #222222;
+}
+
+.search-popup__form input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #222222;
+}
+
+.search-popup__form input:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #222222;
+}
+
+.search-popup__form input:-moz-placeholder {
+	/* Firefox 18- */
+	color: #222222;
+}
+
+.search-popup__form button[type=submit] {
+	border: none;
+	outline: none;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background-color: var(--thm-base);
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+.search-popup__form button[type=submit]:hover {
+	background-color: #222222;
+	color: var(--thm-base);
+}
+
+
