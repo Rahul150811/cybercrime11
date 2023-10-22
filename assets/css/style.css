@@ -8217,7 +8217,8 @@ a:focus {
 }
 
 /*----------------------------------------------*/
-
-.gcse-search{
-	max-width: 10px;
+.search-results {
+	margin-top: 120px;
+	margin-bottom: 100px;
 }
+

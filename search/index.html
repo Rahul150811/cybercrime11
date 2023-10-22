@@ -131,11 +131,11 @@
                                 <li>
                                     <a href="/contact/">Contact</a>
                                 </li>
-                                <!--- Search Bar
+
                                 <li class="header__search search-popup__toggler">
                                     <a href="#"><i class="icon-magnifier"></i></a>
                                 </li>
-                                -->
+                                
                             </ul>
                         </div>
                         <div class="right-side-box">
@@ -148,23 +148,20 @@
         </div>
 
         
-        <section id="inner-banner" style="background-color: #222222;">
-        </section>
+        <section id="inner-banner" style="background-color: #222222;"></section>
 
-        <div class="gcse-searchresults"></div>
-<!--
-        <div class="sidebar__single sidebar__search" style="margin-top: 50px; width: 80%; left: 50%; top: 220px; transform: translate(-50%, -50%); position: absolute">
-            <form action="#" class="sidebar__search-form">
-                <input type="search" placeholder="Search">
-                <button type="submit" class="fa fa-search"></button>
-            </form>
+        <script async src="https://cse.google.com/cse.js?cx=76954005ad55d49bd"></script>
+
+        <form action="#" class="sidebar__search-form" style="margin-top: 50px; width: 80%; left: 50%; top: 220px; transform: translate(-50%, -50%); position: absolute">
+            <input type="text" name="q" placeholder="Search">
+            <button type="submit" value="search" class="fa fa-search"></button>
+        </form>
+
+        <div class="container search-results">
+            <div class="gcse-searchresults-only"></div>
         </div>
-        
 
-        <div class="search-results block-title">
-            <h3>Search Results for: <span id="search-query"></span></h3>
-            <div id="results"></div>
-        </div>  -->
+
 
         <section class="site-footer__wrapper site-footer__style-two ">
             <div class="site-footer__upper">
@@ -285,71 +282,34 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            // Retrieve the search query from sessionStorage
-            var searchQuery = sessionStorage.getItem("searchQuery");
-        
-            // Display the search query on the results page
-            $("#search-query").text(searchQuery);
-        
-            // Define the content extraction function
-            function extractContent(html, startTag, endTag) {
-                var startIndex = html.indexOf(startTag);
-                var endIndex = html.indexOf(endTag, startIndex);
-                return html.slice(startIndex, endIndex + endTag.length);
-            }
-        
-            var pages = [
-                "index.html",
-                "/home/index.html",
-                "/credit/index.html",
-                "/resources/index.html",
-                "/resources/cybertools/index.html",
-                "/contact/index.html",
-                "/about/index.html",
-                "/spread/index.html",
-                "/events/index.html",
-                "/news/index.html",
-                "/learn/index.html",
-                "/socialmedia/index.html",
-            ];
-        
-            var searchResults = [];
-        
-            // Loop through each page and search its content
-            for (var i = 0; i < pages.length; i++) {
-                $.ajax({
-                    url: pages[i],
-                    dataType: "html",
-                    async: false,
-                    success: function(data) {
-                        if (data.toLowerCase().includes(searchQuery)) {
-                            var contentSnippet = extractContent(data, '<div class="content">', '</div>'); // Adjust these tags to match your content structure
-                            searchResults.push({ page: pages[i], content: contentSnippet });
-                        }
-                    }
-                });
-            }
-        
-            // Display the search results
-            var resultsContainer = $("#results");
-        
-            if (searchResults.length > 0) {
-                resultsContainer.append("<h2>Search Results:</h2>");
-                for (var j = 0; j < searchResults.length; j++) {
-                    resultsContainer.append('<h3>Page: ' + searchResults[j].page + '</h3>');
-                    resultsContainer.append(searchResults[j].content);
-                }
-            } else {
-                resultsContainer.append("<p>No results found for: " + searchQuery + "</p>");
-            }
-        });
-        </script>
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+        <div class="search-popup__inner">
+            <form action="/search/" class="search-popup__form">
+                <input type="text" name="q" placeholder="Type here to Search....">
+                <button type="submit" value="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
 
 
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+        <div class="search-popup__inner">
+            <form action="/search/" class="search-popup__form">
+                <input type="text" name="q" placeholder="Type here to Search....">
+                <button type="submit" value="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
     
     <div class="translator-container">
