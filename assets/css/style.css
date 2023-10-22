@@ -8218,7 +8218,10 @@ a:focus {
 
 /*----------------------------------------------*/
 .search-results {
-	margin-top: 120px;
+	margin-top: -20px;
 	margin-bottom: 100px;
+	position: relative;
+	width: 100%;
+	min-width: 300px;
 }
 
