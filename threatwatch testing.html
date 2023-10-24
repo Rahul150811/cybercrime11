@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Styles for the selection dropdown and container */
+.selection {
+    text-align: center;
+    margin: 20px;
+}
+
+#crimeType {
+    padding: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container img {
+    margin: 10px;
+    cursor: pointer;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/* Styles for the image pop-up modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.modal-content {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-button {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: #0056b3;
+}
+#prevButton {
+    left: 10px;
+}
+#nextButton {
+    right: 10px;
+}
+
+/* Add any additional CSS styles as needed */
+
+    </style>
+</head>
+<body>
+    <div class="selection">
+        <label>Select Cybercrime Type:</label>
+        <select id="crimeType">
+            <option value="phishing">Phishing</option>
+            <option value="fraud">Fraud</option>
+            <!-- Add options for other cybercrime types -->
+        </select>
+    </div>
+    <div class="image-container" id="imageContainer">
+        <!-- Images will be displayed here -->
+    </div>
+    <div class="modal" id="imageModal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <button id="prevButton" class="nav-button" onclick="changeImage(-1)">Previous</button>
+        <button id="nextButton" class="nav-button" onclick="changeImage(1)">Next</button>
+    </div>
+    <script>
+        // Add your JavaScript code here
+const imageData = [
+    { type: "phishing", mainImage: "assets/images/threatwatch/Phishing.png", subImage: "assets/images/threatwatch/Phishing3.png" },
+    { type: "fraud", mainImage: "assets/images/threatwatch/fraud_main.jpg", subImage: "assets/images/threatwatch/fraud_sub.jpg" },
+    // Add more image data for other cybercrime types
+];
+
+let currentIndex = 0;
+let currentImages = [];
+let currentImageIndex = 0; // 0 for main image, 1 for sub image
+
+document.getElementById('crimeType').addEventListener('change', filterImages);
+document.getElementById('closeModal').addEventListener('click', closeImageModal);
+document.getElementById('prevButton').addEventListener('click', () => changeImage(-1));
+document.getElementById('nextButton').addEventListener('click', () => changeImage(1));
+
+function filterImages() {
+    const selectedType = document.getElementById('crimeType').value;
+    currentImages = imageData.filter(image => image.type === selectedType);
+    currentIndex = 0;
+    displayImages(currentImages);
+}
+
+function displayImages(images) {
+    const container = document.getElementById('imageContainer');
+    container.innerHTML = '';
+
+    images.forEach((image, index) => {
+        const imageElement = document.createElement('img');
+        imageElement.src = image.mainImage;
+        imageElement.addEventListener('click', () => openImage(index));
+        container.appendChild(imageElement);
+    });
+}
+
+function openImage(index) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    currentIndex = index;
+    currentImageIndex = 0; // Show the main image first
+    modal.style.display = 'block';
+    modalImage.src = currentImages[index].mainImage;
+    updateNavButtons();
+}
+
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+}
+
+function changeImage(offset) {
+    currentImageIndex += offset;
+
+    if (currentImageIndex < 0) {
+        currentImageIndex = 1; // Loop back to the main image
+    } else if (currentImageIndex > 1) {
+        currentImageIndex = 0; // Loop back to the sub-image
+    }
+
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = currentImageIndex === 0 ? currentImages[currentIndex].mainImage : currentImages[currentIndex].subImage;
+    updateNavButtons();
+}
+
+function updateNavButtons() {
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    prevButton.disabled = currentImages.length <= 1;
+    nextButton.disabled = currentImages.length <= 1;
+}
+
+// Initialize the ThreatWatch tool
+filterImages();
+
+    </script>
+</body>
+</html>
