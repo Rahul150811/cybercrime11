@@ -2,32 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.protectnow.info</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/home/</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/about/</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/contact/</loc>
     </url>
     <url>
         <loc>https://www.protectnow.info/resource/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/resource/help_from_nonprofit.html</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/resource/cybertools/</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/learn/</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/credit/</loc>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.protectnow.info/socialmedia/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/tools/risk-calculator.html</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/To_protect_yourself/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/cyberbullying/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/social_media/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/hacked/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/identity_theft/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/phishing/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/ransomware/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/romance_scam/</loc>
+        <priority>0.1</priority>
+    </url>
+    <url>
+        <loc>https://www.protectnow.info/more_info/scam/</loc>
+        <priority>0.1</priority>
     </url>
     <url>
         <loc>https://docs.protectnow.info</loc>
+        <priority>0.1</priority>
     </url>
 </urlset>
+

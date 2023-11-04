@@ -6,5 +6,6 @@ Disallow: /team.html
 Disallow: /stillworking.html
 Disallow: /404.html
 Disallow: /unused pages/
+Disallow: /Thank You for Graphics Sources.html
 
 Sitemap: https://www.protectnow.info/sitemap.xml
