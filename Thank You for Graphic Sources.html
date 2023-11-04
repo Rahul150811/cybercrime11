@@ -48,7 +48,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
 
     <!-- main styles -->
-    <link rel="stylesheet" href="/assets/css/creditcard.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
 </head>
 
@@ -148,7 +148,15 @@
         </div>
 
 
-        <section class="inner-banner">
+        <section class="inner-banner" style="background-image: url(/assets/images/resources/faq1.jpg);">
+            <div class="container text-center">
+                <i class="inner-banner__icon politaro-icon-star-2"></i>
+                <h2 class="inner-banner__title">Thank You</h2>
+                <ul class="list-unstyled thm-breadcrumb">
+                    <li><a href="/home/">Home</a></li>
+                    <li>Appreciation</li>
+                </ul>
+            </div>
         </section>
 
         <div class="block-title text-center" style="margin-top: 10vh;">
@@ -156,9 +164,9 @@
             <h3><span style="color: red;">Graphic </span>Credits and Appreciation</h3>
         </div>
 
-        <section class="service-three">
+        <section class="service-three" style="padding-top: 1vh;">
             <div class="container">
-                <div class="service-three__content">
+                <div class="service-three__content" style="text-align: left;">
                     <h4>
                         We extend our heartfelt thanks to the following websites for providing a variety of vector images that have enriched the visual content on our website. 
                         While we're unable to attribute each image individually, we are immensely grateful for the creative contributions of these platforms:
@@ -192,9 +200,9 @@
                     <li>https://www.protectnow.info/assets/images/stop_ransomware.jpg - <a href="https://www.freepik.com/free-vector/red-prohibited-sign-no-icon-warning-stop-symbol-safety-danger-isolated-vector-illustration_18969015.htm#query=stop&position=1&from_view=search&track=sph">Image by mamewmy</a> on Freepik </li>
                     <li>https://www.protectnow.info/assets/images/resources/identity_theft1.png - <a href="https://www.freepik.com/free-photo/objects-businessmen-placed-brown-wood-plates_5490757.htm#query=wallet%20theif&position=1&from_view=search&track=ais">Image by jcomp</a> on Freepik</li>
                     <li>https://www.protectnow.info/assets/images/resources/dating_scam.jpg Image by <a href="https://www.freepik.com/free-photo/top-view-hands-with-broken-heart_8145578.htm#query=breakup&position=27&from_view=search&track=sph">Freepik</a></li>
-                    <li>https://www.protectnow.info/assets/images/</li>
-                    <li>https://www.protectnow.info/assets/images/</li>
-                    <li>https://www.protectnow.info/assets/images/</li>
+                    <li>https://www.protectnow.info/assets/images/resources/cyberbank.jpg - Image by <a href="https://www.freepik.com/free-photo/cardano-blockchain-platform_42620755.htm#page=3&query=cyber%20financial&position=26&from_view=search&track=ais">Freepik</a></li>
+                    <li>https://www.protectnow.info/assets/images/resources/digital_finance.jpg - <a href="https://www.freepik.com/free-photo/businesswoman-networking-using-digital-devices_15440982.htm#page=2&query=cyber%20financial&position=33&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik</li>
+                    <li>https://www.protectnow.info/assets/images/resources/social_media.jpg - <a href="https://www.freepik.com/free-photo/user-people-network-circuit-board-link-connection-technology_1198382.htm#query=cyber%20communication&position=46&from_view=search&track=ais">Image by natanaelginting</a> on Freepik</li>
                     <li>https://www.protectnow.info/assets/images/</li>
                     <li>https://www.protectnow.info/assets/images/</li>
                     <li>https://www.protectnow.info/assets/images/</li>
@@ -209,6 +217,50 @@
         </section>
     
     -->
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+        <div class="search-popup__inner">
+            <form action="/search/" class="search-popup__form">
+                <input type="text" name="q" placeholder="Type here to Search....">
+                <button type="submit" value="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    
+    <div class="translator-container">
+        <div class="language-text">Translate this Page</div>
+        <div id="google_translate_element"></div>
+    </div>
+    
+    <button id="toggleTranslator" class="translator-button">
+        <i class="fas fa-language"></i> Translate
+    </button>
+    
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    
+        const translatorContainer = document.querySelector('.translator-container');
+        const toggleTranslatorButton = document.getElementById('toggleTranslator');
+    
+        toggleTranslatorButton.addEventListener('click', function() {
+            if (translatorContainer.style.display === 'none' || translatorContainer.style.display === '') {
+                translatorContainer.style.display = 'block';
+            } else {
+                translatorContainer.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <section class="site-footer__wrapper site-footer__style-two ">
             <footer class="site-footer">
                 <div class="container">
