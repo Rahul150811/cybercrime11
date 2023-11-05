@@ -2594,7 +2594,8 @@ a:focus {
 --------------------------------------------------------------*/
 .cta-one {
 	margin-top: 80px;
-	margin-bottom: -80px;
+	margin-bottom: 30px;
+	/*margin-bottom: -80px;   Once Google Analytics done remove above one and use this one*/
 	position: relative;
 	z-index: 11;
 }
