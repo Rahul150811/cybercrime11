@@ -178,7 +178,7 @@
 
         <section class="about-me-header" style="background-image: url(/assets/images/backgrounds/41.png);">
             <div class="container">
-                <div class="row no-gutters">
+                <div class="row">
                     <div class="col-lg-5">
                         <div class="about-me-header__content text-center">
                             <div class="about-me-header__icon">
@@ -190,72 +190,97 @@
                 </div>
             </div>
         </section>
-
-        <div class="searchbar-container">
-            <form action="#" class="searchbar-form">
+ 
+        <div class="filter-container">
+            <div class="searchbar-form">
                 <select id="category">
                     <option value="all">All Categories</option>
-                    <option value="Scams">Scams/Fraud</option>
-                    <option value="Phishing">Phishing</option>
-                    <option value="Ransomware">Ransomware</option>
-                    <option value="Identity Theft">Identity Theft</option>
+                    <option value="category1">Phishing</option>
+                    <option value="category2">Scam/Fraud</option>
+                    <option value="category3">Ransomware</option>
+                    <option value="category4">Identity Theft</option>
                 </select>
-    
+                
                 <select id="subcategory">
                     <option value="all">All Subcategories</option>
                 </select>
-                
-                <input type="search" id="search" placeholder="Search for cyber threats">
+            
+                <input type="text" id="search" placeholder="Search by Categories">
                 <button type="submit"><span style="margin-right: 8px;">Search</span><i class="fa fa-search"></i></button>
-            </form>
+            </div>
         </div>
 
         <p id="resultMessage" class="result-message"></p>
-
-        <div id="content" class="image-gallery">
-        </div>
         
-        <div class="image-popup" id="imagePopup">
-            <div class="popup-content">
-                <img src="" alt="Popup Image" class="popup-image">
-                <span class="close-button" id="closePopup">&times;</span>
+
+        <div class="container image-gallery">
+            <div class="row">
+                <div class="image-container" id="image1" data-hidden-image="/assets/images/backgrounds/10.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/Phishing.png">
+                </div>
+                <div class="image-container" id="image2" data-hidden-image="/assets/images/backgrounds/20.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/Phishing3.png">
+                </div>
+                <div class="image-container" id="image3" data-hidden-image="/assets/images/backgrounds/30.png" data-category="Phishing" data-subcategory="subcategory2">
+                    <img src="/assets/images/threatwatch/Phishing 4.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container" id="image4" data-hidden-image="/assets/images/backgrounds/10.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/Phishing 5.png">
+                </div>
+                <div class="image-container" id="image5" data-hidden-image="/assets/images/backgrounds/20.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/Security Alert Phish1.png">
+                </div>
+                <div class="image-container" id="image6" data-hidden-image="/assets/images/backgrounds/30.png" data-category="Phishing" data-subcategory="subcategory2">
+                    <img src="/assets/images/threatwatch/Security Alert Phish2.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container" id="image7" data-hidden-image="/assets/images/backgrounds/10.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/sensational phishing.png">
+                </div>
+                <div class="image-container" id="image8" data-hidden-image="/assets/images/backgrounds/20.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/facebook phishing.png">
+                </div>
+                <div class="image-container" id="image9" data-hidden-image="/assets/images/backgrounds/30.png" data-category="Phishing" data-subcategory="subcategory2">
+                    <img src="/assets/images/threatwatch/T-Mobile Phish Email.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container" id="image10" data-hidden-image="/assets/images/backgrounds/10.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/UPS scam.png">
+                </div>
+                <div class="image-container" id="image11" data-hidden-image="/assets/images/backgrounds/20.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/ups_scam2.png">
+                </div>
+                <div class="image-container" id="image12" data-hidden-image="/assets/images/backgrounds/30.png" data-category="Phishing" data-subcategory="subcategory2">
+                    <img src="/assets/images/threatwatch/package_delivery2.png">
+                </div>
+            </div>
+            <div class="row">
+                <div class="image-container" id="image13" data-hidden-image="/assets/images/backgrounds/10.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="/assets/images/threatwatch/UPS_Phish2.png">
+                </div>
+                <div class="image-container" id="image14" data-hidden-image="/assets/images/backgrounds/20.png" data-category="Phishing" data-subcategory="subcategory1">
+                    <img src="">
+                </div>
+                <div class="image-container" id="image15" data-hidden-image="/assets/images/backgrounds/30.png" data-category="Phishing" data-subcategory="subcategory2">
+                    <img src="">
+                </div>
             </div>
         </div>
+
+        <div id="lightbox">
+            <span id="close-button">Close &times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <button id="prev-button">&lt; Previous</button>
+            <button id="next-button">Next &gt;</button>
+        </div>
+        
         
 
         <section class="site-footer__wrapper site-footer__style-two ">
-            <div class="site-footer__upper">
-                <div class="container">
-                    <div class="site-footer__logo">
-                        <img src="/assets/images/resources/1.png" height="160px" width="200px" class="main-logo" alt="Awesome Image" />
-                    </div>
-
-                    <div class="site-footer__counter">
-                        <div class="site-footer__counter-single">
-                            <h3><span class="counter">0</span></h3>
-                            <p>Total Complaints</p>
-                        </div>
-                        <div class="site-footer__counter-single">
-                            <h3 class="counter">0</h3>
-                            <p>Cases Resolved</p>
-                        </div>
-                        <!--
-                        <div class="site-footer__counter-single">
-                            <h3>$<span class="counter">0</span></h3>
-                            <p>Money Retrieved</p>
-                        </div> -->
-                        <div class="site-footer__counter-single">
-                            <h3 class="counter">1</h3>
-                            <p>Active Volunteers</p>
-                        </div>
-                        <div class="site-footer__counter-single">
-                            <h3 class="visitor"></h3>
-                            <p>Total Visits</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
             <footer class="site-footer">
                 <div class="container">
                     <div class="row">
@@ -263,14 +288,6 @@
                             <div class="footer-widget">
                                 <h3 class="footer-widget__title">About</h3>
                                 <p><b>PROTECT</b>, a service created by a cybersecurity student to help protect individuals and businesses from cyber threats.</p>
-                                <!--
-                            <div class="footer-widget__social">
-                                <a href="#!"><i class="fab fa- linkedin"></i></a>
-                                <a href="#!"><i class="fa fa-envelope"></i></a>
-                                <a href="#!"><i class="fab fa-github"></i></a>
-                                <a href="#!"><i class="fa fa-globe"></i></a>
-                            </div>
-                            -->
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6">
@@ -297,10 +314,6 @@
                             <div class="footer-widget footer-widget__contact-widget">
                                 <h3 class="footer-widget__title">Get In Touch</h3>
                                 <ul class="footer-widget__contact-info list-unstyled">
-                                    <!--<li>
-                                        <i class="fa fa-phone-alt"></i>
-                                        <strong><a href="tel:+1-345-206-7849">+ 1 (123) 456 7890</a></strong>
-                                    </li>-->
                                     <li>
                                         <i class="fa fa-envelope-open"></i>
                                         <a href="mailto:protect4help@gmail.com">protect4help@gmail.com</a><br><br>
@@ -409,7 +422,7 @@
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/automate_topbar.js"></script>
     <script src="/assets/js/calculation.js"></script>
-    <script src="/assets/js/cybercrimetool.js"></script>
+    <script src="/assets/js/threatwatchtool.js"></script>
     <!----------------- visitor counter ------------------>
     <script>
         function setCookie(name, value, days) {

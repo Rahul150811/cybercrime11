@@ -7997,13 +7997,40 @@ a:focus {
     justify-content: center;
     align-items: center;
 }
-/*---------- Cybercrime Tool -----------*/
-/* Default styles for larger screens */
-.searchbar-container {
+/*---------- Cybercrime Tool --------
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+---------------------*/
+#resultMessage{
+	color: black;
+	margin-left: 120px;
+}
+@media screen and (max-width: 767px) {
+    #resultMessage{
+		width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+		margin-left: 10px;
+	}
+}
+
+.image-gallery{
+	margin-bottom: 100px;
+}
+
+.filter-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .searchbar-form {
@@ -8047,12 +8074,11 @@ a:focus {
 	text-align: center;
 }
 
-/* Styles for smaller screens (mobile) */
 @media screen and (max-width: 767px) {
     .searchbar-form {
         width: 100%;
         max-width: 400px;
-        margin-top: 10px; /* Adjust margin for better spacing */
+        margin-top: 10px;
     }
 
     .searchbar-form select,
@@ -8067,24 +8093,17 @@ a:focus {
         width: 100%;
     }
 
-    .searchbar-container {
+    .filter-container {
         flex-direction: column;
         text-align: center;
     }
 }
 
 
-#content {
-	margin-top: 50px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	margin-bottom: 100px;
-}
-
 .image-container {
-	flex: 0 0 calc(33.33% - 20px); /* Three images per row with spacing */
+	flex: 0 0 calc(33.33% - 20px);
 	margin: 10px;
+	cursor: pointer;
 }
 
 .image-container img {
@@ -8093,65 +8112,65 @@ a:focus {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
-/* Styles for the pop-out image gallery */
-.image-popup {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.8);
-	z-index: 9999;
-	justify-content: center;
-	align-items: center;
-}
-
-.popup-content {
-	background: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	position: relative;
-}
-
-.popup-image {
-	max-width: 100%;
-	/*
-	max-height: 80vh;
-	*/
-	height: 80vh;
-}
-
-@media screen and (max-width: 767px) {
-    .popup-image {
-		height: 50vh;
-	}
-}
 
 
-.close-button {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
-	font-size: 30px;
-	font-weight: bold;
+@media (max-width: 768px) {
+    .image-container {
+        width: calc(50% - 10px);
+    }
 }
 
-#resultMessage{
-	margin-top:20px;
-	color: black;
-	margin-left: 120px;
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 999;
 }
-@media screen and (max-width: 767px) {
-    #resultMessage{
-		width: 100%;
-        max-width: 400px;
-        margin-top: 10px;
-		margin-left: 10px;
-	}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
 }
-/*------------------------------------------*/
+
+#close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+	background-color: white;
+    color: var(--thm-black);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#prev-button, #next-button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#prev-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#next-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 /*----------------Google Translator-----------*/
 .translator-container {
