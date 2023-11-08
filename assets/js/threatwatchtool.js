@@ -31,6 +31,12 @@ function openLightbox(index) {
     }
     lightbox.style.display = 'block';
     currentIndex = index;
+    // Add a click event listener to the lightbox for closing
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
 }
 
 // Function to close the lightbox

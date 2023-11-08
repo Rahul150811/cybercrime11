@@ -8139,15 +8139,20 @@ a:focus {
     display: block;
 }
 
+
 #close-button {
     position: absolute;
     top: 15px;
     right: 15px;
-	background-color: white;
-    color: var(--thm-black);
+    color: whitesmoke;
     cursor: pointer;
     z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+	padding: 0 5px;
+    max-width: 70px;
 }
+
 
 #prev-button, #next-button {
     background: #333;
