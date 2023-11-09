@@ -8026,7 +8026,7 @@ a:focus {
 }
 
 .filter-form {
-    width: 80%;
+	width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -8174,7 +8174,7 @@ a:focus {
     border: none;
     cursor: pointer;
     position: absolute;
-    bottom: 95px;
+    bottom: 100px;
     z-index: 1000;
 }
 
