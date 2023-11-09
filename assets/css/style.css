@@ -7997,6 +7997,7 @@ a:focus {
     justify-content: center;
     align-items: center;
 }
+
 /*---------- Cybercrime Tool -----------*/
 #resultMessage{
 	color: black;
@@ -8012,7 +8013,7 @@ a:focus {
 	}
 }
 
-.image-gallery{
+.image-database{
 	margin-bottom: 100px;
 }
 
@@ -8089,23 +8090,35 @@ a:focus {
         text-align: center;
     }
 }
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .image-container {
-	flex: 0 0 calc(33.33% - 20px);
-	margin: 10px;
-	cursor: pointer;
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    cursor: pointer;
 }
 
 .image-container img {
-	width: 100%;
-	height: auto;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     .image-container {
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .image-container {
+        width: calc(100% - 20px);
     }
 }
 
@@ -8180,11 +8193,8 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
-/*------
-Needs to fix Help from Organization page. Check the Backup from Office PC
---------*/
 
 .searchbar-form {
     width: 80%;
@@ -8207,15 +8217,15 @@ Needs to fix Help from Organization page. Check the Backup from Office PC
     border: none;
     border-radius: 3px;
     outline: none;
+    flex-grow: 1;
 }
 
 .searchbar-form select {
-    flex-grow: 2;
     max-width: 100%;
 }
 
 .searchbar-form input {
-    flex-grow: 5;
+    flex-grow: 2;
     max-width: 100%;
 }
 
@@ -8224,7 +8234,7 @@ Needs to fix Help from Organization page. Check the Backup from Office PC
     cursor: pointer;
     background-color: #007bff;
     color: #fff;
-	text-align: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -8237,12 +8247,6 @@ Needs to fix Help from Organization page. Check the Backup from Office PC
     .searchbar-form select,
     .searchbar-form input,
     .searchbar-form button {
-        margin: 5px;
-        padding: 10px;
-        font-size: 16px;
-        border: none;
-        border-radius: 3px;
-        outline: none;
         width: 100%;
     }
 
@@ -8251,6 +8255,28 @@ Needs to fix Help from Organization page. Check the Backup from Office PC
         text-align: center;
     }
 }
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-card {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .image-card {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .image-card {
+        flex-grow: 0.5;
+    }
+}
+
 
 /*----------------Google Translator-----------*/
 .translator-container {
