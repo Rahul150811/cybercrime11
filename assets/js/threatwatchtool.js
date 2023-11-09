@@ -12,10 +12,10 @@ const resultMessage = document.getElementById('resultMessage');
 
 // Define category-subcategory mappings
 const categorySubcategoryMap = {
-    category1: ["Password Reset", "Virus Alert"],
-    category2: ["Tech Support Scam", "Impersonation Scam", "Dating Scams"],
-    category3: ["Subcategory 5", "Subcategory 6"],
-    category4: ["Subcategory 7", "Subcategory 8"],
+    "Phishing": ["Password Reset", "Virus Alert"],
+    "Scam/Fraud": ["Tech Support Scam", "Impersonation Scam", "Dating Scams"],
+    "Ransomware": ["", ""],
+    "Identity Theft": ["", ""],
 };
 
 let currentIndex = 0;
@@ -54,16 +54,6 @@ imageContainers.forEach((container, index) => {
 
 closeButton.addEventListener('click', closeLightbox);
 
-prevButton.addEventListener('click', () => {
-    if (showHidden) {
-        showHidden = false;
-        openLightbox(currentIndex);
-    } else {
-        showHidden = true;
-        hiddenIndex = currentIndex;
-        openLightbox(hiddenIndex);
-    }
-});
 
 nextButton.addEventListener('click', () => {
     if (showHidden) {

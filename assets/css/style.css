@@ -8130,6 +8130,8 @@ a:focus {
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
     z-index: 999;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #lightbox-image {
@@ -8137,43 +8139,51 @@ a:focus {
     max-height: 90%;
     margin: auto;
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding-top: 10px;
+	border-radius: 5px;
+	border: #edf1f5 solid 10px;
 }
 
 
 #close-button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
     color: whitesmoke;
     cursor: pointer;
-    z-index: 1000;
-	background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-	padding: 0 5px;
+    background-color: #cd2828;
+    padding: 10px 20px;
     max-width: 70px;
+    margin: 30px auto 15px;
+    z-index: 1000;
 }
 
+@media screen and (max-width: 768px) {
+    #close-button {
+        margin: 120px auto;
+    }
+}
 
-#prev-button, #next-button {
+#next-button {
     background: #333;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-}
-
-#prev-button {
     position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 95px;
+    z-index: 1000;
 }
 
 #next-button {
-    position: absolute;
     right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+}
+
+#next-button:hover {
+    background: #cd2828;
+    color: white;
 }
 
 

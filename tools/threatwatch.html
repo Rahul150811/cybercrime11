@@ -195,10 +195,10 @@
             <div class="searchbar-form">
                 <select id="category">
                     <option value="all">All Categories</option>
-                    <option value="category1">Phishing</option>
-                    <option value="category2">Scam/Fraud</option>
-                    <option value="category3">Ransomware</option>
-                    <option value="category4">Identity Theft</option>
+                    <option value="Phishing">Phishing</option>
+                    <option value="Scam/Fraud">Scam/Fraud</option>
+                    <option value="Ransomware">Ransomware</option>
+                    <option value="Identity Theft">Identity Theft</option>
                 </select>
                 
                 <select id="subcategory">
@@ -272,12 +272,10 @@
         </div>
 
         <div id="lightbox">
-            <span id="close-button">Close &times;</span>
+            <span id="close-button">Close <b style="font-size: 20px">&times;</b></span>
             <img id="lightbox-image" src="" alt="">
-            <button id="prev-button">&lt; Previous</button>
-            <button id="next-button">Next &gt;</button>
+            <button id="next-button" class="lightbox-button">Click here to see <br>Red flags 👉</button>
         </div>
-        
         
 
         <section class="site-footer__wrapper site-footer__style-two ">
@@ -367,36 +365,6 @@
     </div>
     
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-    
-    <div class="translator-container">
-        <div class="language-text">Translate this Page</div>
-        <div id="google_translate_element"></div>
-    </div>
-    
-    <button id="toggleTranslator" class="translator-button">
-        <i class="fas fa-language"></i> Translate
-    </button>
-    
-
-    <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en'
-            }, 'google_translate_element');
-        }
-    
-        const translatorContainer = document.querySelector('.translator-container');
-        const toggleTranslatorButton = document.getElementById('toggleTranslator');
-    
-        toggleTranslatorButton.addEventListener('click', function() {
-            if (translatorContainer.style.display === 'none' || translatorContainer.style.display === '') {
-                translatorContainer.style.display = 'block';
-            } else {
-                translatorContainer.style.display = 'none';
-            }
-        });
-    </script>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     
 
     <script src="/assets/js/jquery.min.js"></script>
