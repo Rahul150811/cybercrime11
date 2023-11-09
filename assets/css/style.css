@@ -7997,20 +7997,11 @@ a:focus {
     justify-content: center;
     align-items: center;
 }
-/*---------- Cybercrime Tool --------
-.close-button {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
-	font-size: 30px;
-	font-weight: bold;
-}
-
----------------------*/
+/*---------- Cybercrime Tool -----------*/
 #resultMessage{
 	color: black;
 	margin-left: 120px;
+	margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
     #resultMessage{
@@ -8030,8 +8021,170 @@ a:focus {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
+
+.filter-form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-form select,
+.filter-form input,
+.filter-form button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.filter-form select {
+    flex-grow: 2;
+    max-width: 100%;
+}
+
+.filter-form input {
+    flex-grow: 5;
+    max-width: 100%;
+}
+
+.filter-form button {
+    max-width: 100%;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .filter-form {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+
+    .filter-form select,
+    .filter-form input,
+    .filter-form button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        width: 100%;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.image-container {
+	flex: 0 0 calc(33.33% - 20px);
+	margin: 10px;
+	cursor: pointer;
+}
+
+.image-container img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .image-container {
+        width: calc(50% - 10px);
+    }
+}
+
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding-top: 10px;
+	border-radius: 5px;
+	border: #edf1f5 solid 10px;
+}
+
+#close-button {
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: #cd2828;
+    padding: 10px 20px;
+    max-width: 70px;
+    margin: 30px auto 15px;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    #close-button {
+        margin: 120px auto;
+    }
+}
+
+#next-button {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 95px;
+    z-index: 1000;
+}
+
+#next-button {
+    right: 10px;
+}
+
+#next-button:hover {
+    background: #cd2828;
+    color: white;
+}
+
+
+/*---------------Organization Page---------------------*/
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-bottom: 20px;
+}
+/*------
+Needs to fix Help from Organization page. Check the Backup from Office PC
+--------*/
 
 .searchbar-form {
     width: 80%;
@@ -8093,99 +8246,11 @@ a:focus {
         width: 100%;
     }
 
-    .filter-container {
+    .searchbar-container {
         flex-direction: column;
         text-align: center;
     }
 }
-
-
-.image-container {
-	flex: 0 0 calc(33.33% - 20px);
-	margin: 10px;
-	cursor: pointer;
-}
-
-.image-container img {
-	width: 100%;
-	height: auto;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-}
-
-
-@media (max-width: 768px) {
-    .image-container {
-        width: calc(50% - 10px);
-    }
-}
-
-#lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    z-index: 999;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#lightbox-image {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    padding-top: 10px;
-	border-radius: 5px;
-	border: #edf1f5 solid 10px;
-}
-
-
-#close-button {
-    color: whitesmoke;
-    cursor: pointer;
-    background-color: #cd2828;
-    padding: 10px 20px;
-    max-width: 70px;
-    margin: 30px auto 15px;
-    z-index: 1000;
-}
-
-@media screen and (max-width: 768px) {
-    #close-button {
-        margin: 120px auto;
-    }
-}
-
-#next-button {
-    background: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    bottom: 95px;
-    z-index: 1000;
-}
-
-#next-button {
-    right: 10px;
-}
-
-#next-button:hover {
-    background: #cd2828;
-    color: white;
-}
-
 
 /*----------------Google Translator-----------*/
 .translator-container {
