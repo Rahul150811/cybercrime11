@@ -104,7 +104,7 @@ function filterImages() {
     // Update the result message
     const categoryText = categoryDropdown.options[categoryDropdown.selectedIndex].text;
     const subcategoryText = subcategoryDropdown.options[subcategoryDropdown.selectedIndex].text;
-    resultMessage.textContent = `Showing results for ${categoryText} - ${subcategoryText}`;
+    resultMessage.textContent = `Showing results for "${categoryText}"- "${subcategoryText}"`;
 }
 
 
@@ -120,5 +120,5 @@ searchInput.addEventListener('input', () => {
     // Update the result message
     const categoryText = categoryDropdown.options[categoryDropdown.selectedIndex].text;
     const subcategoryText = subcategoryDropdown.options[subcategoryDropdown.selectedIndex].text;
-    resultMessage.textContent = `Showing results for ${categoryText} - ${subcategoryText}`
+    resultMessage.textContent = `Showing results for "${categoryText}" - "${subcategoryText}"`
 });
