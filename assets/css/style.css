@@ -113,6 +113,7 @@ a:focus {
 	color: #222222;
 	font-weight: bold;
 }
+
 .block-title h4 {
 	margin: 0;
 	font-size: 35px;
@@ -8174,7 +8175,7 @@ a:focus {
     border: none;
     cursor: pointer;
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     z-index: 1000;
 }
 
