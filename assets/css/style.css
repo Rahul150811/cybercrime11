@@ -114,13 +114,6 @@ a:focus {
 	font-weight: bold;
 }
 
-.block-title h4 {
-	margin: 0;
-	font-size: 35px;
-	color: #222222;
-	font-weight: bold;
-}
-
 .thm-btn {
 	border: none;
 	outline: none !important;
@@ -1627,6 +1620,7 @@ a:focus {
 }
 
 .brand-one .owl-item img {
+	opacity: .35;
 	-webkit-transition: all .4s ease;
 	transition: all .4s ease;
 }
@@ -2595,8 +2589,8 @@ a:focus {
 --------------------------------------------------------------*/
 .cta-one {
 	margin-top: 80px;
+	/*- margin-bottom: -80px*/
 	margin-bottom: 30px;
-	/*margin-bottom: -80px;   Once Google Analytics done remove above one and use this one*/
 	position: relative;
 	z-index: 11;
 }
@@ -7679,9 +7673,6 @@ a:focus {
     margin-top: 10px;
 }
 
-
-
-
 .overlay {
     position: absolute;
     top: 0px;
@@ -7713,8 +7704,8 @@ a:focus {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adjust alignment between cards */
-    margin: 0 -15px; /* Add negative margin to compensate for the card margins */
+    justify-content: space-between;
+    margin: 0 -15px;
 }
 
 .card {
@@ -7722,7 +7713,7 @@ a:focus {
     box-sizing: border-box;
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 0 15px 30px; /* Adjust margin to provide spacing between cards */
+    margin: 0 15px 30px; 
 }
 
 .card-title {
@@ -7740,7 +7731,7 @@ a:focus {
 
 .card img {
     max-width: 100%;
-    height: auto; /* Adjust image height for better responsiveness */
+    height: auto; 
 }
 
 @media (max-width: 1024px) {
@@ -7754,7 +7745,104 @@ a:focus {
         flex-basis: 100%; /* Cards will take up full width on smaller screens */
     }
 }
+/*---------- Organization Page -----------*/
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
 
+.searchbar-form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar-form select,
+.searchbar-form input,
+.searchbar-form button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.searchbar-form select {
+    flex-grow: 2;
+    max-width: 100%;
+}
+
+.searchbar-form input {
+    flex-grow: 5;
+    max-width: 100%;
+}
+
+.searchbar-form button {
+    max-width: 100%;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+	text-align: center;
+}
+
+/* Styles for smaller screens (mobile) */
+@media screen and (max-width: 767px) {
+    .searchbar-form {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+
+    .searchbar-form select,
+    .searchbar-form input,
+    .searchbar-form button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 3px;
+        outline: none;
+        width: 100%;
+    }
+
+    .searchbar-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+#content {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 100px;
+}
+
+#resultMessage{
+	color: black;
+	margin-left: 120px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+    #resultMessage{
+		width: 100%;
+        max-width: 400px;
+        margin-top: 10px;
+		margin-left: 10px;
+	}
+}
+/*------------------------------------------*/
 
 /*--------Redirection Design ------------*/
 .popup-container {
@@ -7999,35 +8087,29 @@ a:focus {
     align-items: center;
 }
 
-/*---------- Cybercrime Tool -----------*/
-#resultMessage{
-	color: black;
-	margin-left: 120px;
-	margin-bottom: 50px;
-}
-@media screen and (max-width: 767px) {
-    #resultMessage{
-		width: 100%;
-        max-width: 400px;
-        margin-top: 10px;
-		margin-left: 10px;
-	}
+/*---- ThreatWatch Tool ------*/
+
+.image-container {
+	flex: 0 0 calc(33.33% - 20px);
+	margin: 10px;
 }
 
-.image-database{
-	margin-bottom: 100px;
+.image-container img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 
-.filter-container {
+.threatwatch-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-	margin-bottom: 20px;
 }
 
-.filter-form {
-	width: 80%;
+.threatwatch-form {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -8038,9 +8120,9 @@ a:focus {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.filter-form select,
-.filter-form input,
-.filter-form button {
+.threatwatch-form select,
+.threatwatch-form input,
+.threatwatch-form button {
     margin: 5px;
     padding: 10px;
     font-size: 16px;
@@ -8049,17 +8131,17 @@ a:focus {
     outline: none;
 }
 
-.filter-form select {
+.threatwatch-form select {
     flex-grow: 2;
     max-width: 100%;
 }
 
-.filter-form input {
+.threatwatch-form input {
     flex-grow: 5;
     max-width: 100%;
 }
 
-.filter-form button {
+.threatwatch-form button {
     max-width: 100%;
     cursor: pointer;
     background-color: #007bff;
@@ -8068,15 +8150,15 @@ a:focus {
 }
 
 @media screen and (max-width: 767px) {
-    .filter-form {
+    .threatwatch-form {
         width: 100%;
         max-width: 400px;
         margin-top: 10px;
     }
 
-    .filter-form select,
-    .filter-form input,
-    .filter-form button {
+    .threatwatch-form select,
+    .threatwatch-form input,
+    .threatwatch-form button {
         margin: 5px;
         padding: 10px;
         font-size: 16px;
@@ -8086,43 +8168,11 @@ a:focus {
         width: 100%;
     }
 
-    .filter-container {
+    .threatwatch-container {
         flex-direction: column;
         text-align: center;
     }
 }
-
-.image-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.image-container {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
-    cursor: pointer;
-}
-
-.image-container img {
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-@media (max-width: 1199px) {
-    .image-container {
-        width: calc(50% - 20px);
-    }
-}
-
-@media (max-width: 767px) {
-    .image-container {
-        width: calc(100% - 20px);
-    }
-}
-
 #lightbox {
     display: none;
     position: fixed;
@@ -8189,95 +8239,20 @@ a:focus {
 }
 
 
-/*---------------Organization Page---------------------*/
-.searchbar-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+#resultMessage{
+	color: black;
+	margin-left: 120px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
-
-.searchbar-form {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.searchbar-form select,
-.searchbar-form input,
-.searchbar-form button {
-    margin: 5px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 3px;
-    outline: none;
-    flex-grow: 1;
-}
-
-.searchbar-form select {
-    max-width: 100%;
-}
-
-.searchbar-form input {
-    flex-grow: 2;
-    max-width: 100%;
-}
-
-.searchbar-form button {
-    max-width: 100%;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-}
-
 @media screen and (max-width: 767px) {
-    .searchbar-form {
-        width: 100%;
+    #resultMessage{
+		width: 100%;
         max-width: 400px;
         margin-top: 10px;
-    }
-
-    .searchbar-form select,
-    .searchbar-form input,
-    .searchbar-form button {
-        width: 100%;
-    }
-
-    .searchbar-container {
-        flex-direction: column;
-        text-align: center;
-    }
+		margin-left: 10px;
+	}
 }
-
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.image-card {
-    flex-grow: 1;
-}
-
-@media screen and (max-width: 767px) {
-    .image-card {
-        flex-grow: 1;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .image-card {
-        flex-grow: 0.5;
-    }
-}
-
 
 /*----------------Google Translator-----------*/
 .translator-container {
@@ -8367,294 +8342,4 @@ a:focus {
 	position: relative;
 	width: 100%;
 	min-width: 300px;
-}
-
-  /*-------------------------------*/
-  .accordion {
-	width: 60vw;
-	margin: 0 auto;
-	border-radius: 5px;
-	margin-bottom: 200px;
-	margin-top: 40px;
-  }
-  
-  .accordion-header,
-  .accordion-body {
-	background: white;
-  }
-
-  .accordion-body__contents {
-	width: auto;
-    font-size: 1.6vw;
-    line-height: 1.5;
-    margin-top: 15px;
-}
-
-  .accordion-header {
-	padding: 1.5em 1.5em;
-	background: white;
-	color: black;
-	transition: all .3s;
-	text-transform: uppercase;
-  }
-  .accordion-header i {
-    margin-top: -40px;
-    margin-right: 20px;
-	font-size: 2vw;
-}
-.accordion-header .image-icon-container h4{
-	font-size: 2vw;
-}
-
-
-.image-icon-container .image {
-    max-width: 100%;
-    height: auto;
-}
-.image-icon-container {
-	display: flex;
-}
-.image-icon-container img {
-    max-height: 50px;
-    width: auto;
-    max-width: 100%;
-}
-
-.image-icon-container h4 {
-    margin-top: 10px;
-    margin-left: 20px;
-    font-size: 2vw;
-}
-
-@media (max-width: 768px) {
-    .image-icon-container h4 {
-        margin-left: 5vw;
-        font-size: 3vw;
-    }
-}
-
-@media (max-width: 576px) {
-    .image-icon-container h4 {
-        margin-left: 3vw;
-        font-size: 4vw;
-    }
-}
-
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .accordion-header i {
-        margin-top: -3vw;
-        margin-right: 3vw;
-    }
-}
-@media (min-width: 1200px) {
-    .accordion-header .image-icon-container h4 {
-        font-size: 1.5vw;
-    }
-	.accordion-header i {
-        font-size: 18px;
-    }
-	.accordion-body__contents{
-		font-size: 18px; 
-	}
-}
-
-@media (max-width: 576px) {
-	
-	.accordion-header .image-icon-container h4, .accordion-header i {
-        font-size: 18px;
-	}
-	.accordion-body__contents {
-		font-size: 16px;
-		display: flex;
-        flex-direction: column;
-	}
-    .accordion-header i {
-        margin-top: -4vw; 
-        margin-right: 4vw;
-    }
-}
-@media (max-width: 576px) {
-    .contact-info {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-info strong,
-    .contact-info a {
-        display: block;
-    }
-}
-  .accordion__item {
-	  border-bottom: 1px solid #3a4ba4;
-  }
-  
-  .accordion__item .accordion__item {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  }
-  
-  .accordion-header:hover {
-	background: rgb(226, 226, 226);
-	position: relative;
-	z-index: 5;
-  }
-  
-  .accordion-body {
-	background: #fcfcfc;
-	color: #353535;
-	display: none;
-  }
-  
-  .accordion-body__contents {
-	padding: 1.5em 0;
-	font-size: 1.2em;
-  }
-  
-  .accordion__item.active:last-child .accordion-header {
-	border-radius: none;
-  }
-  
-  .accordion:first-child > .accordion__item > .accordion-header {
-	border-bottom: 1px solid transparent;
-  }
-  
-  .accordion__item.active > .accordion-header:after {
-	transform: rotate(-180deg);
-  }
-  
-  .accordion__item.active .accordion-header {
-	background: rgb(226, 226, 226);
-  }
-  
-  .accordion__item .accordion__item .accordion-header {
-	background: #f1f1f1;
-	color: #353535;
-  }
-  
-  @media screen and (max-width: 1000px) {
-	.accordion {
-	  width: 100%;
-	}
-  }
-
-  #searchResults {
-    background-color: white;
-    border-radius: 5px;
-    width: 60vw;
-    margin: 0 auto;
-  }
-
-  .search-result-accordion {
-    font-size: 1rem;
-    width: 80vw;
-    margin: 0 auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  .search-result-header {
-    padding: 1.5em 1.5em;
-    background: #245da2;
-    color: white;
-    transition: all .3s;
-    text-transform: uppercase;
-  }
-  .search-result-header:hover {
-    background: #2D3D99;
-    position: relative;
-    z-index: 5;
-  }
-  .search-result-image-icon-container {
-    display: flex;
-  }
-  .search-result-image-icon-container h4 {
-    margin-top: 10px;
-    margin-left: 20px;
-  }
-  .search-result-body {
-    background: #fcfcfc;
-    color: #353535;
-    display: none;
-  }
-  .search-result-body-contents {
-    padding: 1.5em 1.5em;
-    font-size: .85em;
-  }
-
-  @media screen and (max-width: 1000px) {
-
-    .search-result-accordion {
-      width: 100%;
-    }
-	#searchResults {
-		width: 100%;
-	  }
-  }
-  @media screen and (max-width: 576px){
-	.search-result-accordion {
-		width: 100%;
-	  }
-	  #searchResults {
-		width: 100%;
-	  }
-  }
-  @media screen and (max-width: 768px) {
-    .search-result-accordion {
-        width: 100%;
-    }
-	#searchResults {
-		width: 100%;
-	  }
-}
-  /*--------- Credit card search ------------------------------*/
-  .height {
-    height: 10vh;
-  }
-
-  .form {
-    position: relative;
-  }
-
-  .form .fa-search {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #9ca3af;
-  }
-
-  .form span {
-    position: absolute;
-    right: 17px;
-    top: 13px;
-    padding: 2px;
-    border-left: 1px solid #d1d5db;
-  }
-
-  .left-pan {
-    padding-left: 7px;
-  }
-
-  .left-pan i {
-    padding-left: 10px;
-  }
-
-  .form-input {
-    height: 55px;
-    text-indent: 33px;
-    border-radius: 10px;
-  }
-
-  .form-input:focus {
-    box-shadow: none;
-    border: none;
-  }
-
-/*--------------------------------------------------------------
-# 404-Page
---------------------------------------------------------------*/
-.page404 {
-	padding-top: 190px;
-}
-
-.page404 .container {
-	z-index: 10;
 }
