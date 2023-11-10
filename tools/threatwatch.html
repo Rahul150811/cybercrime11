@@ -190,23 +190,24 @@
                 </div>
             </div>
         </section>
-        
-        <section class="cta-one">
+
+        <section class="service-three">
             <div class="container">
-                <div class="inner-container wow fadeInUp" data-wow-duration="1500ms" style="background-image: url(/assets/images/backgrounds/cta-3-bg-1-1.jpg);">
-                    <div class="cta-one__content">
-                        <h3><i class="politaro-icon-star-2"></i> <span>Discover ThreatWatch</span> <i class="politaro-icon-star-2"></i></h3>
-                        <p>ThreatWatch is your go-to tool for understanding and identifying online threats. 
-                            Dive into real-life examples of scams, phishing attempts, and ransomware scenarios. 
-                            This free tool is designed for everyone, providing valuable insights to help you recognize and stay protected from cyber threats. 
-                            Click on any image to start learning and fortify your online safety skills.
-                            Get ready to stay safe from phishing, scams, and more. Let's begin!</p>
-                    </div>
+                <div class="block-title text-center">
+                    <p>Exposure to Real-life Cyber Threats</p>
+                    <h3>Discover <span style="color:red;">Threat</span>Watch Tool</h3>
+                </div>
+                <div class="service-three__content">
+                    <p>It is your go-to tool for understanding and identifying online threats. 
+                        Dive into real-life examples of scams, phishing attempts, and ransomware scenarios. 
+                        This free tool is designed for everyone, providing valuable insights to help you recognize and stay protected from cyber threats. 
+                        Click on any image to start learning and fortify your online safety skills.
+                        Get ready to stay safe from phishing, scams, and more. Let's begin!</p>
                 </div>
             </div>
         </section>
 
-        <div class="threatwatch-container" style="margin-top: 150px;">
+        <div class="threatwatch-container">
             <form action="#" class="threatwatch-form">
                 <select id="category">
                     <option value="all">All Categories</option>
@@ -226,8 +227,7 @@
         </div>
 
         <p id="resultMessage" class="result-message"></p>
-    
-
+    <!---  Old design ------------------------------------------------------------------------------
         <div class="container image-database">
             <div class="row image-row">
                 <div class="image-container" id="image1" data-hidden-image="/assets/images/threatwatch/facebook_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
@@ -239,30 +239,53 @@
                 <div class="image-container" id="image3" data-hidden-image="/assets/images/threatwatch/healthcare_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
                     <img src="/assets/images/threatwatch/Healthcare Phishing.png">
                 </div>
-                <div class="image-container" id="image5" data-hidden-image="/assets/images/threatwatch/catphishing1_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/catphishing1.png">
-                </div>
-                <div class="image-container" id="image6" data-hidden-image="/assets/images/threatwatch/Security Alert phishing Analysis.png" data-category="Phishing" data-subcategory="subcategory2">
-                    <img src="/assets/images/threatwatch/Security Alert Phish1.png">
-                </div>
-                <div class="image-container" id="image7" data-hidden-image="/assets/images/threatwatch/Security Alert Phishing2_Analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/Security Alert Phish2.png">
-                </div>
-                <div class="image-container" id="image8" data-hidden-image="/assets/images/threatwatch/UPS_Phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/UPS_phishing.png">
-                </div>
-                <div class="image-container" id="image9" data-hidden-image="/assets/images/threatwatch/T-Mobile_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
-                    <img src="/assets/images/threatwatch/T-Mobile Phishing.png">
-                </div>
-                <div class="image-container" id="image10" data-hidden-image="/assets/images/threatwatch/Tmobile_phishing2_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/Tmobile_phishing2.png">
-                </div>
-                <div class="image-container" id="image11" data-hidden-image="/assets/images/threatwatch/sensation_phishing2_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/sensational phishing2.png">
-                </div>
-                <div class="image-container" id="image12" data-hidden-image="/assets/images/threatwatch/sensational_phishing1_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
-                    <img src="/assets/images/threatwatch/sensational_phishing1.png">
-                </div>
+            </div>
+        </div>
+    -------------------------------------------------------------------------------------------------->
+
+        <div class="image-card-container">
+            <div class="image-card" id="image1" data-hidden-image="/assets/images/threatwatch/facebook_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/facebook phishing.png">
+            </div>
+    
+            <div class="image-card" id="image2" data-hidden-image="/assets/images/threatwatch/T-Mobile_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/T-Mobile Phishing.png">
+            </div>
+
+            <div class="image-card" id="image3" data-hidden-image="/assets/images/threatwatch/healthcare_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
+                <img src="/assets/images/threatwatch/Healthcare Phishing.png">
+            </div>
+
+            <div class="image-card" id="image5" data-hidden-image="/assets/images/threatwatch/catphishing1_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/catphishing1.png">
+            </div>
+
+            <div class="image-card" id="image6" data-hidden-image="/assets/images/threatwatch/Security Alert phishing Analysis.png" data-category="Phishing" data-subcategory="subcategory2">
+                <img src="/assets/images/threatwatch/Security Alert Phish1.png">
+            </div>
+
+            <div class="image-card" id="image7" data-hidden-image="/assets/images/threatwatch/Security Alert Phishing2_Analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/Security Alert Phish2.png">
+            </div>
+
+            <div class="image-card" id="image8" data-hidden-image="/assets/images/threatwatch/UPS_Phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/UPS_phishing.png">
+            </div>
+
+            <div class="image-card" id="image9" data-hidden-image="/assets/images/threatwatch/T-Mobile_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
+                <img src="/assets/images/threatwatch/T-Mobile Phishing.png">
+            </div>
+
+            <div class="image-card" id="image10" data-hidden-image="/assets/images/threatwatch/Tmobile_phishing2_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/Tmobile_phishing2.png">
+            </div>
+
+            <div class="image-card" id="image11" data-hidden-image="/assets/images/threatwatch/sensation_phishing2_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
+                <img src="/assets/images/threatwatch/sensational phishing2.png">
+            </div>
+
+            <div class="image-card" id="image12" data-hidden-image="/assets/images/threatwatch/sensational_phishing1_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
+                <img src="/assets/images/threatwatch/sensational_phishing1.png">
             </div>
         </div>
 

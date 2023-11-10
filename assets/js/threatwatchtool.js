@@ -1,9 +1,31 @@
+/* Old Design 
 // Get references to HTML elements
 const imageContainers = document.querySelectorAll('.image-container');
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
 const closeButton = document.getElementById('close-button');
 const prevButton = document.getElementById('prev-button');
+const nextButton = document.getElementById('next-button');
+const categoryDropdown = document.getElementById('category');
+const subcategoryDropdown = document.getElementById('subcategory');
+const searchInput = document.getElementById('search');
+const resultMessage = document.getElementById('resultMessage');
+
+// Event listeners
+imageContainers.forEach((container, index) => {
+    container.addEventListener('click', () => {
+        showHidden = false;
+        openLightbox(index);
+    });
+});
+
+*/
+
+// Get references to HTML elements
+const imageContainers = document.querySelectorAll('.image-card'); // Update selector
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightbox-image');
+const closeButton = document.getElementById('close-button');
 const nextButton = document.getElementById('next-button');
 const categoryDropdown = document.getElementById('category');
 const subcategoryDropdown = document.getElementById('subcategory');

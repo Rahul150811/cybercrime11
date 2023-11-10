@@ -2659,6 +2659,7 @@ a:focus {
 	margin: 0;
 	margin-top: 10px;
 }
+
 /*--------------------------------------------------------------
 # More Info Emergency link Style
 --------------------------------------------------------------*/
@@ -7700,6 +7701,7 @@ a:focus {
         width: calc(50% - 40px); 
     }
 }
+
 /*------------------------*/
 .card-container {
     display: flex;
@@ -8086,8 +8088,40 @@ a:focus {
     justify-content: center;
     align-items: center;
 }
+/*----Threatwatch Tool Image-----------*/
+.image-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
 
-/*---- ThreatWatch Tool ------*/
+.image-card {
+    flex-basis: calc(33.33% - 30px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 0 15px 30px; 
+}
+
+
+.image-card img {
+    max-width: 100%;
+    height: auto; 
+}
+
+@media (max-width: 1024px) {
+    .image-card {
+        flex-basis: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .image-card {
+        flex-basis: 100%; 
+    }
+}
+/*---- Old Design -----
 
 .image-container {
 	flex: 0 0 calc(33.33% - 20px);
@@ -8101,6 +8135,8 @@ a:focus {
 	border-radius: 5px;
 }
 
+-------------------------*/
+/*---- ThreatWatch Tool ------*/
 .threatwatch-container {
     display: flex;
     align-items: center;
@@ -8207,7 +8243,7 @@ a:focus {
     cursor: pointer;
     background-color: #cd2828;
     padding: 10px 20px;
-    max-width: 70px;
+    max-width: 90px;
     margin: 30px auto 15px;
     z-index: 1000;
 }
@@ -8225,7 +8261,7 @@ a:focus {
     border: none;
     cursor: pointer;
     position: absolute;
-    bottom: 120px;
+    bottom: 70px;
     z-index: 1000;
 }
 
@@ -8343,3 +8379,5 @@ a:focus {
 	width: 100%;
 	min-width: 300px;
 }
+
+/*----------------------------------------------*/
