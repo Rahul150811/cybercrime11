@@ -240,9 +240,13 @@ function calculateRisk() {
     calculatedScore.style.color = 'red';
 
     totalScoreHeading.textContent = 'Total Score: ';
+    totalScoreHeading.style.fontWeight = 'bold';
     calculatedScore.textContent = totalScore;
 
     riskLevelValue.style.color = 'red';
+
+    riskLevelHeading.textContent = 'Risk Level: ';
+    riskLevelHeading.style.fontWeight = 'bold';
     riskLevelValue.textContent = riskLevel;
 
     // Clear previous recommendations

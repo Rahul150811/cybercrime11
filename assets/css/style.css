@@ -7962,9 +7962,6 @@ a:focus {
 
 
 /*--------------------Risk Assessment---------------------*/
-#assessment{
-	font-family: Raleway,sans-serif;
-}
 .center-button {
 	display: flex;
 	justify-content: center;
@@ -7992,20 +7989,14 @@ a:focus {
 
 #assessment {
 	padding: 0 20px;
+	margin-top: -80px;
 }
-#assessment h4{
-	font-family: Raleway,sans-serif;
-	margin-top: 50px;
-}
+
 
 @media screen and (min-width: 768px) {
     #assessment {
         padding: 0 60px; 
     }
-	#assessment h4{
-		font-family: Raleway,sans-serif;
-		margin-top: 50px;
-	}
 }
 
 #assessment h3{
@@ -8014,14 +8005,7 @@ a:focus {
 	font-size: 22px;
 	font-weight: bold;
 }
-#assessment-form{
-	padding-top: 0px;
-}
-@media screen and (min-width: 768px) {
-    #assessment-form {
-        padding-top: 0px;
-    }
-}
+
 
 #assessment li{
 	margin-top: 15px;
@@ -8046,12 +8030,10 @@ a:focus {
 #total-score {
     margin-top: 30px;
     font-size: 25px;
-    font-weight: bold;
 }
 
 #risk-level-text{
 	font-size: 25px;
-    font-weight: bold;
 }
 
 #recommendations-title {
@@ -8059,7 +8041,6 @@ a:focus {
 	margin-top: 50px;
 	font-size: 30px;
 	text-align: left;
-	font-weight: bold;
 }
 
 #recommendations {
@@ -8069,13 +8050,11 @@ a:focus {
 	margin-top: 30px;
 }
 
-.arrow {
-    font-weight: bold;
-}
 
 #recommendations h3{
     margin-top: 20px !important;
     font-size: 25px !important;
+	color: #666666;
 }
 
 #help-button{
@@ -8141,7 +8120,6 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .threatwatch-form {
