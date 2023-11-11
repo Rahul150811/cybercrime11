@@ -175,7 +175,7 @@
                                 </li>
                             </ul>
                             <h3><a href="#!">FBI Highlights Online Safety Tips During Cybersecurity Awareness Month</a></h3>
-                            <a href="https://www.fbi.gov/contact-us/field-offices/norfolk/news/fbi-highlights-online-safety-tips-during-cybersecurity-awareness-month" class="blog-one__more-link">Read this on FBI.gov</a>
+                            <a href="https://www.fbi.gov/contact-us/field-offices/norfolk/news/fbi-highlights-online-safety-tips-during-cybersecurity-awareness-month" class="blog-one__more-link">Read on FBI.gov</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -188,7 +188,7 @@
                                 </li>
                             </ul>
                             <h3><a href="#!">FBI Stats Reveal Top States for Cybercrime</a></h3>
-                            <a href="https://www.technewsworld.com/story/fbi-stats-reveal-nevada-north-dakota-top-states-for-cybercrime-177515.html" class="blog-one__more-link">Read this on TechNewsWorld.com</a>
+                            <a href="https://www.technewsworld.com/story/fbi-stats-reveal-nevada-north-dakota-top-states-for-cybercrime-177515.html" class="blog-one__more-link">Read on TechNewsWorld.com</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -201,7 +201,7 @@
                                 </li>
                             </ul>
                             <h3><a href="#!">Police warns netizens about Whatsapp hacking, here's how fraudsters hack accounts</a></h3>
-                            <a href="https://timesofindia.indiatimes.com/gadgets-news/police-warns-netizens-about-whatsapp-hacking-heres-how-fraudsters-hack-accounts/articleshow/102094292.cms" class="blog-one__more-link">Read this on TimesofIndia</a>
+                            <a href="https://timesofindia.indiatimes.com/gadgets-news/police-warns-netizens-about-whatsapp-hacking-heres-how-fraudsters-hack-accounts/articleshow/102094292.cms" class="blog-one__more-link">Read on TimesofIndia</a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -214,12 +214,9 @@
                                 </li>
                             </ul>
                             <h3><a href="#!">How scammers hack your social media accounts</a></h3>
-                            <a href="https://www.cbs17.com/news/investigators/how-scammers-hack-your-social-media-accounts/" class="blog-one__more-link">Read this on CBS17</a>
+                            <a href="https://www.cbs17.com/news/investigators/how-scammers-hack-your-social-media-accounts/" class="blog-one__more-link">Read on CBS17</a>
                         </div>
                     </div>
-                </div>
-                <div class="row" id="article-list">
-                    <!-- Articles will be dynamically added here using JavaScript -->
                 </div>
             </div>
         </section>
@@ -410,7 +407,7 @@
                                 <h3 class="footer-widget__title">Useful Links</h3>
                                 <ul class="footer-widget__links list-unstyled">
                                     <li><a href="https://www.docs.protectnow.info/" target="_blank">Documentation</a></li>
-                                    <li><a href="/events/">Main Events</a></li>
+                                    <li><a href="/events/">Events</a></li>
                                     <li><a href="/news/">Cyber News</a></li>
                                 </ul>
                             </div>
@@ -523,78 +520,6 @@
         });
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-
-
-    <script>
-        // Function to fetch and display an RSS feed
-        function fetchAndDisplayRSSFeed() {
-            // URL of the RSS feed
-            const rssFeedUrl = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://therecord.media/feed');
-    
-            // Select the container where you want to display the feed
-            const articleList = document.getElementById('article-list');
-    
-            // Make a GET request to fetch the RSS feed
-            fetch(rssFeedUrl)
-                .then((response) => response.json())
-                .then((data) => {
-                    // Parse the XML data into a DOM object
-                    const parser = new DOMParser();
-                    const xmlDoc = parser.parseFromString(data.contents, 'text/xml');
-    
-                    // Get all the items (articles) from the RSS feed
-                    const items = xmlDoc.querySelectorAll('item');
-    
-                    // Loop through the items and display date, heading, and source link
-                    items.forEach((item) => {
-                        // Extract relevant data from the item
-                        const title = item.querySelector('title').textContent;
-                        const pubDate = new Date(item.querySelector('pubDate').textContent).toLocaleDateString(); // Format the date
-                        const link = item.querySelector('link').textContent; // Extract the link to the source
-    
-                        // Create and display the article
-                        const articleDiv = document.createElement('div');
-                        articleDiv.className = 'col-lg-4 col-md-6 col-sm-12 blog-one__single'; // Add your custom class
-                        articleDiv.innerHTML = `
-                            <div class="blog-one__bg-image" style="background-color: #114f9a; 
-                            background-size: cover; background-repeat: no-repeat; background-position: center; height: 250px;">
-                            </div>
-                            <ul class="list-unstyled blog-one__meta">
-                                <li>
-                                    <i class="far fa-calendar"></i><span> ${pubDate}</span>
-                                </li>
-                            </ul>
-                            <h3><a href="${link}"</a> ${title}</h3>
-                            <br>
-                            <a href="${link}" class="blog-one__more-link" target="_blank">Read this on therecord.media</a>
-                        `;
-    
-                        articleDiv.addEventListener('mouseenter', () => {
-                            articleDiv.querySelector('h3').style.color = 'white';
-                            articleDiv.querySelector('li').style.color = 'white'; // Change date color
-                        });
-    
-                        // Restore the original text color when the hover ends
-                        articleDiv.addEventListener('mouseleave', () => {
-                            articleDiv.querySelector('h3').style.color = ''; // Clear inline style
-                            articleDiv.querySelector('li').style.color = ''; // Clear date color
-                        });
-    
-                        articleList.appendChild(articleDiv);
-                    });
-                })
-                .catch((error) => {
-                    console.error('Error fetching RSS feed:', error);
-                });
-        }
-    
-        // Call the function to fetch and display the RSS feed
-        fetchAndDisplayRSSFeed();
-    </script>
-    
-    
-    
 
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
