@@ -8359,3 +8359,283 @@ a:focus {
 }
 
 /*----------------------------------------------*/
+/*-------------------------------*/
+.accordion {
+	width: 60vw;
+	margin: 0 auto;
+	border-radius: 5px;
+	margin-bottom: 200px;
+	margin-top: 40px;
+  }
+  
+  .accordion-header,
+  .accordion-body {
+	background: white;
+  }
+
+  .accordion-body__contents {
+	width: auto;
+    font-size: 1.6vw;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+
+
+  .accordion-header {
+	padding: 1.5em 1.5em;
+	background: white;
+	color: black;
+	transition: all .3s;
+	text-transform: uppercase;
+  }
+  .accordion-header i {
+    margin-top: -40px;
+    margin-right: 20px;
+	font-size: 2vw;
+}
+.accordion-header .image-icon-container h4{
+	font-size: 2vw;
+}
+
+
+.image-icon-container .image {
+    max-width: 100%;
+    height: auto;
+}
+.image-icon-container {
+	display: flex;
+}
+.image-icon-container img {
+    max-height: 50px;
+    width: auto;
+    max-width: 100%;
+}
+
+.image-icon-container h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    .image-icon-container h4 {
+        margin-left: 5vw;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .image-icon-container h4 {
+        margin-left: 3vw;
+        font-size: 4vw;
+    }
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .accordion-header i {
+        margin-top: -3vw;
+        margin-right: 3vw;
+    }
+}
+@media (min-width: 1200px) {
+    .accordion-header .image-icon-container h4 {
+        font-size: 1.5vw;
+    }
+	.accordion-header i {
+        font-size: 18px;
+    }
+	.accordion-body__contents{
+		font-size: 18px; 
+	}
+}
+
+@media (max-width: 576px) {
+	
+	.accordion-header .image-icon-container h4, .accordion-header i {
+        font-size: 18px;
+	}
+	.accordion-body__contents {
+		font-size: 16px;
+		display: flex;
+        flex-direction: column;
+	}
+    .accordion-header i {
+        margin-top: -4vw; 
+        margin-right: 4vw;
+    }
+}
+@media (max-width: 576px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-info strong,
+    .contact-info a {
+        display: block;
+    }
+}
+  .accordion__item {
+	  border-bottom: 1px solid #3a4ba4;
+  }
+  
+  .accordion__item .accordion__item {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .accordion-header:hover {
+	background: rgb(226, 226, 226);
+	position: relative;
+	z-index: 5;
+  }
+  
+  .accordion-body {
+	background: #fcfcfc;
+	color: #353535;
+	display: none;
+  }
+  
+  .accordion-body__contents {
+	padding: 1.5em 0;
+	font-size: 1.2em;
+  }
+  
+  .accordion__item.active:last-child .accordion-header {
+	border-radius: none;
+  }
+  
+  .accordion:first-child > .accordion__item > .accordion-header {
+	border-bottom: 1px solid transparent;
+  }
+  
+  .accordion__item.active > .accordion-header:after {
+	transform: rotate(-180deg);
+  }
+  
+  .accordion__item.active .accordion-header {
+	background: rgb(226, 226, 226);
+  }
+  
+  .accordion__item .accordion__item .accordion-header {
+	background: #f1f1f1;
+	color: #353535;
+  }
+  
+  @media screen and (max-width: 1000px) {
+	.accordion {
+	  width: 100%;
+	}
+  }
+
+  #searchResults {
+    background-color: white;
+    border-radius: 5px;
+    width: 60vw;
+    margin: 0 auto;
+  }
+
+  .search-result-accordion {
+    font-size: 1rem;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .search-result-header {
+    padding: 1.5em 1.5em;
+    background: #245da2;
+    color: white;
+    transition: all .3s;
+    text-transform: uppercase;
+  }
+  .search-result-header:hover {
+    background: #2D3D99;
+    position: relative;
+    z-index: 5;
+  }
+  .search-result-image-icon-container {
+    display: flex;
+  }
+  .search-result-image-icon-container h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .search-result-body {
+    background: #fcfcfc;
+    color: #353535;
+    display: none;
+  }
+  .search-result-body-contents {
+    padding: 1.5em 1.5em;
+    font-size: .85em;
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    .search-result-accordion {
+      width: 100%;
+    }
+	#searchResults {
+		width: 100%;
+	  }
+  }
+  @media screen and (max-width: 576px){
+	.search-result-accordion {
+		width: 100%;
+	  }
+	  #searchResults {
+		width: 100%;
+	  }
+  }
+  @media screen and (max-width: 768px) {
+    .search-result-accordion {
+        width: 100%;
+    }
+	#searchResults {
+		width: 100%;
+	  }
+}
+  /*--------- Credit card search ------------------------------*/
+  .height {
+    height: 10vh;
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .form .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #9ca3af;
+  }
+
+  .form span {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+  }
+
+  .left-pan {
+    padding-left: 7px;
+  }
+
+  .left-pan i {
+    padding-left: 10px;
+  }
+
+  .form-input {
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+  }
+
+  .form-input:focus {
+    box-shadow: none;
+    border: none;
+  }
