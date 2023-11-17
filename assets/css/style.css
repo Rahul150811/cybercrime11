@@ -8078,15 +8078,21 @@ a:focus {
 .image-card {
     flex-basis: calc(33.33% - 30px);
     box-sizing: border-box;
-    border: 1px solid #ccc;
+	border: 1px solid #ccc;
     padding: 10px;
-    margin: 0 15px 30px; 
+    margin: 0 15px 30px;
 }
-
 
 .image-card img {
     max-width: 100%;
     height: auto; 
+}
+
+.image-card p{
+	text-align: center;
+	margin-top: 15px;
+	color: crimson;
+	font-weight: bold;
 }
 
 @media (max-width: 1024px) {
