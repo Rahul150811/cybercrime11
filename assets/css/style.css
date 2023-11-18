@@ -8089,11 +8089,12 @@ a:focus {
 }
 
 .image-card p{
-	text-align: center;
-	margin-top: 15px;
+	margin-top: 10px;
 	color: crimson;
-	font-weight: bold;
+	text-align: center;
+	font-weight: 800;
 }
+
 
 @media (max-width: 1024px) {
     .image-card {
@@ -8645,3 +8646,14 @@ a:focus {
     box-shadow: none;
     border: none;
   }
+
+  /*--------------------------------------------------------------
+# 404-Page
+--------------------------------------------------------------*/
+.page404 {
+	padding-top: 190px;
+}
+
+.page404 .container {
+	z-index: 10;
+}
