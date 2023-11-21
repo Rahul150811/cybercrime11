@@ -8657,3 +8657,82 @@ a:focus {
 .page404 .container {
 	z-index: 10;
 }
+
+/*--------------------------------------------------------------
+# marketplace
+--------------------------------------------------------------*/
+.marketplace .inner-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 3px;
+	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06);
+	position: relative;
+	border-radius: 15px;
+	margin-top: -120.5px;
+	z-index: 10;
+}
+
+.marketplace__content {
+	text-align: center;
+}
+
+.marketplace__content h3 {
+	margin: 0;
+	font-size: 34px;
+	font-weight: bold;
+	color: black;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.marketplace__content p {
+	margin: 0;
+	color: black;
+	font-size: 18px;
+	letter-spacing: .2em;
+}
+
+.marketplace__intro p {
+	text-align: center;
+	font-size: 34px;
+	font-weight: bold;
+	color: black;
+	margin-top: -50px;
+}
+
+.marketplace__intro h5 {
+	font-size: 16px;
+}
+
+.marketplace__list {
+	margin-top: 50px;
+	color: red;
+	list-style: none;
+}
+
+.marketplace__list ul{
+	color: green;
+	list-style: none;
+}
+
+.marketplace__list i {
+    margin-right: 10px;
+    color: #00cc00; /* Change the color as needed */
+    border: 1px solid #00cc00; /* Change the color as needed */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.external-link {
+	display: inline-block;
+	text-decoration: none;
+	position: relative;
+	padding-right: 20px;
+  }
+
+  .external-link::after {
+	content: "\2197"; 
+	margin-left: 10px;
+	font-size: 20px;
+  }
