@@ -8724,14 +8724,14 @@ a:focus {
 }
 
 
-.external-link {
+.marketplace-external-link {
 	display: inline-block;
 	text-decoration: none;
 	position: relative;
 	padding-right: 20px;
   }
 
-  .external-link::after {
+  .marketexternal-link::after::after {
 	content: "\2197"; 
 	margin-left: 10px;
 	font-size: 20px;
