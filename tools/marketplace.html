@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Events</title>
+    <title>PROTECT Marketplace</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
@@ -156,15 +156,104 @@
         <section class="inner-banner" style="background-image: url(/assets/images/backgrounds/inner-banner-event-bg.jpg);">
             <div class="container text-center">
                 <i class="inner-banner__icon politaro-icon-star-2"></i>
-                <h2 class="inner-banner__title">Cyber Awareness Events</h2>
+                <h2 class="inner-banner__title">Cyber Marketplace</h2>
                 <ul class="list-unstyled thm-breadcrumb">
                     <li><a href="/home/">Home</a></li>
-                    <li>Events</li>
+                    <li>Marketplace</li>
                 </ul>
             </div>
         </section>
 
-        <section class="marketplace" style="margin-top: 200px; margin-bottom: 100px;">
+        <!--
+
+        <div class="container marketplace-dropdown">
+            <div class="marketplace-filter-container">
+    
+                <div class="marketplace-filter-dropdown">
+                    <div class="filter-group">
+                        <h3>Filter By:</h3>
+                    </div> 
+
+                    <div class="filter-group">
+                        <label for="marketplace-services-dropdown">Service Offered:</label>
+                        <div class="marketplace-filter">
+                            <select class="selectpicker" multiple title="All Categories" data-live-search="true">
+                                <option data-tokens="ketchup mustard">Cloud Computing</option>
+                                <option data-tokens="mustard">Artificial Intelligence</option>
+                                <option data-tokens="frosting">Game Hosting</option>
+                                <option data-tokens="frosting">Data Migration</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="filter-group">
+                        <label for="marketplace-industries-dropdown">Industries Offered:</label>
+                        <div class="marketplace-filter">
+                            <select class="selectpicker" multiple title="All Categories">
+                                <option>Information Technology</option>
+                                <option>Cybersecurity</option>
+                                <option>Small Business</option>
+                                <option>Education</option>
+                                <option>Healthcare</option>
+                                <option>Government</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="container marketplace-dropdown">
+            <div class="marketplace-filter-container">
+                <div class="marketplace-filter-dropdown">
+                    <div class="filter-group">
+                        <h3 class="filter-title"><i class="fa fa-filter"></i> </h3>
+                    </div>
+
+                    <div class="marketplace-filter">
+                        <label for="marketplace-industries-dropdown">Industries:</label>
+                        <select class="selectpicker" multiple title="All Categories">
+                            <option>Information Technology</option>
+                            <option>Cybersecurity</option>
+                            <option>Small Business</option>
+                            <option>Education</option>
+                            <option>Healthcare</option>
+                            <option>Government</option>
+                        </select>
+                    </div>
+        
+                    <div class="marketplace-filter">
+                        <label for="marketplace-services-dropdown">Services:</label>
+                        <select class="selectpicker" multiple title="All Categories" data-live-search="true">
+                            <option data-tokens="ketchup mustard">Cloud Computing</option>
+                            <option data-tokens="mustard">Artificial Intelligence</option>
+                            <option data-tokens="frosting">Game Hosting</option>
+                            <option data-tokens="frosting">Data Migration</option>
+                        </select>
+                    </div>
+
+                    <div class="marketplace-filter">
+                        <label for="marketplace-size-dropdown">Business Size:</label>
+                        <select class="selectpicker" multiple title="All Categories">
+                            <option>Individuals</option>
+                            <option>Startup</option>
+                            <option>Small Business (1-50 employees)</option>
+                            <option>Large Business (100-1,000 enployees)</option>
+                            <option>Enterprise (1000+ employees)</option>
+                        </select>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+
+        <form action="#" class="sidebar__search-form" style="position: relative; margin: 20px auto; width: 80%; min-width: 300px;">
+            <input type="text" name="q" placeholder="Search by Industry Name">
+            <button type="submit" value="search" class="fa fa-search"></button>
+        </form>
+
+
+        <section class="marketplace" style="margin-bottom: 100px;">
             <div class="container">
                 <div class="inner-container wow fadeInUp" data-wow-duration="1500ms">
                     <div class="row align-items-center">
@@ -172,12 +261,12 @@
                             <div class="marketplace__content">
                                 <img src="/assets/images/brand/fbi.png" alt="Awesome Image" />
                                 <h3>Zscalar</h3>
-                                <div class="slider-one__btn-block">
-                                    <a href="https://www.example.com" class="marketplace-external-link slider-one__btn thm-btn" target="_blank">Visit Website</a>
+                                <div class="visit-button">
+                                    <a href="https://www.example.com" class="marketplace-external-link visit-thm-btn" target="_blank">Visit Website</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 marketplace__intro">
+                        <div class="col-12 col-md-6 marketplace__intro">
                             <p>Zscalar Cybersecurity <br>
                             <span style="font-size: 18px; text-align: center; font-weight: normal;">America's top cyber security firm</span></p>
 
@@ -202,61 +291,47 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="countdown-one" style="margin-top: 200px; margin-bottom: 100px;">
-            <div class="container">
-                <div class="inner-container wow fadeInUp" data-wow-duration="1500ms">
+                <div class="inner-container wow fadeInUp" data-wow-duration="1500ms" style="margin-top: 50px;">
                     <div class="row align-items-center">
-                        <div class="col-xl-5">
-                            <div class="countdown-one__content">
-                                <img src="assets/images/shapes/vote-1-1.png" alt="Awesome Image" />
-                                <h3>Election Campaign</h3>
-                                <p>Wil start in ...</p>
+                        <div class="col">
+                            <div class="marketplace__content">
+                                <img src="/assets/images/brand/nypd.jpg" alt="Awesome Image" />
+                                <h3>AWS</h3>
+                                <div class="visit-button">
+                                    <a href="https://www.example.com" class="marketplace-external-link visit-thm-btn" target="_blank">Visit Website</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-7">
-                            <ul class="countdown-one__list list-unstyled" data-count-date="June 7, 2024 15:03:25"></ul>
-                            
+                        <div class="col-12 col-md-6 marketplace__intro">
+                            <p>Amazon Web Services<br>
+                            <span style="font-size: 18px; text-align: center; font-weight: normal;">A Cloud Technology Company</span></p>
+
+                            <h5>Zscaler is the leader in cybersecurity and zero trust digital transformation. 
+                                Transform your IT and security needs with the best CASB and SASE solutions.
+                            </h5>
+
+                            <div class="marketplace__list">
+                                <ul>
+                                    <li><i class="fas fa-check-square"></i> Endpoint Manager</li>
+                                    <li><i class="fas fa-check-square"></i> Network Manager</li>
+                                    <li><i class="fas fa-check-square"></i> Mobile Device Manager</li>
+                                    <li><i class="fas fa-check-square"></i> Remote Management</li>
+                                    <li><i class="fas fa-check-square"></i> API Integration</li>
+                                </ul>
+                            </div>
+                              
+                        </div>
+                        <div class="col marketplace__reviews">
+                            <p>Reviews</p>
+                            <span>Ratings</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <section class="site-footer__wrapper site-footer__style-two ">
-            <div class="site-footer__upper">
-                <div class="container">
-                    <div class="site-footer__logo">
-                        <img src="/assets/images/resources/1.png" height="160px" width="200px" class="main-logo" alt="Awesome Image" />
-                    </div>
-    
-                    <div class="site-footer__counter">
-                        <div class="site-footer__counter-single">
-                            <h3><span class="counter">0</span></h3>
-                            <p>Total Complaints</p>
-                        </div>
-                        <div class="site-footer__counter-single">
-                            <h3 class="counter">0</h3>
-                            <p>Cases Resolved</p>
-                        </div>
-                        <div class="site-footer__counter-single">
-                            <h3>$<span class="counter">0</span></h3>
-                            <p>Money Retrieved</p>
-                        </div>
-                        <div class="site-footer__counter-single">
-                            <h3 class="counter">1</h3>
-                            <p>Active Volunteers</p>
-                        </div>
-                        <div class="site-footer__counter-single">
-                        <h3 class="counter visitor">0</h3>
-                        <p>Total Visits</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="site-footer__wrapper site-footer__style-two ">
             <!--
@@ -411,6 +486,7 @@
         });
     </script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>

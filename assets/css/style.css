@@ -8661,6 +8661,38 @@ a:focus {
 /*--------------------------------------------------------------
 # marketplace
 --------------------------------------------------------------*/
+.marketplace {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .marketplace__content {
+        text-align: center;
+    }
+
+    .marketplace__content img {
+        margin-bottom: 15px;
+    }
+
+    .marketplace__intro {
+        text-align: center;
+    }
+
+    .visit-button {
+        margin-top: 105px;
+        text-align: center;
+    }
+	.marketplace__intro {
+		margin-top: 50px;
+	}
+}
+
+.marketplace__content img {
+    max-width: 100%;
+    height: auto;
+}
+
 .marketplace .inner-container {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -8668,21 +8700,23 @@ a:focus {
 	box-shadow: 0px 10px 21.25px 3.75px rgba(0, 0, 0, 0.06);
 	position: relative;
 	border-radius: 15px;
-	margin-top: -120.5px;
 	z-index: 10;
 }
 
 .marketplace__content {
-	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .marketplace__content h3 {
-	margin: 0;
-	font-size: 34px;
-	font-weight: bold;
-	color: black;
-	margin-top: 10px;
-	margin-bottom: 5px;
+    margin: 0;
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
 }
 
 .marketplace__content p {
@@ -8697,7 +8731,6 @@ a:focus {
 	font-size: 34px;
 	font-weight: bold;
 	color: black;
-	margin-top: -50px;
 }
 
 .marketplace__intro h5 {
@@ -8708,7 +8741,9 @@ a:focus {
 	margin-top: 50px;
 	color: red;
 	list-style: none;
+	text-align: left;
 }
+
 
 .marketplace__list ul{
 	color: green;
@@ -8717,12 +8752,37 @@ a:focus {
 
 .marketplace__list i {
     margin-right: 10px;
-    color: #00cc00; /* Change the color as needed */
-    border: 1px solid #00cc00; /* Change the color as needed */
+    color: #00cc00;
+    border: 1px solid #00cc00;
     padding: 5px;
     border-radius: 5px;
 }
 
+.visit-button {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.visit-thm-btn {
+	border: none;
+	font-size: 13px;
+	color: #fff;
+	background-color: var(--thm-primary);
+	border-radius: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 12px 20px;
+	font-weight: bold;
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+	position: relative;
+}
+
+.visit-thm-btn:hover {
+	background-color: #222222;
+	color: #fff;
+}
 
 .marketplace-external-link {
 	display: inline-block;
@@ -8731,8 +8791,73 @@ a:focus {
 	padding-right: 20px;
   }
 
-  .marketplace-external-link::after {
+.marketplace-external-link::after {
 	content: "\2197"; 
 	margin-left: 10px;
 	font-size: 20px;
-  }
+}
+
+/*---------Marketplace Filter-----------------
+
+.marketplace-dropdown {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.marketplace-filter-container {
+	padding: 20px;
+}
+
+.filter-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.marketplace-filter-dropdown {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 120px;
+}
+
+.marketplace-filter{
+	width: 100%;
+	border: 1px solid var(--thm-black);
+}
+
+*/
+.marketplace-dropdown {
+    justify-content: center;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.marketplace-filter-container {
+    padding: 20px;
+}
+
+.filter-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.marketplace-filter-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.marketplace-filter {
+    flex: 1;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .marketplace-filter-dropdown {
+        flex-direction: column;
+    }
+}
+
