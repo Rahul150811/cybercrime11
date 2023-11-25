@@ -153,7 +153,7 @@
         </div>
 
 
-        <section class="inner-banner" style="background-image: url(/assets/images/backgrounds/inner-banner-event-bg.jpg);">
+        <section class="inner-banner" style="background-image: url(/assets/images/backgrounds/36.png);">
             <div class="container text-center">
                 <i class="inner-banner__icon politaro-icon-star-2"></i>
                 <h2 class="inner-banner__title">Cyber Marketplace</h2>
@@ -164,6 +164,19 @@
             </div>
         </section>
 
+        <!-------
+        
+        A marketplace for IT and cybersecurity services:
+
+        1. Learn and Share: I want to share trustworthy IT and cybersecurity services with you. It's not just about theory; it's practical, real-world knowledge.
+        2. Easy Choices: Picking the right cybersecurity solution can be confusing. This marketplace simplifies things. It's a one-stop shop where you can find, compare, and choose what suits you.
+        3. Stay Updated: Keeping up with the latest tech trends. Managing the marketplace lets me stay on top of what's new and what works best for you.
+        4. Practice What We Preach: As a senior cybersecurity student, this is me putting what I've learned into action. It's a chance to create something useful for you based on real-world experience.
+        This marketplace isn't just a feature; it's a tool in our mission to PROTECT against cyber threats. 
+
+        -------->
+        
+        
         <!--
 
         <div class="container marketplace-dropdown">
@@ -214,32 +227,83 @@
                     <div class="marketplace-filter">
                         <label for="marketplace-industries-dropdown">Industries:</label>
                         <select class="selectpicker" multiple title="All Categories">
-                            <option>Information Technology</option>
-                            <option>Cybersecurity</option>
-                            <option>Small Business</option>
-                            <option>Education</option>
-                            <option>Healthcare</option>
-                            <option>Government</option>
-                        </select>
-                    </div>
-        
-                    <div class="marketplace-filter">
-                        <label for="marketplace-services-dropdown">Services:</label>
-                        <select class="selectpicker" multiple title="All Categories" data-live-search="true">
-                            <option data-tokens="ketchup mustard">Cloud Computing</option>
-                            <option data-tokens="mustard">Artificial Intelligence</option>
-                            <option data-tokens="frosting">Game Hosting</option>
-                            <option data-tokens="frosting">Data Migration</option>
+                            <option value="smallbusiness">Small Business</option>
+                            <option>Finance</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Education">Education</option>
+                            <option value="Government">Government</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Retail">Retail</option>
+                            <option value="Telecommunications">Telecommunications</option>
+                            <option value="Transportation">Transportation</option>
+                            <option value="Media">Media and Entertainment</option>
+                            <option value="Nonprofit">Nonprofit</option>
                         </select>
                     </div>
 
                     <div class="marketplace-filter">
-                        <label for="marketplace-size-dropdown">Business Size:</label>
+                        <label for="marketplace-cyber-dropdown">Cybersecurity Services:</label>
+                        <select class="selectpicker" multiple title="All Categories" data-live-search="true">
+                            <option data-tokens="ketchup mustard">Cloud Computing</option>
+                            <option data-tokens="mustard">Artificial Intelligence</option>
+
+                            <option value="Antivirus">Antivirus and Endpoint Protection</option>
+                            <option value="Firewall">Firewall Solutions</option>
+                            <option value="NetworkSecurity">Network Security</option>
+                            <option value="DataEncryption">Data Encryption</option>
+                            <option value="IAM">Identity and Access Management (IAM)</option>
+                            <option value="SIEM">Security Information and Event Management (SIEM)</option>
+                            <option value="VulnerabilityAssessment">Vulnerability Assessment and Penetration Testing</option>
+                            <option value="IncidentResponse">Incident Response Services</option>
+                            <option value="CloudSecurity">Cloud Security</option>
+                            <option value="BackupRecovery">Backup and Disaster Recovery</option>
+                            <option value="WebGateways">Secure Web Gateways</option>
+                            <option value="MobileSecurity">Mobile Device Security</option>
+                            <option value="EmailSecurity">Email Security</option>
+                            <option value="SecurityTraining">Security Awareness Training</option>
+                            <option value="DigitalForensics">Digital Forensics Services</option>
+                            <option value="ManagedSecurity">Managed Security Services</option>
+                            <option value="ComplianceGovernance">Compliance and Governance</option>
+                            <option value="IoTSecurity">IoT Security</option>
+                            <option value="BlockchainSecurity">Blockchain Security</option>
+                            <option value="PhysicalSecurity">Physical Security Systems</option>
+                        </select>
+                    </div>
+
+                    <div class="marketplace-filter">
+                        <label for="marketplace-it-dropdown">IT Services:</label>
+                        <select class="selectpicker" multiple title="All Categories" data-live-search="true">
+                            <option value="ITConsulting">IT Consulting</option>
+                            <option value="ManagedIT">Managed IT Services</option>
+                            <option value="NetworkInfrastructure">Network Infrastructure</option>
+                            <option value="CloudComputing">Cloud Computing</option>
+                            <option value="DataStorage">Data Storage Solutions</option>
+                            <option value="Virtualization">Virtualization Services</option>
+                            <option value="ITSecurity">IT Security Services</option>
+                            <option value="HelpDeskSupport">Help Desk and Technical Support</option>
+                            <option value="SoftwareDevelopment">Custom Software Development</option>
+                            <option value="WebDevelopment">Web Development</option>
+                            <option value="DatabaseManagement">Database Management</option>
+                            <option value="ITTraining">IT Training and Certification</option>
+                            <option value="HardwareMaintenance">Hardware Maintenance and Support</option>
+                            <option value="BusinessContinuity">Business Continuity Planning</option>
+                            <option value="ITProcurement">IT Procurement Services</option>
+                            <option value="DigitalTransformation">Digital Transformation Services</option>
+                            <option value="UnifiedCommunications">Unified Communications</option>
+                            <option value="IoTIntegration">IoT Integration</option>
+                            <option value="ITOutsourcing">IT Outsourcing</option>
+                            <option value="Cybersecurity">Cybersecurity Strategy</option>
+                        </select>
+                    </div>
+
+                    <div class="marketplace-filter">
+                        <label for="marketplace-size-dropdown">Company Size:</label>
                         <select class="selectpicker" multiple title="All Categories">
                             <option>Individuals</option>
                             <option>Startup</option>
                             <option>Small Business (1-50 employees)</option>
-                            <option>Large Business (100-1,000 enployees)</option>
+                            <option>Large Business (100-1,000 employees)</option>
                             <option>Enterprise (1000+ employees)</option>
                         </select>
                     </div>
@@ -250,7 +314,7 @@
 <!------------------------------------------------------------------------------------------------------------------------------->
 
         <form action="#" class="sidebar__search-form" style="position: relative; margin: 20px auto; width: 80%; min-width: 300px;">
-            <input type="text" name="q" placeholder="Search by Industry Name">
+            <input type="text" name="q" placeholder="Search by Company Name">
             <button type="submit" value="search" class="fa fa-search"></button>
         </form>
 
@@ -276,6 +340,63 @@
                                 Transform your IT and security needs with the best CASB and SASE solutions.
                             </h5>
 
+                            <div class="row marketplace__list">
+                                <div class="col">
+                                    <ul>
+                                        <li><i class="fas fa-check-square"></i> Endpoint Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Network Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Mobile Device Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Remote Management</li>
+                                        <li><i class="fas fa-check-square"></i> API Integration</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><i class="fas fa-check-square"></i> Endpoint Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Network Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Mobile Device Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Remote Management</li>
+                                        <li><i class="fas fa-check-square"></i> API Integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                              
+                        </div>
+                        <div class="col marketplace_reviews">
+                            <div class="heading">
+                                <span>User Rating: 4.1</span>
+                            </div>
+                            <div style="margin-top: 10px; margin-bottom: 10px;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Based on 254 reviews</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner-container wow fadeInUp" data-wow-duration="1500ms" style="margin-top: 50px;">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="marketplace__content">
+                                <img src="/assets/images/brand/nypd.jpg" alt="Awesome Image" />
+                                <h3>AWS</h3>
+                                <div class="visit-button">
+                                    <a href="https://www.example.com" class="marketplace-external-link visit-thm-btn" target="_blank">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 marketplace__intro">
+                            <p>Amazon Web Services<br>
+                            <span style="font-size: 18px; text-align: center; font-weight: normal;">A Cloud Technology Company</span></p>
+
+                            <h5>Zscaler is the leader in cybersecurity and zero trust digital transformation. 
+                                Transform your IT and security needs with the best CASB and SASE solutions.
+                            </h5>
+
                             <div class="marketplace__list">
                                 <ul>
                                     <li><i class="fas fa-check-square"></i> Endpoint Manager</li>
@@ -290,6 +411,63 @@
                         <div class="col marketplace__reviews">
                             <p>Reviews</p>
                             <span>Ratings</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner-container wow fadeInUp" data-wow-duration="1500ms">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="marketplace__content">
+                                <img src="/assets/images/brand/fbi.png" alt="Awesome Image" />
+                                <h3>Zscalar</h3>
+                                <div class="visit-button">
+                                    <a href="https://www.example.com" class="marketplace-external-link visit-thm-btn" target="_blank">Visit Website</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 marketplace__intro">
+                            <p>Zscalar Cybersecurity <br>
+                            <span style="font-size: 18px; text-align: center; font-weight: normal;">America's top cyber security firm</span></p>
+
+                            <h5>Zscaler is the leader in cybersecurity and zero trust digital transformation. 
+                                Transform your IT and security needs with the best CASB and SASE solutions.
+                            </h5>
+
+                            <div class="row marketplace__list">
+                                <div class="col">
+                                    <ul>
+                                        <li><i class="fas fa-check-square"></i> Endpoint Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Network Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Mobile Device Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Remote Management</li>
+                                        <li><i class="fas fa-check-square"></i> API Integration</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul>
+                                        <li><i class="fas fa-check-square"></i> Endpoint Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Network Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Mobile Device Manager</li>
+                                        <li><i class="fas fa-check-square"></i> Remote Management</li>
+                                        <li><i class="fas fa-check-square"></i> API Integration</li>
+                                    </ul>
+                                </div>
+                            </div>
+                              
+                        </div>
+                        <div class="col marketplace_reviews">
+                            <div class="heading">
+                                <span>User Rating: 4.1</span>
+                            </div>
+                            <div style="margin-top: 10px; margin-bottom: 10px;">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <p>Based on 254 reviews</p>
                         </div>
                     </div>
                 </div>

@@ -8864,3 +8864,26 @@ a:focus {
 }
 
 /*--------------------------------------------------*/
+
+.marketplace_reviews{
+	text-align: center;
+	margin-top: -180px;
+	border: 1px solid #666666;
+	padding: 20px 10px;
+	margin-right: 40px;
+	border-radius: 50px;
+}
+
+.marketplace_reviews .heading {
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+}
+	  
+.marketplace_reviews .fa {
+	font-size: 25px;
+}
+	  
+.marketplace_reviews .checked {
+	color: orange;
+}
