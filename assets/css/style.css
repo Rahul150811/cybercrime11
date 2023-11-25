@@ -8867,8 +8867,6 @@ a:focus {
 
 .marketplace_reviews{
 	text-align: center;
-	margin-top: -180px;
-	border: 1px solid #666666;
 	padding: 20px 10px;
 	margin-right: 40px;
 	border-radius: 50px;
@@ -8881,9 +8879,18 @@ a:focus {
 }
 	  
 .marketplace_reviews .fa {
-	font-size: 25px;
+	font-size: 20px;
 }
 	  
 .marketplace_reviews .checked {
-	color: orange;
+	color: white;
+	border-radius: 10px;
+    padding: 8px;
+    display: inline-block;
+	background-color: red;
 }
+
+.marketplace_btn{
+	text-align: center;
+}
+
