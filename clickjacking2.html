@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickjacking Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: transparent;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://www.example.com" frameborder="0"></iframe>
+    <div class="overlay" onclick="alert('Cmon, you cannot click on strange website. If it was a real malicious website, you would have compromised your Data')"></div>
+</body>
+</html>
