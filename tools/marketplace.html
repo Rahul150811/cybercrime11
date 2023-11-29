@@ -164,6 +164,139 @@
             </div>
         </section>
 
+        <div class="container marketplace-dropdown">
+            <!-- Industries Dropdown -->
+            <div class="dropdown">
+              <span>Industries</span>
+              <button onclick="myFunction('industriesDropdown')" class="dropbtn">All Categories <i class="fas fa-chevron-down"></i>
+              </button>
+              <div id="industriesDropdown" class="dropdown-content">
+                <div class="search-box">
+                  <input
+                    type="text"
+                    class="dropdown-search"
+                    placeholder="Search..."
+                  />
+                  <i class="fas fa-search"></i>
+                </div>
+                <a href="#smallbusiness">Small Business</a>
+                <a href="#finance">Finance</a>
+                <a href="#healthcare">Healthcare</a>
+                <a href="#education">Education</a>
+                <a href="#government">Government</a>
+                <a href="#technology">Technology</a>
+                <a href="#retail">Retail</a>
+                <a href="#telecommunications">Telecommunications</a>
+                <a href="#transportation">Transportation</a>
+                <a href="#media">Media and Entertainment</a>
+                <a href="#nonprofit">Nonprofit</a>
+              </div>
+            </div>
+      
+            <!-- Cybersecurity Services Dropdown -->
+            <div class="dropdown">
+              <span>Cybersecurity Services</span>
+              <button onclick="myFunction('cyberDropdown')" class="dropbtn">
+                All Categories <i class="fas fa-chevron-down"> </i>
+              </button>
+              <div id="cyberDropdown" class="dropdown-content">
+                <div class="search-box">
+                  <input
+                    type="text"
+                    class="dropdown-search"
+                    placeholder="Search..."
+                  />
+                  <i class="fas fa-search"></i>
+                </div>
+                <a href="#cloudComputing">Cloud Computing</a>
+                <a href="#ai">Artificial Intelligence</a>
+                <a href="#antivirus">Antivirus and Endpoint Protection</a>
+                <a href="#firewall">Firewall Solutions</a>
+                <a href="#networkSecurity">Network Security</a>
+                <a href="#dataEncryption">Data Encryption</a>
+                <a href="#iam">Identity and Access Management (IAM)</a>
+                <a href="#siem">Security Information and Event Management (SIEM)</a>
+                <a href="#vulnerabilityAssessment"
+                  >Vulnerability Assessment and Penetration Testing</a
+                >
+                <a href="#incidentResponse">Incident Response Services</a>
+                <a href="#cloudSecurity">Cloud Security</a>
+                <a href="#backupRecovery">Backup and Disaster Recovery</a>
+                <a href="#webGateways">Secure Web Gateways</a>
+                <a href="#mobileSecurity">Mobile Device Security</a>
+                <a href="#emailSecurity">Email Security</a>
+                <a href="#securityTraining">Security Awareness Training</a>
+                <a href="#digitalForensics">Digital Forensics Services</a>
+                <a href="#managedSecurity">Managed Security Services</a>
+                <a href="#complianceGovernance">Compliance and Governance</a>
+                <a href="#iotSecurity">IoT Security</a>
+                <a href="#blockchainSecurity">Blockchain Security</a>
+                <a href="#physicalSecurity">Physical Security Systems</a>
+              </div>
+            </div>
+      
+            <!-- IT Services Dropdown -->
+            <div class="dropdown">
+              <span>IT Services</span>
+              <button onclick="myFunction('itServicesDropdown')" class="dropbtn">
+                All Categories <i class="fas fa-chevron-down"> </i>
+              </button>
+              <div id="itServicesDropdown" class="dropdown-content">
+                <div class="dropdown-search-box">
+                  <input
+                    type="text"
+                    class="dropdown-search"
+                    placeholder="Search..."
+                  />
+                  <i class="fas fa-search"></i>
+                </div>
+                <a href="#itConsulting">IT Consulting</a>
+                <a href="#managedIT">Managed IT Services</a>
+                <a href="#networkInfrastructure">Network Infrastructure</a>
+                <a href="#cloudComputing">Cloud Computing</a>
+                <a href="#dataStorage">Data Storage Solutions</a>
+                <a href="#virtualization">Virtualization Services</a>
+                <a href="#itSecurity">IT Security Services</a>
+                <a href="#helpDeskSupport">Help Desk and Technical Support</a>
+                <a href="#softwareDevelopment">Custom Software Development</a>
+                <a href="#webDevelopment">Web Development</a>
+                <a href="#databaseManagement">Database Management</a>
+                <a href="#itTraining">IT Training and Certification</a>
+                <a href="#hardwareMaintenance">Hardware Maintenance and Support</a>
+                <a href="#businessContinuity">Business Continuity Planning</a>
+                <a href="#itProcurement">IT Procurement Services</a>
+                <a href="#digitalTransformation">Digital Transformation Services</a>
+                <a href="#unifiedCommunications">Unified Communications</a>
+                <a href="#iotIntegration">IoT Integration</a>
+                <a href="#itOutsourcing">IT Outsourcing</a>
+                <a href="#cybersecurity">Cybersecurity Strategy</a>
+              </div>
+            </div>
+      
+            <!-- Company Size Dropdown -->
+            <div class="dropdown">
+              <span>Company Size</span>
+              <button onclick="myFunction('companySizeDropdown')" class="dropbtn">
+                All Categories <i class="fas fa-chevron-down"> </i>
+              </button>
+              <div id="companySizeDropdown" class="dropdown-content">
+                <div class="search-box">
+                  <input
+                    type="text"
+                    class="dropdown-search"
+                    placeholder="Search..."
+                  />
+                  <i class="fas fa-search"></i>
+                </div>
+                <a href="#individuals">Individuals</a>
+                <a href="#startup">Startup</a>
+                <a href="#smallBusiness">Small Business (1-50 employees)</a>
+                <a href="#largeBusiness">Large Business (100-1,000 employees)</a>
+                <a href="#enterprise">Enterprise (1000+ employees)</a>
+              </div>
+            </div>
+          </div>
+
         <!-------
         
         A marketplace for IT and cybersecurity services:
@@ -177,143 +310,9 @@
         -------->
         
         
-        <!--
-
-        <div class="container marketplace-dropdown">
-            <div class="marketplace-filter-container">
-    
-                <div class="marketplace-filter-dropdown">
-                    <div class="filter-group">
-                        <h3>Filter By:</h3>
-                    </div> 
-
-                    <div class="filter-group">
-                        <label for="marketplace-services-dropdown">Service Offered:</label>
-                        <div class="marketplace-filter">
-                            <select class="selectpicker" multiple title="All Categories" data-live-search="true">
-                                <option data-tokens="ketchup mustard">Cloud Computing</option>
-                                <option data-tokens="mustard">Artificial Intelligence</option>
-                                <option data-tokens="frosting">Game Hosting</option>
-                                <option data-tokens="frosting">Data Migration</option>
-                            </select>
-                        </div>
-                    </div>
-    
-                    <div class="filter-group">
-                        <label for="marketplace-industries-dropdown">Industries Offered:</label>
-                        <div class="marketplace-filter">
-                            <select class="selectpicker" multiple title="All Categories">
-                                <option>Information Technology</option>
-                                <option>Cybersecurity</option>
-                                <option>Small Business</option>
-                                <option>Education</option>
-                                <option>Healthcare</option>
-                                <option>Government</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-<!----------------------Yomi work here --------------------------------------------------->
-        <div class="container marketplace-dropdown">
-            <div class="marketplace-filter-container">
-                <div class="marketplace-filter-dropdown">
-                    <div class="filter-group">
-                        <h3 class="filter-title"><i class="fa fa-filter"></i> </h3>
-                    </div>
-
-                    <div class="marketplace-filter">
-                        <label for="marketplace-industries-dropdown">Industries:</label>
-                        <select class="selectpicker" multiple title="All Categories">
-                            <option value="smallbusiness">Small Business</option>
-                            <option>Finance</option>
-                            <option value="Healthcare">Healthcare</option>
-                            <option value="Finance">Finance</option>
-                            <option value="Education">Education</option>
-                            <option value="Government">Government</option>
-                            <option value="Technology">Technology</option>
-                            <option value="Retail">Retail</option>
-                            <option value="Telecommunications">Telecommunications</option>
-                            <option value="Transportation">Transportation</option>
-                            <option value="Media">Media and Entertainment</option>
-                            <option value="Nonprofit">Nonprofit</option>
-                        </select>
-                    </div>
-
-                    <div class="marketplace-filter">
-                        <label for="marketplace-cyber-dropdown">Cybersecurity Services:</label>
-                        <select class="selectpicker" multiple title="All Categories" data-live-search="true">
-                            <option data-tokens="ketchup mustard">Cloud Computing</option>
-                            <option data-tokens="mustard">Artificial Intelligence</option>
-
-                            <option value="Antivirus">Antivirus and Endpoint Protection</option>
-                            <option value="Firewall">Firewall Solutions</option>
-                            <option value="NetworkSecurity">Network Security</option>
-                            <option value="DataEncryption">Data Encryption</option>
-                            <option value="IAM">Identity and Access Management (IAM)</option>
-                            <option value="SIEM">Security Information and Event Management (SIEM)</option>
-                            <option value="VulnerabilityAssessment">Vulnerability Assessment and Penetration Testing</option>
-                            <option value="IncidentResponse">Incident Response Services</option>
-                            <option value="CloudSecurity">Cloud Security</option>
-                            <option value="BackupRecovery">Backup and Disaster Recovery</option>
-                            <option value="WebGateways">Secure Web Gateways</option>
-                            <option value="MobileSecurity">Mobile Device Security</option>
-                            <option value="EmailSecurity">Email Security</option>
-                            <option value="SecurityTraining">Security Awareness Training</option>
-                            <option value="DigitalForensics">Digital Forensics Services</option>
-                            <option value="ManagedSecurity">Managed Security Services</option>
-                            <option value="ComplianceGovernance">Compliance and Governance</option>
-                            <option value="IoTSecurity">IoT Security</option>
-                            <option value="BlockchainSecurity">Blockchain Security</option>
-                            <option value="PhysicalSecurity">Physical Security Systems</option>
-                        </select>
-                    </div>
-
-                    <div class="marketplace-filter">
-                        <label for="marketplace-it-dropdown">IT Services:</label>
-                        <select class="selectpicker" multiple title="All Categories" data-live-search="true">
-                            <option value="ITConsulting">IT Consulting</option>
-                            <option value="ManagedIT">Managed IT Services</option>
-                            <option value="NetworkInfrastructure">Network Infrastructure</option>
-                            <option value="CloudComputing">Cloud Computing</option>
-                            <option value="DataStorage">Data Storage Solutions</option>
-                            <option value="Virtualization">Virtualization Services</option>
-                            <option value="ITSecurity">IT Security Services</option>
-                            <option value="HelpDeskSupport">Help Desk and Technical Support</option>
-                            <option value="SoftwareDevelopment">Custom Software Development</option>
-                            <option value="WebDevelopment">Web Development</option>
-                            <option value="DatabaseManagement">Database Management</option>
-                            <option value="ITTraining">IT Training and Certification</option>
-                            <option value="HardwareMaintenance">Hardware Maintenance and Support</option>
-                            <option value="BusinessContinuity">Business Continuity Planning</option>
-                            <option value="ITProcurement">IT Procurement Services</option>
-                            <option value="DigitalTransformation">Digital Transformation Services</option>
-                            <option value="UnifiedCommunications">Unified Communications</option>
-                            <option value="IoTIntegration">IoT Integration</option>
-                            <option value="ITOutsourcing">IT Outsourcing</option>
-                            <option value="Cybersecurity">Cybersecurity Strategy</option>
-                        </select>
-                    </div>
-
-                    <div class="marketplace-filter">
-                        <label for="marketplace-size-dropdown">Company Size:</label>
-                        <select class="selectpicker" multiple title="All Categories">
-                            <option>Individuals</option>
-                            <option>Startup</option>
-                            <option>Small Business (1-50 employees)</option>
-                            <option>Large Business (100-1,000 employees)</option>
-                            <option>Enterprise (1000+ employees)</option>
-                        </select>
-                    </div>
         
-                </div>
-            </div>
-        </div>
-<!------------------------------------------------------------------------------------------------------------------------------->
 
-        <form action="#" class="sidebar__search-form" style="position: relative; margin: 20px auto; max-width: 85%; min-width: 300px;">
+        <form action="#" class="sidebar__search-form" style="position: relative; margin: 20px auto; max-width: 56%; min-width: 300px;">
             <input type="text" name="q" placeholder="Search by Company Name">
             <button type="submit" value="search" class="fa fa-search"></button>
         </form>
@@ -711,6 +710,7 @@
     <script src="/assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/automate_topbar.js"></script>
+    <script src="/assets/js/marketplace_dropdown.js"></script>
     <!----------------- visitor counter ------------------>
     <script>
         function setCookie(name, value, days) {
