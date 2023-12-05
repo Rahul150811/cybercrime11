@@ -7781,6 +7781,7 @@ a:focus {
 .searchbar-form select {
     flex-grow: 2;
     max-width: 100%;
+	color: black;
 }
 
 .searchbar-form input {
@@ -8078,8 +8079,11 @@ a:focus {
 .image-card {
     flex-basis: calc(33.33% - 30px);
     box-sizing: border-box;
+	/*
 	border: 1px solid #ccc;
-    padding: 10px;
+    */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	padding: 10px;
     margin: 0 15px 30px;
 }
 
@@ -8862,18 +8866,18 @@ a:focus {
 	color: white;
   }
   
-  .dropdown {
+  .marketplace-dropdown-content {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	margin: 5px 10px;
   }
 
-  .dropdown button{
+  .marketplace-dropdown-content button{
 	float: right;
   }
   
-  .dropdown span {
+  .marketplace-dropdown-content span {
 	font-weight: bold;
 	color: black;
 	margin-bottom: 5px;
@@ -8909,7 +8913,7 @@ a:focus {
   }
 
   
-  .dropdown a:hover {
+  .marketplace-dropdown-content a:hover {
 	background-color: red;
 	color: white;
   }
@@ -8956,4 +8960,101 @@ a:focus {
 	}
   }
   
-/**************-----------------**************/
+/**************-------------
+New button design with green theme
+color: #fff;
+background-color: #5cb85c
+----
+**************/
+.price-comparison{
+	margin-top: 30px;
+  }
+  
+  .price-comparison table {
+	  width: 100%;
+	  border-collapse: collapse;
+	  margin-top: 20px;
+	}
+	
+  .price-comparison table, .price-comparison th, .price-comparison td {
+	  border: 1px solid #ddd;
+	}
+	
+  .price-comparison th, .price-comparison td {
+	  padding: 15px;
+	  text-align: left;
+	}
+	
+  .price-comparison th {
+	  background-color: #f39c12;
+	  color: #fff;
+  }
+  
+
+/*---------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
+
+  
+  .audioscam_threatwatch {
+	max-width: 1800px;
+	margin: 20px auto;
+	box-sizing: border-box;
+	margin-bottom: 150px;
+  }
+  
+  .audioscam-list {
+	display: grid;
+	gap: 20px;
+	list-style: none;
+	padding: 0;
+  }
+  
+  .audioscam-list-item {
+	background-color: #f7fbfc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 2em auto;
+    padding: 2em;
+  }
+  
+  .audioscam-list-item h2 {
+	color: #34495e;
+	font-weight: bold;
+  }
+  
+  .audioscam-list-item audio {
+	width: 100%;
+	margin-top: 10px;
+  }
+  
+  /* Media Query for Responsive Layout */
+  @media screen and (min-width: 600px) {
+	.audioscam-list {
+	  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+	}
+  }
+  
+  @media screen and (max-width: 599px) {
+	.audioscam-list {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
+  .episode-info {
+	margin-top: 1.5em;
+}
+
+.episode-info a {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	border-color: red;
+}
+
+.episode-info a:hover {
+	background-color: var(--thm-primary);
+	border-color: var(--thm-primary);
+}

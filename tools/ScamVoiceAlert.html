@@ -22,22 +22,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Threat Watch</title>
+    <title>ScamVoice Alert</title>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Threat Watch",
-          "url": "https://www.protectnow.info/tools/threatwatch.html",
+          "name": "ScamVoice Alert",
+          "url": "https://www.protectnow.info/tools/ScamVoiceAlert.html",
           "logo": "https://www.protectnow.info/assets/images/resources/1.png"
         }
     </script>
-    <meta property="og:title" content="Threat Watch" />
+    <meta property="og:title" content="ScamVoice Alert" />
     <meta property="og:site_name" content="PROTECT" />
     <meta name="description" content="At Protect, our mission is clear: to empower individuals and businesses in the relentless fight against cyber threats. We stand apart by offering a seamless reporting experience paired with a wealth of targeted resources and active community engagement. ">
     <meta property="og:description" content="At Protect, our mission is clear: to empower individuals and businesses in the relentless fight against cyber threats. We stand apart by offering a seamless reporting experience paired with a wealth of targeted resources and active community engagement. " />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.protectnow.info/tools/threatwatch.html" />
+    <meta property="og:url" content="https://www.protectnow.info/tools/ScamVoiceAlert.html" />
     <meta property="og:image" content="https://www.protectnow.info/assets/images/favicon/fav2.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
@@ -145,6 +145,8 @@
                                         <li><a href="/resource/cybertools/">Softwares/Tools</a></li>
                                         <li><a href="/resource/help_from_nonprofit.html">Help from Organizations</a></li>
                                         <li><a href="/tools/risk-assessment.html">Risk Assessment Tool</a></li>
+                                        <li><a href="/tools/threatwatch.html">Threatwatch (Not Ready)</a></li>
+                                        <li><a href="/tools/ScamVoiceAlert.html">ScamVoice Alert (Not Ready)</a></li>
                                     </ul>
                                 </li>
 
@@ -184,7 +186,7 @@
                             <div class="about-me-header__icon">
                                 <i class="politaro-icon-star-2"></i>
                             </div>
-                            <h3><span style="color:crimson">Threat</span> Watch</h3>
+                            <h3>ScamVoice<span style="color:crimson"> Alert</span></h3>
                         </div>
                     </div>
                 </div>
@@ -194,287 +196,198 @@
         <section class="service-three">
             <div class="container">
                 <div class="block-title text-center">
-                    <p>Exposure to Real-life Cyber Threats</p>
-                    <h3>Discover <span style="color:red;">Threat</span>Watch Tool</h3>
+                    <p>Shielding Against Voice Scams</p>
+                    <h3>Discover <span style="color:red;">Scam</span>Voice Alert</h3>
                 </div>
                 <div class="service-three__content">
-                    <p>It is your go-to tool for understanding and identifying online threats. 
-                        Dive into real-life examples of scams, phishing attempts, and ransomware scenarios. 
-                        This free tool is designed for everyone, providing valuable insights to help you recognize and stay protected from cyber threats. 
-                        Click on any image to start learning and fortify your online safety skills.
-                        Get ready to stay safe from phishing, scams, and more. Let's begin!</p>
+                    <p>ScamVoice Alert helps you identify and stay safe from phone scams. 
+                      Listen to real recordings of fraudulent calls, like IRS scams and tech support frauds. 
+                      This free tool is for everyone, offering insights to recognize and avoid deceptive phone practices. 
+                      Click to listen and boost your skills against scams. 
+                      Stay vigilant with ScamVoice Alert and protect yourself from phone scams. Listen now!</p>
                 </div>
             </div>
         </section>
 
         <div class="threatwatch-container">
-            <form action="#" class="threatwatch-form">
-                <select id="category">
-                    <option value="all">All Categories</option>
-                    <option value="Phishing">Phishing</option>
-                    <option value="Scam/Fraud">Scam/Fraud</option>
-                    <option value="Ransomware">Ransomware</option>
-                    <option value="Identity Theft">Identity Theft</option>
-                </select>
-                
-                <select id="subcategory">
-                    <option value="all">All Subcategories</option>
-                </select>
-            
-                <input type="text" id="search" placeholder="Search by Categories">
-                <button type="submit"><span style="margin-right: 8px;">Search</span><i class="fa fa-search"></i></button>
-            </form>
+          <form action="#" class="threatwatch-form">
+              <select id="category">
+                  <option value="all">All Categories</option>
+                  <option value="Tech Support">Tech Support</option>
+                  <option value="IRS">IRS</option>
+                  <option value="Impersonation">Impersonation</option>
+                  <option value="Amazon">Amazon</option>
+              </select>
+              
+              <input type="text" id="search" placeholder="Search by Categories">
+              <button type="submit"><span style="margin-right: 8px;">Search</span><i class="fa fa-search"></i></button>
+          </form>
         </div>
 
         <p id="resultMessage" class="result-message"></p>
-    
-    <!----------------------------------------------- Old design --------------------------------------
-        <div class="container image-database">
-            <div class="row image-row">
-                <div class="image-container" id="image1" data-hidden-image="/assets/images/threatwatch/facebook_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/facebook phishing.png">
+ 
+        <main class="audioscam_threatwatch">
+            <section class="audioscam-list">
+
+              <article class="audioscam-list-item" data-category="IRS" >
+                <h2 class="mb-4">IRS Scam</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="/assets/audio/irs_scam1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
                 </div>
-                <div class="image-container" id="image2" data-hidden-image="/assets/images/threatwatch/T-Mobile_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                    <img src="/assets/images/threatwatch/T-Mobile Phishing.png">
-                </div>
-                <div class="image-container" id="image3" data-hidden-image="/assets/images/threatwatch/healthcare_phishing_analysis.png" data-category="Phishing" data-subcategory="subcategory2">
-                    <img src="/assets/images/threatwatch/Healthcare Phishing.png">
-                </div>
-            </div>
-        </div>
-    -------------------------------------------------------------------------------------------------->
-
-        <div class="image-card-container">
-            <div class="image-card" id="image1" data-hidden-image="/assets/images/threatwatch/Facebook_Phishing_Analysis1.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/facebook phishing.png">
-                <!--<p>Facebook Phishing <br> Possible Credentials Theft Attempt</p>-->
-            </div>
-    
-            <div class="image-card" id="image2" data-hidden-image="/assets/images/threatwatch/T-Mobile_Phishing_Analysis1.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/T-Mobile Phishing.png">
-            </div>
-
-            <div class="image-card" id="image3" data-hidden-image="/assets/images/threatwatch/Healthcare_Phishing_Analysis1.png" data-category="Phishing" data-subcategory="subcategory2">
-                <img src="/assets/images/threatwatch/Healthcare Phishing.png">
-            </div>
-
-            <div class="image-card" id="image5" data-hidden-image="/assets/images/threatwatch/wrong_number_scam_analysis1.png" data-category="Phishing" data-subcategory="subcategory2">
-                <img src="/assets/images/threatwatch/wrong_number_scam1.jpg">
-            </div>
-
-            <div class="image-card" id="image6" data-hidden-image="/assets/images/threatwatch/Subscription_Renewal_Scam_Norton_Analysis1.png" data-category="Phishing" data-subcategory="subcategory2">
-                <img src="/assets/images/threatwatch/Security Alert Phish1.png">
-            </div>
-
-            <div class="image-card" id="image7" data-hidden-image="/assets/images/threatwatch/Subscription_Renewal_Scam_Norton_Analysis2.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/Security Alert Phish2.png">
-            </div>
-
-            <div class="image-card" id="image8" data-hidden-image="/assets/images/threatwatch/Package_Delivery_UPS_Analysis1.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/UPS_phishing.png">
-            </div>
-
-            <div class="image-card" id="image10" data-hidden-image="/assets/images/threatwatch/Lottery_Scam_T-Mobile_Analysis1.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/Tmobile_phishing2.png">
-            </div>
-
-            <div class="image-card" id="image11" data-hidden-image="/assets/images/threatwatch/sensation_phishing2_analysis.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/sensational phishing2.png">
-            </div>
-
-            <div class="image-card" id="image12" data-hidden-image="/assets/images/threatwatch/Diet_Scam_Analysis1.png" data-category="Phishing" data-subcategory="subcategory2">
-                <img src="/assets/images/threatwatch/sensational_phishing1.png">
-            </div>
-
-            <div class="image-card" id="image13" data-hidden-image="/assets/images/threatwatch/Advance Fee Fraud_Analysis1.png" data-category="Phishing" data-subcategory="subcategory1">
-                <img src="/assets/images/threatwatch/Advance Fee Fraud.png">
-            </div>
-        </div>
-
-        <div class="post-pagination" style="margin-bottom: 100px; margin-top: 100px;">
-            <a href="#" class="active">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#"><i class="fa fa-arrow-right"></i></a>
-        </div>
-
-        <section class="about-two" style="margin-top: -100px; margin-bottom: -350px;">
-            <div class="container">
-                <div class="block-title text-center">
-                    <i class="block-title__icon politaro-icon-star-2"></i>
-                    <p>How to Analyse Phishing and Scam Emails</p>
-                    <h3>Identifying <span style="color:red;">Red</span> Flags🚩</h3>
-                </div>
-                <ul class="nav-tabs nav">
-                    <li class="nav-item"><a href="#about-two__1" data-toggle="tab" class="nav-link active">Email</a></li>
-                    <!--
-                    <li class="nav-item"><a href="#about-two__2" data-toggle="tab" class="nav-link">SMS</a></li>
-                    <li class="nav-item"><a href="#about-two__3" data-toggle="tab" class="nav-link">Phone Call</a></li>
-                    -->
-                </ul>
-                <div class="tab-content" style="margin-bottom: 300px;">
-                    <div class="tab-pane show active animated fadeInUp" id="about-two__1">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="about-two__content">
-                                    <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                        <div class="accrodion active">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 1: Sender's Email Address</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p> Check the sender's email address. 
-                                                        Phishing emails often come from addresses that may look similar to legitimate ones but have subtle misspellings or variations.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion ">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 2: Urgency and Threats</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>Phishing emails create a sense of urgency and may include threats to prompt immediate action. 
-                                                        Legitimate organizations usually don't threaten or pressure users.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 3: Unsolicited Nature</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>If you didn't expect the email or haven't signed up for related services, it's likely a phishing attempt.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 4: Unusual Content</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>Be cautious of unexpected or unusual content, especially those claiming you've won a prize, inherited money, or are in urgent need of assistance.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 5: Links and Hovering</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>Hover over links to reveal the actual destination. Phishing emails often include links to fake websites designed to collect personal information.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 6: Email Content</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>Poor grammar, spelling mistakes, or awkward language can indicate a phishing attempt. 
-                                                        Legitimate organizations typically proofread their communications.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 7: Requests for Personal Information</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>Legitimate organizations won't ask for sensitive information (passwords, credit card details) via email.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 8: Unusual Attachments</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p>Avoid opening attachments in unsolicited emails. Malicious attachments can contain malware.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <img src="/assets/images/threatwatch/Phishing Red Flags.png" class="img-fluid" alt="Phishing Red Flags"/>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--
-                    <div class="tab-pane animated fadeInUp" id="about-two__2">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <img src="assets/images/resources/about-two-1-1.jpg" alt="Awesome Image" />
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="about-two__content">
-                                    <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                        <div class="accrodion active">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 1: Sender's Email AddressOn-the-ground Organizing</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion ">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 1: Sender's Email AddressFinance Department Coordinates</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 1: Sender's Email AddressCampaign Management Tools</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accrodion">
-                                            <div class="accrodion-title">
-                                                <h4>Flag 1: Sender's Email AddressAccording The Laws Of Politics</h4>
-                                            </div>
-                                            <div class="accrodion-content">
-                                                <div class="inner">
-                                                    <p></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                -->
-                </div>
-            </div>
-        </section>
-
-        <div id="lightbox">
-            <span id="close-button">Close <b style="font-size: 20px">&times;</b></span>
-            <img id="lightbox-image" src="" alt="">
-            <button id="next-button" class="lightbox-button">Click here to see <br>Red flags 👈</button>
-        </div>
+              </article>
         
+              <article class="audioscam-list-item" data-category="Amazon">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="Tech Support">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="Impersonation">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2>IRS Scam</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="/assets/audio/irs_scam1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+        
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+
+              <article class="audioscam-list-item" data-category="IRS">
+                <h2 class="mb-4">Latest Episode</h2>
+                <i>It is your go-to tool for understanding and identifying online threats. Dive into real-life examples of scams, phishing attempts, and ransomware scenarios</i>
+                <audio controls controlsList="nodownload">
+                  <source src="episode1.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <div class="episode-info">
+                  <a href="#" class="btn btn-primary">More Information</a>
+                  <a href="#" class="btn btn-primary">Transcript</a>
+                </div>
+              </article>
+        
+            </section>
+        </main>
+
 
         <section class="site-footer__wrapper site-footer__style-two ">
             <footer class="site-footer">
@@ -528,7 +441,6 @@
                 </div>
             </div>
         </section>
-
     </div>
 
     <div class="side-menu__block">
@@ -563,8 +475,10 @@
     </div>
     
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-    
 
+    
+    
+    <script src="/assets/js/ScamVoiceAlert.js"></script>
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/bootstrap-datepicker.min.js"></script>
@@ -582,13 +496,10 @@
     <script src="/assets/js/circle-progress.min.js"></script>
     <script src="/assets/js/countdown.min.js"></script>
     <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
-
     <script src="/assets/js/nouislider.js"></script>
     <script src="/assets/js/jquery.bootstrap-touchspin.min.js"></script>
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/automate_topbar.js"></script>
-    <script src="/assets/js/calculation.js"></script>
-    <script src="/assets/js/threatwatchtool.js"></script>
     <!----------------- visitor counter ------------------>
     <script>
         function setCookie(name, value, days) {
