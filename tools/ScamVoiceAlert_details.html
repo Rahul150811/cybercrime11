@@ -76,49 +76,51 @@
     <link rel="stylesheet" href="/assets/css/responsive.css">
 
     <style>
-        main {
-      max-width: 800px;
-      margin: 20px auto;
+        .podcast-container {
+      width: 80%;
+      margin: 50px auto;
     }
-
-    .page-description {
-      margin-bottom: 20px;
-    }
-
-    .audio-container {
-      background-color: #f5f5f5;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-
-    audio {
-      width: 100%;
-    }
-
-    .transcript-button {
-      display: block;
-      margin-bottom: 20px;
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px;
+    .podcast-header {
       text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
+      margin-bottom: 30px;
     }
+    .audio-player {
+      width: 100%;
+      text-align: center;
+    }
+    .podcast-details,
+    .transcript,
+    .reviews {
+      margin-top: 30px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    canvas {
+      max-width: 100%;
+      height: auto;
+      /* Add fixed dimensions to the chart container */
+      width: 100%;
+      height: 300px;
+    }
+    .chart-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Maintain aspect ratio (1:1) for the charts */
+}
 
-    .reviews-section {
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-    }
+.chart-container canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 
-    .user-review {
-      margin-bottom: 10px;
-    }
     </style>
 </head>
 
@@ -241,34 +243,110 @@
             <h3>Number 5 in trend. Every target 5 in 10 people. Mostly age 50 year and above. </h3>
         </div>
         
-        <main>
-            <div class="page-description">
-              <p>ScamVoice Alert helps you identify and stay safe from phone scams. Listen to real recordings of fraudulent calls, like IRS scams and tech support frauds. This free tool is for everyone, offering insights to recognize and avoid deceptive phone practices. Click to listen and boost your skills against scams. Stay vigilant with ScamVoice Alert and protect yourself from phone scams. Listen now!</p>
+        <div class="podcast-container">
+            <div class="podcast-header">
+              <h1 class="display-4">Podcast Title</h1>
+              <p class="lead">By <span id="author">Podcast Author</span></p>
             </div>
         
-            <div class="audio-container">
-              <audio controls controlsList="nodownload">
-                <source src="sample-audio.mp3" type="audio/mp3">
+            <!-- Audio Player -->
+            <div class="audio-player">
+              <audio controls>
+                <source src="your-audio-file.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
               </audio>
             </div>
         
-            <a href="#" class="transcript-button">Request Transcript</a>
-        
-            <div class="reviews-section">
-              <h2>User Reviews</h2>
-              <div class="user-review">
-                <p>"ScamVoice Alert saved me from a potential scam call. I highly recommend it!"</p>
-                <p>- User123</p>
-              </div>
-        
-              <div class="user-review">
-                <p>"Excellent tool to learn about different scam tactics. Very informative!"</p>
-                <p>- SafetyFirst</p>
-              </div>
-              <!-- Add more user reviews as needed -->
+            <!-- Podcast Details -->
+            <div class="podcast-details">
+              <h2>Podcast Details</h2>
+              <p class="lead">Explore interesting topics and discussions in this engaging podcast series.</p>
             </div>
-          </main>
+        
+            
+            <!-- Transcript -->
+        <div class="transcript">
+          <h2>Transcript</h2>
+          <div id="transcript">
+            <p class="lead">[Intro music]</p>
+            <p class="lead">Host: Welcome, everyone, to another episode of our podcast, where we explore...</p>
+            <!-- More introductory content -->
+        
+            <p class="lead">Host: Today, we have a special guest with us, an expert in...</p>
+            <p class="lead">Guest: Thank you for having me. I'm excited to discuss...</p>
+            <!-- Guest and host conversation -->
+        
+            <p class="lead">Host: Now, shifting gears a bit, let's talk about the latest trends...</p>
+            <!-- Discussion on trends -->
+        
+            <p class="lead">Host: It's fascinating to see how technology is shaping the future...</p>
+            <!-- Technology discussion -->
+        
+            <p class="lead">Host: Before we wrap up, let's take a moment to share some insights from our listeners...</p>
+            <!-- Listener comments and feedback -->
+        
+            <p class="lead">Listener 1: I really enjoyed the episode on...</p>
+            <p class="lead">Listener 2: The discussions are always thought-provoking...</p>
+            <!-- Additional listener comments -->
+        
+            <p class="lead">Host: Thank you all for your valuable input. We appreciate your engagement...</p>
+            <!-- Closing remarks -->
+        
+            <p class="lead">[Outro music]</p>
+          </div>
+          <button class="btn btn-primary" onclick="toggleTranscript()">Show/Hide Transcript</button>
+        </div>
+        
+        
+            
+        
+          <!-- Insights Section -->
+        <div class="insights">
+          <h2>Podcast Insights</h2>
+          <p class="lead">Discover interesting insights about this podcast.</p>
+        
+          <div class="insights-details">
+            <h3>Popularity and Trends</h3>
+                <canvas id="popularityChart"></canvas>
+            <div class="row">
+              <!-- Listener Demographics Pie Chart -->
+              <div class="col-md-6">
+                <h3>Listener Demographics</h3>
+                <div class="chart-container">
+                  <canvas id="demographicsChart"></canvas>
+                </div>
+              </div>
+        
+              <!-- Engagement Metrics Pie Chart -->
+              <div class="col-md-6">
+                <h3>Engagement Metrics</h3>
+                <div class="chart-container">
+                  <canvas id="engagementChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Reviews and Ratings -->
+        <div class="reviews">
+          <h2>Reviews and Ratings</h2>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Great Podcast!</h5>
+              <p class="card-text">I love the content and the engaging discussions. Keep it up!</p>
+              <p class="card-text"><small class="text-muted">Rating: 5/5</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Informative and Entertaining</h5>
+              <p class="card-text">This podcast provides valuable insights while keeping the audience entertained.</p>
+              <p class="card-text"><small class="text-muted">Rating: 4/5</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
 
 
         <section class="site-footer__wrapper site-footer__style-two ">
@@ -359,6 +437,96 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
     
+
+    <!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Chart.js -->
+<script>
+  // Sample data for the demographics chart
+  var demographicsData = {
+    labels: ['18-24', '25-34', '35-44', '45-54', '55+'],
+    datasets: [{
+      data: [15, 30, 25, 20, 10],
+      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#E7E9ED'],
+      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#E7E9ED']
+    }]
+  };
+
+  // Sample data for the engagement chart
+  var engagementData = {
+    labels: ['Positive', 'Neutral', 'Negative'],
+    datasets: [{
+      data: [70, 20, 10],
+      backgroundColor: ['#4CAF50', '#FFCE56', '#FF6384'],
+      hoverBackgroundColor: ['#4CAF50', '#FFCE56', '#FF6384']
+    }]
+  };
+
+  // Create a demographics chart
+  var demographicsChart = new Chart(document.getElementById('demographicsChart'), {
+    type: 'pie',
+    data: demographicsData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+
+  // Create an engagement chart
+  var engagementChart = new Chart(document.getElementById('engagementChart'), {
+    type: 'pie',
+    data: engagementData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+</script>
+
+<!-- Chart.js -->
+<script>
+  // Sample data for the popularity chart
+  var popularityData = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    datasets: [{
+      label: 'Monthly Listeners',
+      data: [500, 800, 1200, 1000, 1500, 2000],
+      backgroundColor: 'rgba(0, 123, 255, 0.5)',
+      borderColor: 'rgba(0, 123, 255, 1)',
+      borderWidth: 1
+    }]
+  };
+
+  // Create a popularity chart
+  var popularityChart = new Chart(document.getElementById('popularityChart'), {
+    type: 'line',
+    data: popularityData,
+    options: {
+      responsive: false, // Disable responsiveness
+      maintainAspectRatio: true,
+      scales: {
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }],
+        yAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
+      }
+    }
+  });
+
+  function toggleTranscript() {
+    var transcript = document.getElementById("transcript");
+    transcript.style.display = (transcript.style.display === "none") ? "block" : "none";
+  }
+</script>
     
 
     <script src="/assets/js/jquery.min.js"></script>
