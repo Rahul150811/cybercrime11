@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NJD7VXKF');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVD237NRT7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-MVD237NRT7');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ScamVoice Alert</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "ScamVoice Alert",
+          "url": "https://www.protectnow.info/tools/ScamVoiceAlert.html",
+          "logo": "https://www.protectnow.info/assets/images/resources/1.png"
+        }
+    </script>
+    <meta property="og:title" content="ScamVoice Alert" />
+    <meta property="og:site_name" content="PROTECT" />
+    <meta name="description" content="At Protect, our mission is clear: to empower individuals and businesses in the relentless fight against cyber threats. We stand apart by offering a seamless reporting experience paired with a wealth of targeted resources and active community engagement. ">
+    <meta property="og:description" content="At Protect, our mission is clear: to empower individuals and businesses in the relentless fight against cyber threats. We stand apart by offering a seamless reporting experience paired with a wealth of targeted resources and active community engagement. " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.protectnow.info/tools/ScamVoiceAlert.html" />
+    <meta property="og:image" content="https://www.protectnow.info/assets/images/favicon/fav2.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <!-- For Window Tab Color -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#cd2828">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#cd2828">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#cd2828">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i%7CMerriweather:400i&display=swap" rel="stylesheet">
+
+    <!-- plugins styles -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/assets/css/hover-min.css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/nouislider.css">
+    <link rel="stylesheet" href="/assets/css/nouislider.pips.css">
+    <link rel="stylesheet" href="/assets/css/jquery.bootstrap-touchspin.min.css">
+    <link rel="stylesheet" href="/assets/css/jquery.mCustomScrollbar.min.css">
+
+    <!-- icon styles -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/politaro-icons.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+
+    <!-- main styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <style>
+        .podcast-container {
+      width: 80%;
+      margin: 50px auto;
+    }
+    .podcast-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .audio-player {
+      width: 100%;
+      text-align: center;
+    }
+    .podcast-details,
+    .transcript,
+    .reviews {
+      margin-top: 30px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    canvas {
+      max-width: 100%;
+      height: auto;
+      /* Add fixed dimensions to the chart container */
+      width: 100%;
+      height: 300px;
+    }
+    .chart-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Maintain aspect ratio (1:1) for the charts */
+}
+
+.chart-container canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJD7VXKF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="preloader">
+        <div class="loader-icon" style="background-image: url(/assets/images/resources/preloader.svg);"></div>
+        <p class="loading-text">Loading, please wait...</p>
+    </div>
+    
+    <div class="page-wrapper">
+        <div class="site-header__header-one-wrapper">
+            <div class="topbar-one">
+                <div class="container">
+                    <div class="topbar-one__left">
+                        <span style="color: black;"><i class="fa fa-rss"></i> Updates: &nbsp;</span><p></p>
+                    </div>
+                    <div class="topbar-one__right">
+                        <a href="https://form.jotform.com/232297439320154">Donate</a>
+                        <a href="javascript:void(window.open('https://form.jotform.com/232107830628150', 'blank', 'scrollbars=yes, toolbar=no, width=auto, height=500'))">Volunteer</a>
+                        <div class="topbar-one__social">
+                            <!--
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a> -->
+                            <a href="https://www.instagram.com/protect.nyc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="mail:protect4help@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="site-header site-header__header-one  ">
+                <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                    <div class="container clearfix">
+                        
+                        <div class="logo-box">
+                            <a class="navbar-brand" href="/home/">
+                                <img src="/assets/images/resources/1.png" height="160px" width="200px" class="main-logo" alt="Awesome Image" />
+                            </a>
+                            <button class="menu-toggler side-menu__toggler">
+                                <span class="fa fa-bars"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="main-navigation main-nav__main-navigation">
+                            <ul class=" navigation-box ">
+                                <li>
+                                    <a href="/home/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="/about/">About</a>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href="/what_to_do/">What-to-do Guide</a>
+                                    <ul>
+                                        <li><a href="https://docs.protectnow.info/" target="_blank">Documentation</a></li>
+                                        <li><a href="/If you become a victim/">After you become a victim?</a></li>
+                                        <li><a href="/To_protect_yourself/">To protect yourself?</a></li>
+                                        <li><a href="/To_deal_with_cyber_incident/">To deal with Cyber Incidents?</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="/resource/">Resources</a>
+                                    <ul>
+                                        <li><a href="/resource/#govlinks">Government Links</a></li>
+                                        <li><a href="/resource/cybertools/">Softwares/Tools</a></li>
+                                        <li><a href="/resource/help_from_nonprofit.html">Help from Organizations</a></li>
+                                        <li><a href="/tools/risk-assessment.html">Risk Assessment Tool</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="/learn/">Learn</a>
+                                    <ul>
+                                        <li><a href="/learn/#games">Awarness Games</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown"><a href="/contact">Contact</a>
+                                    <ul>
+                                        <li><a href="/contact/chatbot.html">ChatBot</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="header__search search-popup__toggler">
+                                    <a href="#"><i class="icon-magnifier"></i></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="right-side-box">
+                            <a href="/home/#report" class="thm-btn header-donation__btn">Report</a>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </header>
+        </div>
+
+
+        <section class="about-me-header" style="background-image: url(/assets/images/backgrounds/41.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-me-header__content text-center">
+                            <div class="about-me-header__icon">
+                                <i class="politaro-icon-star-2"></i>
+                            </div>
+                            <h3>ScamVoice<span style="color:crimson"> Alert</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <h3>Number 5 in trend. Every target 5 in 10 people. Mostly age 50 year and above. </h3>
+        </div>
+        
+        <div class="podcast-container">
+            <div class="podcast-header">
+              <h1 class="display-4">Podcast Title</h1>
+              <p class="lead">By <span id="author">Podcast Author</span></p>
+            </div>
+        
+            <!-- Audio Player -->
+            <div class="audio-player">
+              <audio controls>
+                <source src="your-audio-file.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+        
+            <!-- Podcast Details -->
+            <div class="podcast-details">
+              <h2>Podcast Details</h2>
+              <p class="lead">Explore interesting topics and discussions in this engaging podcast series.</p>
+            </div>
+        
+            
+            <!-- Transcript -->
+        <div class="transcript">
+          <h2>Transcript</h2>
+          <div id="transcript">
+            <p class="lead">[Intro music]</p>
+            <p class="lead">Host: Welcome, everyone, to another episode of our podcast, where we explore...</p>
+            <!-- More introductory content -->
+        
+            <p class="lead">Host: Today, we have a special guest with us, an expert in...</p>
+            <p class="lead">Guest: Thank you for having me. I'm excited to discuss...</p>
+            <!-- Guest and host conversation -->
+        
+            <p class="lead">Host: Now, shifting gears a bit, let's talk about the latest trends...</p>
+            <!-- Discussion on trends -->
+        
+            <p class="lead">Host: It's fascinating to see how technology is shaping the future...</p>
+            <!-- Technology discussion -->
+        
+            <p class="lead">Host: Before we wrap up, let's take a moment to share some insights from our listeners...</p>
+            <!-- Listener comments and feedback -->
+        
+            <p class="lead">Listener 1: I really enjoyed the episode on...</p>
+            <p class="lead">Listener 2: The discussions are always thought-provoking...</p>
+            <!-- Additional listener comments -->
+        
+            <p class="lead">Host: Thank you all for your valuable input. We appreciate your engagement...</p>
+            <!-- Closing remarks -->
+        
+            <p class="lead">[Outro music]</p>
+          </div>
+          <button class="btn btn-primary" onclick="toggleTranscript()">Show/Hide Transcript</button>
+        </div>
+        
+        
+            
+        
+          <!-- Insights Section -->
+        <div class="insights">
+          <h2>Podcast Insights</h2>
+          <p class="lead">Discover interesting insights about this podcast.</p>
+        
+          <div class="insights-details">
+            <h3>Popularity and Trends</h3>
+                <canvas id="popularityChart"></canvas>
+            <div class="row">
+              <!-- Listener Demographics Pie Chart -->
+              <div class="col-md-6">
+                <h3>Listener Demographics</h3>
+                <div class="chart-container">
+                  <canvas id="demographicsChart"></canvas>
+                </div>
+              </div>
+        
+              <!-- Engagement Metrics Pie Chart -->
+              <div class="col-md-6">
+                <h3>Engagement Metrics</h3>
+                <div class="chart-container">
+                  <canvas id="engagementChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Reviews and Ratings -->
+        <div class="reviews">
+          <h2>Reviews and Ratings</h2>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Great Podcast!</h5>
+              <p class="card-text">I love the content and the engaging discussions. Keep it up!</p>
+              <p class="card-text"><small class="text-muted">Rating: 5/5</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Informative and Entertaining</h5>
+              <p class="card-text">This podcast provides valuable insights while keeping the audience entertained.</p>
+              <p class="card-text"><small class="text-muted">Rating: 4/5</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+        <section class="site-footer__wrapper site-footer__style-two ">
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget">
+                                <h3 class="footer-widget__title">About</h3>
+                                <p><b>PROTECT</b>, a service created by a cybersecurity student to help protect individuals and businesses from cyber threats.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget footer-widget__links-widget">
+                                <h3 class="footer-widget__title">Project</h3>
+                                <ul class="footer-widget__links list-unstyled">
+                                    <li><a href="/about/">Our Mission</a></li>
+                                    <li><a href="/spread/">Spread Us</a></li>
+                                    <li><a href="/privacypolicy/" target="_blank">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget footer-widget__links-widget">
+                                <h3 class="footer-widget__title">Useful Links</h3>
+                                <ul class="footer-widget__links list-unstyled">
+                                    <li><a href="https://www.docs.protectnow.info/" target="_blank">Documentation</a></li>
+                                    <li><a href="/events/">Events</a></li>
+                                    <li><a href="/news/">Cyber News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-widget footer-widget__contact-widget">
+                                <h3 class="footer-widget__title">Get In Touch</h3>
+                                <ul class="footer-widget__contact-info list-unstyled">
+                                    <li>
+                                        <i class="fa fa-envelope-open"></i>
+                                        <a href="mailto:protect4help@gmail.com">protect4help@gmail.com</a><br><br>
+                                        <a href="javascript:void(window.open('https://form.jotform.com/232167373167156','blank','scrollbars=yes,toolbar=no,width=auto,height=auto'))">Submit your Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="site-footer__bottom">
+                <div class="container text-center">
+                    <p>&copy; 2023 <a href="/home/">PROTECT</a> - All rights reserved.</p>
+                    <p>📚 Explore Our Image Credits: <a href="/Thank You for Graphic Sources.html" target="_blank">Resources Attribution</a> 📚</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="side-menu__block">
+        <a href="#" class="side-menu__toggler side-menu__close-btn"><i class="fa fa-times"></i></a>
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+        <div class="side-menu__block-inner ">
+            <a href="/home/" class="side-menu__logo"> <img src="/assets/images/resources/1.png" height="160px" width="200px" alt="Awesome Image" /></a>
+            <nav class="mobile-nav__container">
+            </nav>
+            <p class="side-menu__block__copy">(c) 2023 <a href="https://www.protectnow.info/" class="text-uppercase">PROTECT</a> - All rights reserved.</p>
+            <div class="side-menu__social">
+                <a href="javascript:void(window.open('https://form.jotform.com/232107830628150', 'blank', 'scrollbars=yes, toolbar=no, width=auto, height=500'))">Volunteer</a>
+                <a href="https://form.jotform.com/232297439320154">Donate</a>
+                <a href="https://www.instagram.com/protect.nyc/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+        <div class="search-popup__inner">
+            <form action="/search/" class="search-popup__form">
+                <input type="text" name="q" placeholder="Type here to Search....">
+                <button type="submit" value="search"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+    
+
+    <!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Chart.js -->
+<script>
+  // Sample data for the demographics chart
+  var demographicsData = {
+    labels: ['18-24', '25-34', '35-44', '45-54', '55+'],
+    datasets: [{
+      data: [15, 30, 25, 20, 10],
+      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#E7E9ED'],
+      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#E7E9ED']
+    }]
+  };
+
+  // Sample data for the engagement chart
+  var engagementData = {
+    labels: ['Positive', 'Neutral', 'Negative'],
+    datasets: [{
+      data: [70, 20, 10],
+      backgroundColor: ['#4CAF50', '#FFCE56', '#FF6384'],
+      hoverBackgroundColor: ['#4CAF50', '#FFCE56', '#FF6384']
+    }]
+  };
+
+  // Create a demographics chart
+  var demographicsChart = new Chart(document.getElementById('demographicsChart'), {
+    type: 'pie',
+    data: demographicsData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+
+  // Create an engagement chart
+  var engagementChart = new Chart(document.getElementById('engagementChart'), {
+    type: 'pie',
+    data: engagementData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false
+    }
+  });
+</script>
+
+<!-- Chart.js -->
+<script>
+  // Sample data for the popularity chart
+  var popularityData = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+    datasets: [{
+      label: 'Monthly Listeners',
+      data: [500, 800, 1200, 1000, 1500, 2000],
+      backgroundColor: 'rgba(0, 123, 255, 0.5)',
+      borderColor: 'rgba(0, 123, 255, 1)',
+      borderWidth: 1
+    }]
+  };
+
+  // Create a popularity chart
+  var popularityChart = new Chart(document.getElementById('popularityChart'), {
+    type: 'line',
+    data: popularityData,
+    options: {
+      responsive: false, // Disable responsiveness
+      maintainAspectRatio: true,
+      scales: {
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }],
+        yAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
+      }
+    }
+  });
+
+  function toggleTranscript() {
+    var transcript = document.getElementById("transcript");
+    transcript.style.display = (transcript.style.display === "none") ? "block" : "none";
+  }
+</script>
+    
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/js/bootstrap-select.min.js"></script>
+    <script src="/assets/js/isotope.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/jquery.validate.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/TweenMax.min.js"></script>
+    <script src="/assets/js/jquery.enllax.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/assets/js/circle-progress.min.js"></script>
+    <script src="/assets/js/countdown.min.js"></script>
+    <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="/assets/js/nouislider.js"></script>
+    <script src="/assets/js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/automate_topbar.js"></script>
+    <script src="/assets/js/calculation.js"></script>
+    <script src="/assets/js/ScamVoiceAlerttool.js"></script>
+    <!----------------- visitor counter ------------------>
+    <script>
+        function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+    
+        function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+          }
+          return null;
+        }
+    
+        function incrementVisits() {
+          var visits = parseInt(getCookie("unique_visits") || "0");
+          if (visits === 0) {
+            setCookie("unique_visits", "1", 365);
+          } else {
+            setCookie("unique_visits", (visits + 1).toString(), 365);
+          }
+        }
+    
+        function displayTotalVisits() {
+          var visits = getCookie("unique_visits") || "0";
+          document.querySelector(".visitor").textContent = visits;
+        }
+    
+        incrementVisits();
+        displayTotalVisits();
+    </script>
+
+</body>
+</html>
