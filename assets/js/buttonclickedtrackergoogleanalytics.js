@@ -4,6 +4,6 @@
         gtag('event', 'button_click', {
             'event_category': 'Report Button',
             'event_label': 'Report Now Button Clicked'
-        });
+        })
     });
 </script>
