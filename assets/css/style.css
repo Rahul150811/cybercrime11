@@ -8094,9 +8094,8 @@ a:focus {
 
 .image-card p{
 	margin-top: 10px;
-	color: crimson;
 	text-align: center;
-	font-weight: 800;
+	color: black;
 }
 
 
@@ -8224,7 +8223,7 @@ a:focus {
     transform: translateY(-50%);
     padding-top: 10px;
 	border-radius: 5px;
-	border: #edf1f5 solid 10px;
+	border: #edf1f5 solid 5px;
 }
 
 #close-button {
