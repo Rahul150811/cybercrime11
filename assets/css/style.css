@@ -9004,13 +9004,34 @@ background-color: #5cb85c
 	list-style: none;
 	padding: 0;
   }
+
+  .audioscam-tags{
+	margin-bottom: 20px;
+  }
+  
+  .audioscam-tags .tag {
+	display: inline-block;
+	padding: 0 6px;
+	font-size: 12px;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+	.audioscam-tags .tag {
+	  font-size: 10px;
+	  padding: 5px 8px;
+	  margin-right: 5px;
+	}
+  }
+  
   
   .audioscam-list-item {
 	background-color: #f7fbfc;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     margin: 2em auto;
     padding: 2em;
+	border-radius: 50px 50px 50px 50px;
+	border: 1px solid grey;
   }
   
   .audioscam-list-item h2 {
@@ -9038,22 +9059,22 @@ background-color: #5cb85c
   
   .episode-info {
 	margin-top: 1.5em;
-}
+	}
 
-.episode-info a {
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding: 10px 15px;
-	text-decoration: none;
-	background-color: red;
-	color: white;
-	border-color: red;
-}
+	.episode-info a {
+		margin-right: 10px;
+		margin-bottom: 10px;
+		padding: 10px 15px;
+		text-decoration: none;
+		background-color: red;
+		color: white;
+		border-color: red;
+	}
 
-.episode-info a:hover {
-	background-color: var(--thm-primary);
-	border-color: var(--thm-primary);
-}
+	.episode-info a:hover {
+		background-color: var(--thm-primary);
+		border-color: var(--thm-primary);
+	}
 
 /*---------------Info Bar on Threat watch Page --------*/
 #info-bar {
